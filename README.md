@@ -12,7 +12,7 @@
 
 5. Return to (root) and select 'Code' > 'Codespaces' > 'Create codespace on main'
    
-6. Once you're redirected, run the following commands:
+6. Once you're redirected to vscode.dev, run the following commands:
    
     &emsp;```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
    
@@ -24,9 +24,9 @@
 
     &emsp;```cargo run```
 
-7. Move `solutions.txt` from (root) to /web/solutions
+7. While it computes, rename /web to /docs and change `full_solution_compressed.txt` to `solution.txt` in `ui.js`
 
-8. In `ui.js`, change `full_solution_compressed.txt` to `solutions.txt`
+8. Move the output `solution.txt` from (root) to /docs/solutions and Commit & Push
 
-To deploy to GitHub Pages, rename /web to /docs and select /docs under 
+When deploying to GitHub Pages, select /docs under 
 ... Build and deployment > Branch
