@@ -302,8 +302,11 @@
                 const tokens = line.trim().split(/\s+/);
                 if (tokens.length === 0 || tokens[0] === "") continue;
                 
+                // Count exact 'ggggg' occurrences to determine winning words
+                const hasWin = tokens.includes("ggggg");
                 const triesCount = tokens.filter(isFeedback).length;
-                if (triesCount > 0) {
+                
+                if (hasWin && triesCount > 0) {
                     totalWords++;
                     totalTries += triesCount;
                     if (distribution[triesCount] !== undefined) {
