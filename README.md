@@ -1,8 +1,8 @@
 # Instructions
 
-1. For your own copy of [nkoppel/OptimalWordleSolver](https://github.com/nkoppel/OptimalWordleSolver)
+1. Fork your own copy of [nkoppel/OptimalWordleSolver](https://github.com/nkoppel/OptimalWordleSolver)
 
-2. Upload your own custom `solution_words_{`descriptor`}.txt`, if any, to /words
+2. Upload your own custom `solution_words_{/*descriptor*/}.txt`, if any, to /words
    
 3. Under /src in `words.rs`, edit the txt paths accordingly
    
@@ -27,3 +27,5 @@
 7. Move the generated `solutions.txt` from the repo root to /web/solutions
 
 8. Edit the txt paths accordingly in `ui.js`
+
+And you're now ready to deploy to GitHub Pages!
