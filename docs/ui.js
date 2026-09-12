@@ -20,7 +20,7 @@ async function init() {
 
     d3.select("#keyboard").style("display", "flex")
 
-    await set_solution("solutions/solutions.txt", true)
+    await set_solution("solutions/solution.txt", true)
     render()
 }
 
