@@ -24,4 +24,4 @@
 
     &emsp;```cargo run```
 
-7. Download the output `solution.txt` under the Explorer view and upload it to [xfmgp.github.io/OptimalWordleSolver](xfmgp.github.io/OptimalWordleSolver)
+7. Download the output `solution.txt` under the Explorer view and upload it to [xfmgp.github.io/OptimalWordleSolver](https://xfmgp.github.io/OptimalWordleSolver/)
