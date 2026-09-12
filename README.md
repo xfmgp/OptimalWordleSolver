@@ -2,7 +2,7 @@
 
 1. Fork your own copy of [nkoppel/OptimalWordleSolver](https://github.com/nkoppel/OptimalWordleSolver)
 
-2. Upload your own custom `solution_words_<descriptor>.txt`, if any, to /words
+2. Upload your own custom `solution_words_<descriptor>.txt` to /words
    
 3. In `words.rs`, under /src, edit the txt paths accordingly
    
