@@ -92,13 +92,14 @@ pub fn hint_to_str(mut hint: u8) -> String {
 }
 
 lazy_static! {
-    pub static ref GUESS_WORDS   : Vec<String> = read_words("words/guess_words.txt"   );
+    
     // pub static ref GUESS_WORDS   : Vec<String> = read_words("words/solution_words.txt");
     // pub static ref SOLUTION_WORDS: Vec<String> = read_words("words/solution_words.txt");
 
     // pub static ref GUESS_WORDS   : Vec<String> = read_words("words/guess_words_2.txt"   );
     // pub static ref SOLUTION_WORDS: Vec<String> = read_words("words/solution_words_2.txt");
 
+    pub static ref GUESS_WORDS   : Vec<String> = read_words("words/guess_words.txt");
     pub static ref SOLUTION_WORDS: Vec<String> = read_words("words/solution_words_wordlecup.txt");
     
 
