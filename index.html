@@ -25,12 +25,57 @@
             box-sizing: border-box;
         }
 
-        h1 {
-            font-size: 1.5rem;
-            margin: 0 0 20px 0;
+        /* --- Wordle Tile Header (Enlarged) --- */
+        .title-container {
             text-align: center;
+            margin-bottom: 20px;
         }
 
+        .wordle-title {
+            display: inline-flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .title-tile {
+            width: 56px;
+            height: 56px;
+            border: 2.5px solid #565758;
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            animation: popIn 0.3s ease-in-out;
+        }
+
+        .title-tile.green {
+            background-color: var(--green);
+            border-color: var(--green);
+        }
+
+        .title-tile.gray {
+            background-color: var(--gray);
+            border-color: var(--gray);
+        }
+
+        .title-tile.yellow {
+            background-color: var(--yellow);
+            border-color: var(--yellow);
+        }
+
+        .subtitle {
+            letter-spacing: 5px;
+            font-size: 15px;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        /* --- Fancy Wordle Upload Button (Scaled Down) --- */
         .upload-container {
             text-align: center;
             margin-bottom: 20px;
@@ -41,19 +86,42 @@
         }
 
         .custom-file-upload {
-            border: 1px solid #555;
-            display: inline-block;
-            padding: 12px 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 16px;
             cursor: pointer;
-            background: var(--gray);
+            background-color: var(--green);
+            color: #fff;
+            border: 1.5px solid var(--green);
             border-radius: 4px;
-            font-weight: bold;
-            font-size: 14px;
-            transition: background 0.2s;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 8px rgba(83, 141, 78, 0.25);
         }
 
         .custom-file-upload:hover {
-            background: #555;
+            background-color: #6aaa64;
+            border-color: #6aaa64;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(83, 141, 78, 0.35);
+        }
+
+        .custom-file-upload:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 4px rgba(83, 141, 78, 0.25);
+        }
+
+        .upload-icon {
+            font-size: 13px;
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         /* Stats Section */
@@ -214,17 +282,32 @@
         @media (max-width: 480px) {
             .stat-row { flex-wrap: wrap; }
             .stat-box.small { min-width: 30%; }
+            .title-tile {
+                width: 40px;
+                height: 40px;
+                font-size: 22px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Wordle Strategy Visualiser</h1>
+    <div class="title-container">
+        <div class="wordle-title">
+            <div class="title-tile green">W</div>
+            <div class="title-tile gray">O</div>
+            <div class="title-tile yellow">R</div>
+            <div class="title-tile green">D</div>
+            <div class="title-tile gray">L</div>
+            <div class="title-tile yellow">E</div>
+        </div>
+        <div class="subtitle">Strategy Visualiser</div>
+    </div>
 
     <div class="upload-container">
         <label class="custom-file-upload">
             <input type="file" id="file-upload" accept=".txt" />
-            Upload
+            <span class="upload-icon">📁</span> Upload Strategy
         </label>
     </div>
 
@@ -246,7 +329,6 @@
     <div id="tree-container"></div>
 
     <script>
-        // Fetch default solution.txt from root on load
         window.addEventListener('DOMContentLoaded', () => {
             fetch('./solution.txt')
                 .then(response => {
