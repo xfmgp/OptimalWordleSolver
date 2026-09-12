@@ -4,20 +4,22 @@
    
 3. Head to words.rs under the /src folder and edit the txt paths accordingly
    
-    &nbsp;`guess_words.txt` contains the original 12972 valid Wordle guesses (which WordleCup uses)
+    &emsp;`guess_words.txt` contains the original 12972 valid Wordle guesses (which WordleCup uses)
    
-    &nbsp;`guess_words_2.txt` contains the current 14855 valid Wordle guesses
+    &emsp;`guess_words_2.txt` contains the current 14855 valid Wordle guesses
 
 4. Return to the repo root and select 'Code', then 'Codespaces', and finally 'Create codespace on main'
    
 6. Once you're redirected, run the following commands:
    
-    &nbsp;```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
+    &emsp;```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
    
-    &nbsp;Enter '1' when prompted\
+    &emsp;Enter '1' when prompted
    
-    &nbsp;```source "$HOME/.cargo/env"```
+    &emsp;```source "$HOME/.cargo/env"```
    
-    &nbsp;```rustup default nightly```
+    &emsp;```rustup default nightly```
 
-    &nbsp;```cargo run```
+    &emsp;```cargo run```
+
+A `solutions.txt` will be saved to the repo root
