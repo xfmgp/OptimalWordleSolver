@@ -10,6 +10,7 @@ actor
 acute
 adept
 admin
+admit
 adobe
 adopt
 adore
@@ -70,11 +71,13 @@ arrow
 arson
 aside
 asset
+atlas
 atone
 attic
 audio
 audit
 avail
+avant
 avert
 avian
 avoid
@@ -149,12 +152,15 @@ bosom
 bound
 bowel
 boxer
+brace
 braid
 brain
 brake
 brand
 brass
+brave
 brawl
+bread
 break
 breed
 bribe
@@ -168,11 +174,14 @@ broad
 broke
 brood
 brook
+broom
 broth
 brown
+brunt
 brush
 brute
 buddy
+budge
 buggy
 build
 built
@@ -519,6 +528,7 @@ frost
 frown
 froze
 fruit
+fryer
 fudge
 fully
 fungi
@@ -576,6 +586,7 @@ greet
 grief
 grill
 grind
+gripe
 groan
 groin
 groom
@@ -812,6 +823,7 @@ murky
 music
 musty
 naive
+naked
 nanny
 nasal
 nasty
@@ -830,7 +842,6 @@ ninth
 noble
 noise
 noisy
-noose
 north
 nosey
 novel
@@ -1155,6 +1166,7 @@ snake
 sneak
 snipe
 snowy
+snuck
 sober
 soggy
 solar
@@ -1202,6 +1214,7 @@ stage
 stain
 stair
 stake
+stale
 stalk
 stall
 stamp
@@ -1219,6 +1232,7 @@ steer
 stern
 stick
 stiff
+still
 sting
 stint
 stock
@@ -1266,6 +1280,8 @@ swore
 syrup
 table
 taboo
+tacit
+tacky
 taint
 taken
 tally
@@ -1408,6 +1424,7 @@ vital
 vivid
 vocal
 vodka
+vogue
 voice
 voila
 vomit
@@ -1435,6 +1452,7 @@ wheel
 where
 which
 while
+whiny
 whirl
 white
 whole
