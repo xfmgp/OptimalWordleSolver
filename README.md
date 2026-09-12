@@ -10,7 +10,7 @@
    
     &emsp;`guess_words_2.txt` contains the current 14855 valid Wordle guesses
 
-5. Return to the repo root and select 'Code', then 'Codespaces', and finally 'Create codespace on main'
+5. Return to (root) and select 'Code' > 'Codespaces' > 'Create codespace on main'
    
 6. Once you're redirected, run the following commands:
    
@@ -24,7 +24,7 @@
 
     &emsp;```cargo run```
 
-7. Move the generated `solutions.txt` from the repo root to /web/solutions
+7. Move `solutions.txt` from (root) to /web/solutions
 
 8. In `ui.js`, change `full_solution_compressed.txt` to `solutions.txt`
 
