@@ -27,9 +27,8 @@
 7. While it computes, rename /web to /docs and change `full_solution_compressed.txt` to `solution.txt` in `ui.js`
 
 8. Move the output `solution.txt` from (root) to /docs/solutions and
-   
-[!NOTE]
-Commit & Push
+> [!NOTE]
+> Commit & Push
 
 When deploying to GitHub Pages, select /docs under 
 ... Build and deployment > Branch
