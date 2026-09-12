@@ -12,7 +12,7 @@
 
 5. Return to (root) and select 'Code' > 'Codespaces' > 'Create codespace on main'
    
-6. Once you're redirected to vscode.dev, run the following commands:
+6. Once you're redirected to the codespace, run the following commands:
    
     &emsp;```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
    
@@ -24,9 +24,4 @@
 
     &emsp;```cargo run```
 
-7. While it computes, rename /web to /docs and change `full_solution_compressed.txt` to `solution.txt` in `ui.js`
-
-8. Move the output `solution.txt` from (root) to /docs/solutions and 'Commit & Push'
-
-When deploying to GitHub Pages, select /docs under 
-... Build and deployment > Branch
+7. Download the output `solution.txt` under the Explorer view and upload it to xfmgp.github.io/OptimalWordleSolver
