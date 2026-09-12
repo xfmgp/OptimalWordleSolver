@@ -4,7 +4,7 @@
 
 2. Upload your own custom `solution_words_<descriptor>.txt`, if any, to /words
    
-3. Under /src in `words.rs`, edit the txt paths accordingly
+3. In `words.rs`, under /src), edit the txt paths accordingly
    
     &emsp;`guess_words.txt` contains the original 12972 valid Wordle guesses (which WordleCup uses)
    
@@ -26,6 +26,7 @@
 
 7. Move the generated `solutions.txt` from the repo root to /web/solutions
 
-8. Edit the txt paths accordingly in `ui.js`
+8. In `ui.js`, change `full_solution_compressed.txt` to `solutions.txt`
 
-And you're now ready to deploy to GitHub Pages!
+To deploy to GitHub Pages, rename /web to /docs and select /docs under 
+... Build and deployment > Branch
