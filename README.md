@@ -2,17 +2,13 @@
 
 1. Fork your own copy of [nkoppel/OptimalWordleSolver](https://github.com/nkoppel/OptimalWordleSolver)
 
-2. Upload your own custom `solution_words_<descriptor>.txt` to /words
+2. Upload your own custom list of guess and solution words to /words, if any
    
-3. In `words.rs`, under /src, edit the txt paths accordingly
-   
-    &emsp;`guess_words.txt` contains the original 12972 valid Wordle guesses (which WordleCup uses)
-   
-    &emsp;`guess_words_2.txt` contains the current 14855 valid Wordle guesses
+3. Under /src, edit the txt paths in `words.rs` accordingly
 
-5. Return to (root) and select 'Code' > 'Codespaces' > 'Create codespace on main'
+4. Return to (root) and select Code > Codespaces > Create codespace on main
    
-6. Once you're redirected to the codespace, run the following commands:
+5. Once you're redirected to the codespace, run the following commands:
    
     &emsp;```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
    
@@ -24,4 +20,4 @@
 
     &emsp;```cargo run```
 
-7. Download the output `solution.txt` under the Explorer view and upload it to [ylarp.github.io/OptimalWordleSolver](https://ylarp.github.io/OptimalWordleSolver/)
+6. Download the output `solution.txt` under the Explorer view and upload it to [ylarp.github.io/OptimalWordleSolver](https://ylarp.github.io/OptimalWordleSolver/)
