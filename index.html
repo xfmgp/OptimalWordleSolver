@@ -25,7 +25,7 @@
             box-sizing: border-box;
         }
 
-        /* --- Wordle Tile Header (Enlarged) --- */
+        /* --- Wordle Tile Header --- */
         .title-container {
             text-align: center;
             margin-bottom: 20px;
@@ -75,56 +75,7 @@
             margin-top: 8px;
         }
 
-        /* --- Fancy Wordle Upload Button (Scaled Down) --- */
-        .upload-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        input[type="file"] {
-            display: none;
-        }
-
-        .custom-file-upload {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 7px 16px;
-            cursor: pointer;
-            background-color: var(--green);
-            color: #fff;
-            border: 1.5px solid var(--green);
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 2px 8px rgba(83, 141, 78, 0.25);
-        }
-
-        .custom-file-upload:hover {
-            background-color: #6aaa64;
-            border-color: #6aaa64;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(83, 141, 78, 0.35);
-        }
-
-        .custom-file-upload:active {
-            transform: translateY(0);
-            box-shadow: 0 1px 4px rgba(83, 141, 78, 0.25);
-        }
-
-        .upload-icon {
-            font-size: 13px;
-        }
-
-        @keyframes popIn {
-            0% { transform: scale(0.8); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        /* Stats Section */
+        /* --- Stats Section --- */
         #stats-container {
             max-width: 600px;
             margin: 0 auto 20px auto;
@@ -134,6 +85,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+            box-sizing: border-box;
         }
 
         .hidden {
@@ -176,7 +128,149 @@
             letter-spacing: 0.5px;
         }
 
-        /* Tree Section */
+        /* --- Upload & Inline Search Controls --- */
+        .controls-container {
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-file-upload {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 16px;
+            cursor: pointer;
+            background-color: var(--green);
+            color: #fff;
+            border: 1.5px solid var(--green);
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 8px rgba(83, 141, 78, 0.25);
+        }
+
+        .custom-file-upload:hover {
+            background-color: #6aaa64;
+            border-color: #6aaa64;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(83, 141, 78, 0.35);
+        }
+
+        .upload-icon {
+            font-size: 13px;
+        }
+
+        .search-box {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 0;
+            height: 38px;
+            padding: 0 12px;
+            background: #2a2a2a;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .search-input:focus {
+            border-color: var(--green);
+        }
+
+        .search-btn {
+            height: 38px;
+            padding: 0 16px;
+            background: var(--green);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 12px;
+            transition: background 0.2s;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+
+        .search-btn:hover {
+            background: #6aaa64;
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* --- Search Result Section --- */
+        #search-result-container {
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            background: var(--panel-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .search-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .badge-found {
+            background-color: var(--green);
+            color: #fff;
+        }
+
+        .badge-calculated {
+            background-color: var(--yellow);
+            color: #fff;
+        }
+
+        .path-step {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .step-number {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--light-gray);
+            width: 20px;
+        }
+
+        /* --- Tree Section --- */
         #tree-container {
             max-width: 600px;
             margin: 0 auto;
@@ -184,6 +278,7 @@
             padding: 15px;
             border-radius: 8px;
             overflow-x: auto;
+            box-sizing: border-box;
         }
 
         .word-row {
@@ -304,13 +399,7 @@
         <div class="subtitle">Strategy Visualiser</div>
     </div>
 
-    <div class="upload-container">
-        <label class="custom-file-upload">
-            <input type="file" id="file-upload" accept=".txt" />
-            <span class="upload-icon">📁</span> Upload
-        </label>
-    </div>
-
+    <!-- Stats Container placed FIRST -->
     <div id="stats-container" class="hidden">
         <div class="stat-row">
             <div class="stat-box">
@@ -326,9 +415,27 @@
         </div>
     </div>
 
+    <!-- Controls Container placed BELOW Stats -->
+    <div class="controls-container">
+        <label class="custom-file-upload">
+            <input type="file" id="file-upload" accept=".txt" />
+            <span class="upload-icon">📁</span> Upload
+        </label>
+        
+        <div class="search-box">
+            <input type="text" id="search-input" class="search-input" placeholder="Search target word..." maxlength="5">
+            <button id="search-btn" class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div id="search-result-container" class="hidden"></div>
+
     <div id="tree-container"></div>
 
     <script>
+        let globalRootNode = null;
+        let globalSolutionsList = [];
+
         window.addEventListener('DOMContentLoaded', () => {
             fetch('./solution.txt')
                 .then(response => {
@@ -353,7 +460,40 @@
             reader.readAsText(file);
         });
 
+        document.getElementById('search-btn').addEventListener('click', handleSearch);
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleSearch();
+        });
+
         const isFeedback = (token) => /^[yg_]{5}$/.test(token);
+
+        function computeFeedback(guess, target) {
+            guess = guess.toLowerCase();
+            target = target.toLowerCase();
+            let res = ['_', '_', '_', '_', '_'];
+            let targetArr = target.split('');
+
+            for (let i = 0; i < 5; i++) {
+                if (guess[i] === target[i]) {
+                    res[i] = 'g';
+                    targetArr[i] = null;
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                if (res[i] !== 'g') {
+                    let idx = targetArr.indexOf(guess[i]);
+                    if (idx !== -1) {
+                        res[i] = 'y';
+                        targetArr[idx] = null;
+                    }
+                }
+            }
+            return res.join('');
+        }
+
+        function filterCandidates(candidates, guess, feedback) {
+            return candidates.filter(word => computeFeedback(guess, word) === feedback);
+        }
 
         function processData(text) {
             const lines = text.split('\n');
@@ -362,6 +502,7 @@
             let totalWords = 0;
             let totalTries = 0;
             let distribution = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
+            globalSolutionsList = [];
             
             for (let line of lines) {
                 const tokens = line.trim().split(/\s+/);
@@ -384,7 +525,7 @@
                 let currentGuess = "";
                 
                 if (!isFeedback(tokens[0])) {
-                    currentGuess = tokens[0];
+                    currentGuess = tokens[0].toLowerCase();
                     i++;
                 } else {
                     if (!root) continue; 
@@ -400,7 +541,7 @@
                     i++;
                     
                     if (i < tokens.length) {
-                        let nextGuess = tokens[i];
+                        let nextGuess = tokens[i].toLowerCase();
                         i++;
                         
                         if (!currentNode.branches[feedback]) {
@@ -409,12 +550,132 @@
                         currentNode = currentNode.branches[feedback];
                     } else {
                         currentNode.branches[feedback] = null; 
+                        if (feedback === 'ggggg') {
+                            globalSolutionsList.push(currentGuess);
+                        }
                     }
                 }
             }
             
+            globalRootNode = root;
             renderStats(totalWords, totalTries, distribution);
             renderTree(root);
+            clearSearch();
+        }
+
+        function findPathInTree(node, target, currentPath = []) {
+            if (!node) return null;
+
+            for (let feedback of Object.keys(node.branches)) {
+                const nextNode = node.branches[feedback];
+                const newPath = [...currentPath, { guess: node.guess, feedback: feedback }];
+
+                if (feedback === 'ggggg' && node.guess.toLowerCase() === target.toLowerCase()) {
+                    return newPath;
+                }
+
+                if (nextNode) {
+                    const res = findPathInTree(nextNode, target, newPath);
+                    if (res) return res;
+                }
+            }
+            return null;
+        }
+
+        function calculatePathForNewWord(root, targetWord) {
+            targetWord = targetWord.toLowerCase();
+            let candidates = [...new Set(globalSolutionsList)];
+            let path = [];
+            let currentNode = root;
+
+            while (currentNode) {
+                let guess = currentNode.guess;
+                let feedback = computeFeedback(guess, targetWord);
+                path.push({ guess: guess, feedback: feedback });
+
+                if (feedback === 'ggggg') {
+                    return path;
+                }
+
+                candidates = filterCandidates(candidates, guess, feedback);
+                if (currentNode.branches[feedback]) {
+                    currentNode = currentNode.branches[feedback];
+                } else {
+                    currentNode = null;
+                }
+            }
+
+            while (candidates.length > 0) {
+                let guess = candidates.includes(targetWord) ? targetWord : candidates[0];
+                let feedback = computeFeedback(guess, targetWord);
+                
+                if (path.length > 0 && path[path.length - 1].guess === guess) {
+                    break;
+                }
+                
+                path.push({ guess: guess, feedback: feedback });
+                if (feedback === 'ggggg') break;
+                
+                candidates = filterCandidates(candidates, guess, feedback);
+            }
+
+            return path;
+        }
+
+        function handleSearch() {
+            const searchInput = document.getElementById('search-input');
+            const targetWord = searchInput.value.trim().toLowerCase();
+
+            if (!targetWord || targetWord.length !== 5) {
+                alert('Please enter a valid 5-letter word.');
+                return;
+            }
+
+            if (!globalRootNode) {
+                alert('Please load strategy data first.');
+                return;
+            }
+
+            let path = findPathInTree(globalRootNode, targetWord);
+            let isCalculated = false;
+
+            if (!path) {
+                path = calculatePathForNewWord(globalRootNode, targetWord);
+                isCalculated = true;
+            }
+
+            renderSearchResult(targetWord, path, isCalculated);
+        }
+
+        function renderSearchResult(targetWord, path, isCalculated) {
+            const container = document.getElementById('search-result-container');
+            container.classList.remove('hidden');
+
+            const badgeClass = isCalculated ? 'badge-calculated' : 'badge-found';
+            const badgeText = isCalculated ? 'Calculated Path (New Word)' : 'Found in Tree';
+
+            let html = `
+                <div style="display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
+                    <div style="font-size:18px; font-weight:bold; color:var(--green);">${targetWord.toUpperCase()}</div>
+                    <span class="search-badge ${badgeClass}">${badgeText}</span>
+                </div>
+            `;
+
+            path.forEach((step, idx) => {
+                html += `
+                    <div class="path-step">
+                        <div class="step-number">#${idx + 1}</div>
+                        ${createWordRow(step.guess, step.feedback)}
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            document.getElementById('search-result-container').classList.add('hidden');
         }
 
         function renderStats(totalWords, totalTries, distribution) {
