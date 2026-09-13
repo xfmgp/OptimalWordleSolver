@@ -14,6 +14,7 @@
             --light-gray: #818384;
             --border-color: #333;
             --panel-bg: #1e1e1e;
+            --red: #e74c3c;
         }
 
         body {
@@ -75,6 +76,49 @@
             margin-top: 8px;
         }
 
+        /* --- Action Buttons Container --- */
+        .action-container {
+            max-width: 600px;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 16px;
+            cursor: pointer;
+            background-color: var(--green);
+            color: #fff;
+            border: 1.5px solid var(--green);
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 8px rgba(83, 141, 78, 0.25);
+        }
+
+        .btn-action:hover {
+            background-color: #6aaa64;
+            border-color: #6aaa64;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(83, 141, 78, 0.35);
+        }
+
+        .upload-icon {
+            font-size: 13px;
+        }
+
         /* --- Stats Section --- */
         #stats-container {
             max-width: 600px;
@@ -98,6 +142,27 @@
             justify-content: space-between;
         }
 
+        .grid-1x2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+        }
+
+        /* 2x2 Layout for Tries 2 through 5 */
+        .grid-2x2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+        }
+
+        /* Container for 6 Tries below 2x2 grid */
+        .tries-six-container {
+            width: 100%;
+            margin-top: 10px;
+        }
+
         .stat-box {
             background: #2a2a2a;
             border-radius: 6px;
@@ -107,6 +172,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            box-sizing: border-box;
+            position: relative;
         }
 
         .stat-val {
@@ -128,7 +195,36 @@
             letter-spacing: 0.5px;
         }
 
-        /* --- Upload & Inline Search Controls --- */
+        /* --- Info Icon Styling --- */
+        .info-btn {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #3a3a3c;
+            color: var(--light-gray);
+            font-size: 10px;
+            font-weight: bold;
+            font-family: serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid #4a4a4c;
+            transition: background-color 0.2s, color 0.2s, transform 0.15s ease;
+            user-select: none;
+            line-height: 1;
+        }
+
+        .info-btn:hover {
+            background-color: #565758;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        /* --- Search Controls --- */
         .controls-container {
             max-width: 600px;
             margin: 0 auto 20px auto;
@@ -138,39 +234,6 @@
             align-items: center;
             width: 100%;
             box-sizing: border-box;
-        }
-
-        input[type="file"] {
-            display: none;
-        }
-
-        .custom-file-upload {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 7px 16px;
-            cursor: pointer;
-            background-color: var(--green);
-            color: #fff;
-            border: 1.5px solid var(--green);
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 2px 8px rgba(83, 141, 78, 0.25);
-        }
-
-        .custom-file-upload:hover {
-            background-color: #6aaa64;
-            border-color: #6aaa64;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(83, 141, 78, 0.35);
-        }
-
-        .upload-icon {
-            font-size: 13px;
         }
 
         .search-box {
@@ -192,7 +255,6 @@
             border-radius: 4px;
             color: #fff;
             font-size: 14px;
-            text-transform: uppercase;
             letter-spacing: 1px;
             outline: none;
             box-sizing: border-box;
@@ -232,18 +294,66 @@
             max-width: 600px;
             margin: 0 auto 20px auto;
             background: var(--panel-bg);
-            padding: 20px;
+            padding: 0 20px 20px 20px;
             border-radius: 8px;
             box-sizing: border-box;
+            position: relative;
+        }
+
+        .result-header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 15px;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-color: var(--red);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s, transform 0.15s ease;
+            line-height: 1;
+        }
+
+        .close-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .search-result-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .path-steps-list {
+            flex: 1;
         }
 
         .search-badge {
             display: inline-block;
-            padding: 4px 8px;
+            padding: 6px 12px;
             border-radius: 4px;
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
+            line-height: 1;
         }
 
         .badge-found {
@@ -263,11 +373,35 @@
             margin-bottom: 12px;
         }
 
+        .path-step:last-child {
+            margin-bottom: 0;
+        }
+
         .step-number {
             font-size: 14px;
             font-weight: bold;
             color: var(--light-gray);
             width: 20px;
+        }
+
+        .add-tree-btn {
+            padding: 6px 12px;
+            background-color: var(--green);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 1;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            white-space: nowrap;
+            align-self: center;
+        }
+
+        .add-tree-btn:hover {
+            background-color: #6aaa64;
         }
 
         /* --- Tree Section --- */
@@ -350,7 +484,7 @@
         }
 
         .next-guess::before {
-            content: '↳';
+            content: '▶';
             color: #666;
             font-size: 16px;
         }
@@ -375,12 +509,14 @@
         }
 
         @media (max-width: 480px) {
-            .stat-row { flex-wrap: wrap; }
-            .stat-box.small { min-width: 30%; }
             .title-tile {
                 width: 40px;
                 height: 40px;
                 font-size: 22px;
+            }
+            .search-result-content {
+                flex-direction: row;
+                align-items: center;
             }
         }
     </style>
@@ -399,29 +535,29 @@
         <div class="subtitle">Strategy Visualiser</div>
     </div>
 
-    <!-- Stats Container placed FIRST -->
+    <div class="action-container">
+        <label class="btn-action">
+            <input type="file" id="file-upload" accept=".txt" />
+            <span class="upload-icon">📂</span> Upload
+        </label>
+    </div>
+
     <div id="stats-container" class="hidden">
-        <div class="stat-row">
+        <div class="grid-1x2">
             <div class="stat-box">
                 <div class="stat-val" id="stat-avg">0.00</div>
                 <div class="stat-label">Average Tries</div>
             </div>
             <div class="stat-box">
-                <div class="stat-val" id="stat-total" style="color: var(--text-color);">0</div>
+                <div class="stat-val" id="stat-total" style="color: var(--yellow);">0</div>
                 <div class="stat-label">Total Words</div>
             </div>
         </div>
-        <div class="stat-row" id="distribution-row">
-        </div>
+        <div class="grid-2x2" id="distribution-row"></div>
+        <div class="tries-six-container hidden" id="six-tries-row"></div>
     </div>
 
-    <!-- Controls Container placed BELOW Stats -->
     <div class="controls-container">
-        <label class="custom-file-upload">
-            <input type="file" id="file-upload" accept=".txt" />
-            <span class="upload-icon">📁</span> Upload
-        </label>
-        
         <div class="search-box">
             <input type="text" id="search-input" class="search-input" placeholder="Search target word..." maxlength="5">
             <button id="search-btn" class="search-btn">Search</button>
@@ -433,8 +569,12 @@
     <div id="tree-container"></div>
 
     <script>
+        let rawTxtContent = "";
         let globalRootNode = null;
         let globalSolutionsList = [];
+        let currentCalculatedPath = null;
+        let currentSearchTarget = "";
+        let wordsByTriesMap = {};
 
         window.addEventListener('DOMContentLoaded', () => {
             fetch('./solution.txt')
@@ -442,7 +582,7 @@
                     if (!response.ok) throw new Error('Default file not found');
                     return response.text();
                 })
-                .then(text => processData(text))
+                .then(text => processData(text, true))
                 .catch(err => {
                     console.log('Auto-load notice:', err);
                 });
@@ -455,7 +595,7 @@
             const reader = new FileReader();
             reader.onload = function(e) {
                 const text = e.target.result;
-                processData(text);
+                processData(text, true);
             };
             reader.readAsText(file);
         });
@@ -495,13 +635,15 @@
             return candidates.filter(word => computeFeedback(guess, word) === feedback);
         }
 
-        function processData(text) {
+        function processData(text, resetSearch = false) {
+            rawTxtContent = text.trim();
             const lines = text.split('\n');
             let root = null;
             
             let totalWords = 0;
             let totalTries = 0;
-            let distribution = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
+            let distribution = {};
+            wordsByTriesMap = {};
             globalSolutionsList = [];
             
             for (let line of lines) {
@@ -514,11 +656,7 @@
                 if (hasWin && triesCount > 0) {
                     totalWords++;
                     totalTries += triesCount;
-                    if (distribution[triesCount] !== undefined) {
-                        distribution[triesCount]++;
-                    } else {
-                        distribution[triesCount] = 1;
-                    }
+                    distribution[triesCount] = (distribution[triesCount] || 0) + 1;
                 }
 
                 let i = 0;
@@ -548,10 +686,15 @@
                             currentNode.branches[feedback] = { guess: nextGuess, branches: {} };
                         }
                         currentNode = currentNode.branches[feedback];
+                        currentGuess = nextGuess;
                     } else {
                         currentNode.branches[feedback] = null; 
                         if (feedback === 'ggggg') {
                             globalSolutionsList.push(currentGuess);
+                            if (!wordsByTriesMap[triesCount]) {
+                                wordsByTriesMap[triesCount] = [];
+                            }
+                            wordsByTriesMap[triesCount].push(currentGuess.toUpperCase());
                         }
                     }
                 }
@@ -560,7 +703,7 @@
             globalRootNode = root;
             renderStats(totalWords, totalTries, distribution);
             renderTree(root);
-            clearSearch();
+            if (resetSearch) clearSearch();
         }
 
         function findPathInTree(node, target, currentPath = []) {
@@ -593,9 +736,7 @@
                 let feedback = computeFeedback(guess, targetWord);
                 path.push({ guess: guess, feedback: feedback });
 
-                if (feedback === 'ggggg') {
-                    return path;
-                }
+                if (feedback === 'ggggg') return path;
 
                 candidates = filterCandidates(candidates, guess, feedback);
                 if (currentNode.branches[feedback]) {
@@ -606,17 +747,22 @@
             }
 
             while (candidates.length > 0) {
-                let guess = candidates.includes(targetWord) ? targetWord : candidates[0];
-                let feedback = computeFeedback(guess, targetWord);
+                let nextGuess = candidates.includes(targetWord) ? targetWord : candidates[0];
+                let feedback = computeFeedback(nextGuess, targetWord);
                 
-                if (path.length > 0 && path[path.length - 1].guess === guess) {
+                if (path.length > 0 && path[path.length - 1].guess === nextGuess) {
                     break;
                 }
                 
-                path.push({ guess: guess, feedback: feedback });
+                path.push({ guess: nextGuess, feedback: feedback });
                 if (feedback === 'ggggg') break;
                 
-                candidates = filterCandidates(candidates, guess, feedback);
+                candidates = filterCandidates(candidates, nextGuess, feedback);
+            }
+
+            const lastStep = path[path.length - 1];
+            if (!lastStep || lastStep.guess !== targetWord || lastStep.feedback !== 'ggggg') {
+                path.push({ guess: targetWord, feedback: 'ggggg' });
             }
 
             return path;
@@ -644,6 +790,9 @@
                 isCalculated = true;
             }
 
+            currentCalculatedPath = isCalculated ? path : null;
+            currentSearchTarget = targetWord;
+
             renderSearchResult(targetWord, path, isCalculated);
         }
 
@@ -655,34 +804,113 @@
             const badgeText = isCalculated ? 'Calculated Path (New Word)' : 'Found in Tree';
 
             let html = `
-                <div style="display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
-                    <div style="font-size:18px; font-weight:bold; color:var(--green);">${targetWord.toUpperCase()}</div>
+                <div class="result-header">
                     <span class="search-badge ${badgeClass}">${badgeText}</span>
+                    <button class="close-btn" id="close-result-btn">✖</button>
                 </div>
+                <div class="search-result-content">
+                    <div class="path-steps-list">
             `;
 
             path.forEach((step, idx) => {
+                const isFinalWin = (step.feedback === 'ggggg');
                 html += `
                     <div class="path-step">
-                        <div class="step-number">#${idx + 1}</div>
+                        <div class="step-number">${idx + 1}</div>
                         ${createWordRow(step.guess, step.feedback)}
+                        ${isFinalWin ? '<span class="win">🏆</span>' : ''}
                     </div>
                 `;
             });
 
+            html += `</div>`;
+
+            if (isCalculated) {
+                html += `<button id="add-to-tree-btn" class="add-tree-btn">ADD</button>`;
+            }
+
+            html += `</div>`;
+
             container.innerHTML = html;
+
+            document.getElementById('close-result-btn').addEventListener('click', clearSearch);
+
+            if (isCalculated) {
+                document.getElementById('add-to-tree-btn').addEventListener('click', addCalculatedPathToTree);
+            }
+        }
+
+        function downloadTreeTxt() {
+            if (!rawTxtContent) return;
+
+            const blob = new Blob([rawTxtContent], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'solution.txt';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        function addCalculatedPathToTree() {
+            if (!currentCalculatedPath || currentCalculatedPath.length === 0) return;
+
+            let stepsToAppend = currentCalculatedPath;
+            if (globalRootNode && currentCalculatedPath[0].guess.toLowerCase() === globalRootNode.guess.toLowerCase()) {
+                stepsToAppend = currentCalculatedPath;
+            }
+
+            let lineTokens = [];
+            stepsToAppend.forEach((step, idx) => {
+                if (idx > 0) {
+                    lineTokens.push(step.guess);
+                }
+                lineTokens.push(step.feedback);
+            });
+
+            const newLine = lineTokens.join(" ");
+            const updatedTxt = rawTxtContent ? `${rawTxtContent}\n${newLine}` : newLine;
+
+            processData(updatedTxt, false);
+            downloadTreeTxt();
+
+            const addedPath = [...currentCalculatedPath];
+            currentCalculatedPath = null;
+            renderSearchResult(currentSearchTarget, addedPath, false);
+        }
+
+        function downloadWordsForTries(triesNum) {
+            const wordList = wordsByTriesMap[triesNum] || [];
+            const uniqueWords = [...new Set(wordList)];
+            const content = uniqueWords.join("\n");
+
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `${triesNum}_tries_words.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
         }
 
         function clearSearch() {
             document.getElementById('search-input').value = '';
             document.getElementById('search-result-container').classList.add('hidden');
+            currentCalculatedPath = null;
+            currentSearchTarget = "";
         }
 
         function renderStats(totalWords, totalTries, distribution) {
             const container = document.getElementById('stats-container');
+            const sixRow = document.getElementById('six-tries-row');
             
             if (totalWords === 0) {
                 container.classList.add('hidden');
+                sixRow.classList.add('hidden');
                 return;
             }
 
@@ -692,29 +920,35 @@
             document.getElementById('stat-avg').innerText = avg;
             document.getElementById('stat-total').innerText = totalWords;
 
-            let distHtml = '';
-            let maxVal = Math.max(...Object.values(distribution));
+            let dist2To5Html = '';
 
-            let maxTryToCheck = 5;
-            if (distribution[6] > 0) {
-                maxTryToCheck = 6;
-            }
-
-            for (let i = 2; i <= maxTryToCheck; i++) {
-                if (i === 6 && distribution[6] === 0) continue;
-                
+            for (let i = 2; i <= 5; i++) {
                 const count = distribution[i] || 0;
-                const isMax = count > 0 && count === maxVal;
-                const highlightStyle = isMax ? 'color: var(--yellow);' : '';
-
-                distHtml += `
+                dist2To5Html += `
                     <div class="stat-box small">
-                        <div class="stat-val" style="${highlightStyle}">${count}</div>
+                        <div class="info-btn" onclick="downloadWordsForTries(${i})" title="Download words solved in ${i} tries">i</div>
+                        <div class="stat-val">${count}</div>
                         <div class="stat-label">${i} Tries</div>
                     </div>
                 `;
             }
-            document.getElementById('distribution-row').innerHTML = distHtml;
+
+            document.getElementById('distribution-row').innerHTML = dist2To5Html;
+
+            const countSix = distribution[6] || 0;
+            if (countSix > 0) {
+                sixRow.classList.remove('hidden');
+                sixRow.innerHTML = `
+                    <div class="stat-box small">
+                        <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">i</div>
+                        <div class="stat-val">${countSix}</div>
+                        <div class="stat-label">6 Tries</div>
+                    </div>
+                `;
+            } else {
+                sixRow.classList.add('hidden');
+                sixRow.innerHTML = '';
+            }
         }
 
         function createWordRow(word, feedback) {
