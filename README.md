@@ -2,7 +2,7 @@
 
 2. Upload your own custom list of guess and solution words to `/words`, if any
    
-   &nbsp;&nbsp;&nbsp;&nbsp;Under `/src`, edit the txt paths in `words.rs` accordingly
+   a. Under `/src`, edit the txt paths in `words.rs` accordingly
 
 3. Return to (root) and select **Code > Codespaces > Create codespace on main**
 
