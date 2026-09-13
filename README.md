@@ -5,8 +5,8 @@
   <br>
   <li>
     Upload your own custom list of guess and solution words to <code>/words</code>, if any
-    <ul "style="list-style-type: none;">
-      <li>2a.Under <code>/src</code>, edit the txt paths in <code>words.rs</code> accordingly</li>
+    <ul>
+      <li "style=list-style-type: circle;">Under <code>/src</code>, edit the txt paths in <code>words.rs</code> accordingly</li>
     </ul>
   </li>
   <li>
