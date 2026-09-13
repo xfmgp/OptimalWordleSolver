@@ -2,9 +2,9 @@
 
 1. Fork your own copy of [nkoppel/OptimalWordleSolver](https://github.com/nkoppel/OptimalWordleSolver)
 
-2i. Upload your own custom list of guess and solution words to /words, if any
+2. Upload your own custom list of guess and solution words to /words, if any
    
-2b. Under /src, edit the txt paths in `words.rs` accordingly
+&nbsp;&nbsp;&nbsp;&nbsp;2a. Under /src, edit the txt paths in `words.rs` accordingly
 
 3. Return to (root) and select Code > Codespaces > Create codespace on main
    
