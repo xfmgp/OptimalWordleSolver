@@ -5,12 +5,12 @@
   <br>
   <li>
     Upload your own custom list of guess and solution words to <code>/words</code>, if any
-    <ul>
+    <ulstyle="list-style-type: none;">
       <li>2a.Under <code>/src</code>, edit the txt paths in <code>words.rs</code> accordingly</li>
     </ul>
   </li>
   <li>
-    Return to (root) and select <strong>Code</strong> &gt; <strong>Codespaces</strong> &gt; <strong>Create codespace on main</strong>
+    Return to (root) and select <strong>Code &gt; Codespaces &gt; Create codespace on main</strong>
   </li>
   <li>
     Once you're redirected to the codespace, run the following commands:
