@@ -3,16 +3,16 @@
     Fork your own copy of <a href="https://github.com/nkoppel/OptimalWordleSolver">nkoppel/OptimalWordleSolver</a>
   </li>
   <br>
-  <li>
+  <li style="margin-bottom: 15px;">
     Upload your own custom list of guess and solution words to <code>/words</code>, if any
-    <ul>
-      <li style="list-style-type: none;">Under <code>/src</code>, edit the txt paths in <code>words.rs</code> accordingly</li>
-    </ul>
+      <div style="margin-left: 20px; margin-top: 7.5px;">
+      Under <code>/src</code>, edit the txt paths in <code>words.rs</code> accordingly
+    </div>
   </li>
-  <li>
+  <li style="margin-bottom: 15px;">
     Return to (root) and select <strong>Code &gt; Codespaces &gt; Create codespace on main</strong>
   </li>
-  <li>
+  <li style="margin-bottom: 15px;">
     Once you're redirected to the codespace, run the following commands:
     <pre><code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</code></pre>
     <p>Enter <code>1</code> when prompted</p>
@@ -20,7 +20,7 @@
     <pre><code>rustup default nightly</code></pre>
     <pre><code>cargo run</code></pre>
   </li>
-  <li>
+  <li style="margin-bottom: 15px;">
     Download the output <code>solution.txt</code> under the Explorer view and upload it to <a href="https://ylarp.github.io/OptimalWordleSolver">ylarp.github.io/OptimalWordleSolver</a>
   </li>
 </ol>
