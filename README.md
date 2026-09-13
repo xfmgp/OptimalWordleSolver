@@ -1,17 +1,25 @@
-<ol>
-  <li>
-    Fork your own copy of <a href="https://github.com/nkoppel/OptimalWordleSolver">nkoppel/OptimalWordleSolver</a>
-  </li>
-  <li>
-    Upload your own custom list of guess and solution words to <code>/words</code>, if any
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Under <code>/src</code>, edit the txt paths in <code>words.rs</code> accordingly
-  </li>
-  <li>
-    Return to (root) and select <strong>Code &gt; Codespaces &gt; Create codespace on main</strong>
-  </li>
-  <li>
-    Once you're redirected to the codespace, run the following commands:
-    <pre><code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</code></pre>
-  </li>
-</ol>
+1. Fork your own copy of [nkoppel/OptimalWordleSolver](https://github.com/nkoppel/OptimalWordleSolver)
+
+2. Upload your own custom list of guess and solution words to `/words`, if any
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;Under `/src`, edit the txt paths in `words.rs` accordingly
+
+3. Return to (root) and select **Code > Codespaces > Create codespace on main**
+
+4. Once you're redirected to the codespace, run the following commands:
+   
+   ```
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+   Enter `1` when prompted
+   ```
+   source "$HOME/.cargo/env"
+   ```
+   ```
+   rustup default nightly
+   ```
+   ```
+   cargo run
+   ```
+
+5. Download the output `solution.txt` under the Explorer view and upload it to [ylarp.github.io/OptimalWordleSolver](https://ylarp.github.io/OptimalWordleSolver/)
