@@ -21,4 +21,4 @@
    cargo run
    ```
 
-6. Download the output `solution.txt` under the Explorer view and upload it to [ylarp.github.io/OptimalWordleSolver](https://ylarp.github.io/OptimalWordleSolver/)
+6. Download the output `solution.txt` under the Explorer view and upload it to [xfmgp.github.io/OptimalWordleSolver](https://xfmgp.github.io/OptimalWordleSolver/)
