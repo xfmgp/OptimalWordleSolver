@@ -32,11 +32,12 @@ trace _____ diols _yy__ union _gyg_ inbox ggggg
 trace _____ diols _yy__ union _gggg onion ggggg
 trace _____ diols _yy__ union y_gy_ opium ggggg
 trace _____ diols _yy__ union ggggg
-trace _____ diols y_y__ whups __g__ bound _gggg found ggggg
-trace _____ diols y_y__ whups __g__ bound ggggg
-trace _____ diols y_y__ whups __gy_ pound ggggg
-trace _____ diols y_y__ whups _yg__ hound ggggg
-trace _____ diols y_y__ whups g_g__ wound ggggg
+trace _____ diols y_y__ whomp __y__ bound _gggg found ggggg
+trace _____ diols y_y__ whomp __y__ bound ggggg 
+trace _____ diols y_y__ whomp __y_y pound ggggg
+trace _____ diols y_y__ whomp __yy_ mound ggggg
+trace _____ diols y_y__ whomp _yy__ hound ggggg
+trace _____ diols y_y__ whomp g_y__ wound ggggg
 trace _____ diols __y__ young yg___ poppy _g__g hobby ggggg
 trace _____ diols __y__ young yg___ poppy ggggg
 trace _____ diols __y__ young yg__y foggy ggggg
@@ -278,7 +279,6 @@ trace y____ flosh __y__ point _yg_g idiot ggggg
 trace y____ flosh __y__ point _g__y motto ggggg
 trace y____ flosh __y__ point _g__g doubt ggggg
 trace y____ flosh __y__ point _g_yg donut ggggg
-trace y____ flosh __y__ point _g_g_ mound ggggg
 trace y____ flosh __y__ point _g_gg mount ggggg
 trace y____ flosh __y__ point _gy_g vomit ggggg
 trace y____ flosh __y__ point _gggg joint ggggg
