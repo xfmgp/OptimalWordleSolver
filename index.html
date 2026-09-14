@@ -956,9 +956,18 @@
             }
         }
 
+        function stripComments(text) {
+            // Strip multi-line comments: /* ... */
+            let cleaned = text.replace(/\/\*[\s\S]*?\*\//g, '');
+            // Strip single-line comments: // ...
+            cleaned = cleaned.replace(/\/\/.*/g, '');
+            return cleaned;
+        }
+
         function processData(text, resetSearch = false) {
             rawTxtContent = text.trim();
-            const lines = text.split('\n');
+            const cleanedText = stripComments(text);
+            const lines = cleanedText.split('\n');
             let root = null;
             
             let totalWords = 0;
