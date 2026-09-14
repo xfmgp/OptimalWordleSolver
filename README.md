@@ -21,4 +21,4 @@
    cargo run
    ```
 
-6. Download the output `solution.txt` under the Explorer view and upload it to [yca-rp.github.io/OptimalWordleSolver](https://yca-rp.github.io/OptimalWordleSolver/)
+6. Download the output `solution.txt` under the Explorer view and upload it to [yca-rp.github.io/WordleStrategyVisualiser](https://yca-rp.github.io/WordleStrategyVisualiser/)
