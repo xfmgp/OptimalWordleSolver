@@ -136,12 +136,6 @@
             display: none !important;
         }
 
-        .stat-row {
-            display: flex;
-            gap: 10px;
-            justify-content: space-between;
-        }
-
         .grid-1x2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -353,14 +347,17 @@
         .grid-search-banner {
             width: 100%;
             max-width: 360px;
+            min-height: 64px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin-bottom: 15px;
-            padding: 8px 14px;
+            padding: 12px 14px;
             background: #2a2a2a;
             border-radius: 6px;
             box-sizing: border-box;
+            gap: 8px;
         }
 
         .badge-container {
@@ -368,6 +365,8 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
+            flex-wrap: wrap;
+            margin: 0;
         }
 
         .badge-info {
@@ -382,7 +381,8 @@
             justify-content: center;
             box-sizing: border-box;
             user-select: none;
-            line-height: normal;
+            line-height: 1;
+            margin: 0;
         }
 
         .badge-info.green {
@@ -393,6 +393,29 @@
         .badge-info.yellow {
             background-color: var(--yellow);
             color: #fff;
+        }
+
+        /* Words Left Header Styling */
+        .words-left-text {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--light-gray);
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .words-left-num {
+            color: var(--green);
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 1;
         }
 
         .add-tree-btn {
@@ -413,11 +436,41 @@
             justify-content: center;
             gap: 6px;
             box-sizing: border-box;
-            line-height: normal;
+            line-height: 1;
+            margin: 0;
         }
 
         .add-tree-btn:hover {
             background-color: #6aaa64;
+        }
+
+        /* --- Candidate Words Container inside Banner --- */
+        .candidates-words {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0;
+        }
+
+        .candidate-tag {
+            background-color: #121213;
+            color: var(--text-color);
+            font-weight: 700;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border: 1px solid #4a4a4c;
+            animation: popIn 0.2s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            margin: 0;
         }
 
         .wordle-grid {
@@ -718,8 +771,14 @@
                     <svg class="btn-icon-svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
                     Add
                 </button>
-                <span id="grid-search-badge" class="badge-info"></span>
+                <span id="grid-search-badge" class="badge-info hidden"></span>
             </div>
+            <!-- Standard text styling for words left counter -->
+            <div id="grid-count-text" class="words-left-text hidden">
+                <span id="grid-count-num" class="words-left-num">0</span> Words Left
+            </div>
+            <!-- Candidate words list rendering directly below the text -->
+            <div class="candidates-words" id="candidates-words"></div>
         </div>
 
         <div class="wordle-grid" id="wordle-grid"></div>
@@ -737,6 +796,7 @@
                 Enter
             </button>
         </div>
+
         <div id="grid-msg" class="grid-msg"></div>
     </div>
 
@@ -851,6 +911,51 @@
             return candidates.filter(word => computeFeedback(guess, word) === feedback);
         }
 
+        function getRemainingCandidates() {
+            let candidates = [...new Set(globalSolutionsList)];
+            for (let i = 0; i <= currentActiveRow; i++) {
+                if (!gridGuesses[i]) continue;
+                const g = gridGuesses[i].toLowerCase();
+                const fb = gridStates[i].join('');
+                candidates = filterCandidates(candidates, g, fb);
+            }
+            return candidates;
+        }
+
+        function updateCandidatesUI() {
+            const banner = document.getElementById('grid-search-banner');
+            const countText = document.getElementById('grid-count-text');
+            const countNum = document.getElementById('grid-count-num');
+            const searchBadge = document.getElementById('grid-search-badge');
+            const addBtn = document.getElementById('grid-add-btn');
+            const wordsEl = document.getElementById('candidates-words');
+
+            const feedback = gridStates[currentActiveRow].join('');
+            const candidates = getRemainingCandidates();
+            const count = candidates.length;
+
+            if ((count === 2 || count === 3) && feedback !== 'ggggg') {
+                countNum.innerText = count;
+                countText.classList.remove('hidden');
+                banner.classList.remove('hidden');
+
+                wordsEl.innerHTML = '';
+                candidates.forEach(word => {
+                    const tag = document.createElement('span');
+                    tag.className = 'candidate-tag';
+                    tag.innerText = word.toUpperCase();
+                    wordsEl.appendChild(tag);
+                });
+            } else {
+                countText.classList.add('hidden');
+                wordsEl.innerHTML = '';
+
+                if (searchBadge.classList.contains('hidden') && addBtn.classList.contains('hidden')) {
+                    banner.classList.add('hidden');
+                }
+            }
+        }
+
         function processData(text, resetSearch = false) {
             rawTxtContent = text.trim();
             const lines = text.split('\n');
@@ -935,6 +1040,13 @@
                 gridNodePath.push(globalRootNode);
             }
 
+            document.getElementById('grid-count-text').classList.add('hidden');
+            document.getElementById('candidates-words').innerHTML = '';
+            
+            // Show Back and Enter buttons
+            document.getElementById('grid-back-btn').classList.remove('hidden');
+            document.getElementById('grid-enter-btn').classList.remove('hidden');
+
             renderGrid();
             document.getElementById('grid-enter-btn').disabled = false;
         }
@@ -982,9 +1094,10 @@
             if (!currentGuess || currentGuess.length !== 5) return;
 
             const feedback = gridStates[currentActiveRow].join('');
-            
+
+            updateCandidatesUI();
+
             if (feedback === 'ggggg') {
-                resetGridWithState();
                 return;
             }
 
@@ -998,13 +1111,7 @@
                     gridNodePath.push(nextNode);
                 }
             } else {
-                let candidates = [...new Set(globalSolutionsList)];
-                
-                for (let i = 0; i <= currentActiveRow; i++) {
-                    const g = gridGuesses[i].toLowerCase();
-                    const fb = gridStates[i].join('');
-                    candidates = filterCandidates(candidates, g, fb);
-                }
+                let candidates = getRemainingCandidates();
 
                 if (candidates.length > 0) {
                     nextGuess = candidates[0];
@@ -1043,13 +1150,17 @@
             }
 
             document.getElementById('grid-enter-btn').disabled = false;
+            updateCandidatesUI();
             renderGrid();
         }
 
         function resetGridWithState() {
             document.getElementById('grid-search-banner').classList.add('hidden');
             document.getElementById('grid-add-btn').classList.add('hidden');
+            document.getElementById('grid-search-badge').classList.add('hidden');
             document.getElementById('grid-msg').innerText = '';
+            currentCalculatedPath = null;
+            currentSearchTarget = "";
             initGridUI();
         }
 
@@ -1151,11 +1262,16 @@
         function renderGridSearchResult(targetWord, path, isCalculated) {
             initGridUI();
 
+            // Hide Back and Enter buttons during active search mode
+            document.getElementById('grid-back-btn').classList.add('hidden');
+            document.getElementById('grid-enter-btn').classList.add('hidden');
+
             const banner = document.getElementById('grid-search-banner');
             const badge = document.getElementById('grid-search-badge');
             const addBtn = document.getElementById('grid-add-btn');
 
             banner.classList.remove('hidden');
+            badge.classList.remove('hidden');
 
             if (isCalculated) {
                 badge.className = 'badge-info yellow';
@@ -1176,6 +1292,7 @@
             });
 
             currentActiveRow = Math.min(path.length - 1, 5);
+            updateCandidatesUI();
             renderGrid();
         }
 
@@ -1240,6 +1357,9 @@
             document.getElementById('search-input').value = '';
             document.getElementById('grid-search-banner').classList.add('hidden');
             document.getElementById('grid-add-btn').classList.add('hidden');
+            document.getElementById('grid-search-badge').classList.add('hidden');
+            document.getElementById('grid-count-text').classList.add('hidden');
+            document.getElementById('candidates-words').innerHTML = '';
             document.getElementById('grid-msg').innerText = '';
             currentCalculatedPath = null;
             currentSearchTarget = "";
