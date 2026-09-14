@@ -164,8 +164,8 @@ trace ____y wedel _y_g_ sheep ggggg
 trace ____y wedel _yy_y yield __gyg blend ggggg
 trace ____y wedel _yy_y yield _gggg field ggggg
 trace ____y wedel _yy_y yield ggggg
-trace ____y wedel _y_gy sleep gggg_ sleek ggggg
-trace ____y wedel _y_gy sleep ggggg
+trace ____y wedel _y_gy sleek gggg_ sleep ggggg
+trace ____y wedel _y_gy sleek ggggg
 trace ____y wedel _y_gg kneel __ygg expel ggggg
 trace ____y wedel _y_gg kneel ggggg
 trace ____y wedel _yyg_ speed __ygg embed ggggg
@@ -315,8 +315,9 @@ trace y____ flosh ____y night _gggg might ggggg
 trace y____ flosh ____y night ggggg
 trace y____ flosh ____g width _g_gg ninth ggggg
 trace y____ flosh ____g width ggggg
-trace y____ flosh __gy_ stout g_ggg spout ggggg
-trace y____ flosh __gy_ stout ggggg
+trace y____ flosh __gy_ spout g_ggg stout ggggg
+trace y____ flosh __gy_ spout gyg_y stoop ggggg
+trace y____ flosh __gy_ spout ggggg
 trace y____ flosh __gyy shout ggg_g shoot ggggg
 trace y____ flosh __gyy shout ggggg
 trace y____ flosh ___yy sight ggggg
@@ -726,6 +727,7 @@ trace __y_y penal _g_gg medal _g_gg legal ggggg
 trace __y_y penal _g_gg medal ggggg
 trace __y_y penal _y_yy alley ggggg
 trace __y_y penal _y_gy bleak ggggg
+trace __y_y penal _yyyg navel yy_gg angel ggggg
 trace __y_y penal _yyyg navel ggggg
 trace __y_y penal _yyg_ sneak ggggg
 trace __y_y penal _ygy_ annex ggggg
@@ -839,7 +841,8 @@ trace _yy_y ympes ___yy swear g_ggg shear ggggg
 trace _yy_y ympes ___yy swear ggggg
 trace _yy_y ympes y__y_ relay yyyyg early ggggg
 trace _yy_y ympes y__y_ relay ggggg
-trace _yy_y ympes ___gy safer ggggg
+trace _yy_y ympes ___gy laser _gygg safer ggggg
+trace _yy_y ympes ___gy laser ggggg
 trace _yy_y ympes __yy_ opera ggggg
 trace _yy_y ympes __yyy spear ggggg
 trace _yy_y ympes __gg_ paper ggggg
@@ -880,8 +883,8 @@ trace ___g_ sulph __y__ fribs g____ flock ggggg
 trace ___g_ sulph __y__ fribs g_g__ flick ggggg
 trace ___g_ sulph _y__g vouch _gggg couch ggggg
 trace ___g_ sulph _y__g vouch ggggg
-trace ___g_ sulph _g___ quick _ggg_ juicy ggggg
-trace ___g_ sulph _g___ quick ggggg
+trace ___g_ sulph _g___ juicy _ggg_ quick ggggg
+trace ___g_ sulph _g___ juicy ggggg
 trace ___g_ sulph _g__g munch _gggg bunch ggggg
 trace ___g_ sulph _g__g munch ggggg
 trace ___g_ sulph _____ knock ggggg
@@ -1354,6 +1357,7 @@ trace y__gy yield _yy__ evict ggggg
 trace y__gy yield _yy_y edict ggggg
 trace y_y_g yowls _____ matte _gg_g bathe ggggg
 trace y_y_g yowls _____ matte ggggg
+trace y_y_g yowls ____y paste _gggg haste ggggg
 trace y_y_g yowls ____y paste ggggg
 trace y_y_g yowls ___y_ lathe ggggg
 trace y_y_g yowls __y_y waste ggggg
