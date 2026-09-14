@@ -961,8 +961,8 @@ trace _g__g bonds g____ bribe ggggg
 trace _g__g bonds g__g_ bride ggggg
 trace _g__g bonds g_y__ brine ggggg
 trace _g__g bonds gy___ broke ggggg
-trace _gg__ dings ___y_ gravy ggg__ graph ggggg
-trace _gg__ dings ___y_ gravy ggggg
+trace _gg__ dings ___y_ graph ggg__ gravy ggggg
+trace _gg__ dings ___y_ graph ggggg
 trace _gg__ dings __y__ prank _gggg frank ggggg
 trace _gg__ dings __y__ prank ggggg
 trace _gg__ dings _____ brawl ggggg
@@ -1303,7 +1303,8 @@ trace _ggy_ yolks ____g crass ggggg
 trace _ggy_ yolks ___y_ crank ggggg
 trace _ggy_ yolks __y__ crawl ggggg
 trace _ggy_ yolks y____ crazy ggggg
-trace y__g_ wiped _____ stock ggggg
+trace y__g_ wiped _____ notch _yyg_ stock ggggg
+trace y__g_ wiped _____ notch ggggg
 trace y__g_ wiped _y___ stick ggggg
 trace y__g_ wiped _g___ hitch ggggg
 trace y__g_ wiped _g__y ditch ggggg
@@ -1400,9 +1401,9 @@ trace g__y_ zupan _____ toxic ggggg
 trace g__y_ zupan ____y tonic ggggg
 trace g__y_ zupan __g__ topic ggggg
 trace g__y_ zupan _g__y tunic ggggg
-trace __ygg lance _g_gg sauce ggggg
-trace __ygg lance _gggg dance ggggg
-trace __ygg lance ggggg
+trace __ygg dance _g_gg sauce ggggg
+trace __ygg dance _gggg lance ggggg
+trace __ygg dance ggggg
 trace __gyg chase y_gyg scale ggggg
 trace __gyg chase g_ggg cease ggggg
 trace __gyg chase ggggg
@@ -1440,7 +1441,8 @@ trace _yyyy clear g_ygg cedar ggggg
 trace _yyyy clear ggggg
 trace _g_yg crime gg__g crepe ggggg
 trace _g_yg crime ggggg
-trace _ggyg crane ggg_g crave ggggg
+trace _ggyg crane ggg_g craze ggg_g crave ggggg
+trace _ggyg crane ggg_g craze ggggg
 trace _ggyg crane ggggg
 trace y_yyg caste yy_gg acute ggggg
 trace y_yyg caste ggggg
