@@ -22,3 +22,5 @@
    ```
 
 6. Download the output `solution.txt` under the Explorer view and upload it to [yca-rp.github.io/OptimalWordleSolver](https://yca-rp.github.io/OptimalWordleSolver)
+
+   Use `//` for single-line comments or `/* */` for multi-line comments in `solution.txt`
