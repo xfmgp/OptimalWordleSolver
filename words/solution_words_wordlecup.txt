@@ -29,7 +29,7 @@ alarm
 album
 alert
 algae
-+alias
+alias
 alien
 align
 alike
@@ -76,13 +76,13 @@ arrow
 arson
 aside
 asset
-+atlas
+atlas
 atone
 attic
 audio
 audit
 avail
-+avant
+avant
 avert
 avian
 avoid
@@ -114,7 +114,7 @@ beach
 beard
 beast
 begin
-+beige
+beige
 being
 belly
 below
@@ -124,7 +124,7 @@ berth
 beset
 bicep
 bigot
-+biker
+biker
 binge
 bingo
 birch
@@ -283,10 +283,10 @@ coach
 coast
 cobra
 cocoa
-+coder
+coder
 colon
 color
-+combo
+combo
 comet
 comic
 comma
@@ -542,7 +542,7 @@ frost
 frown
 froze
 fruit
-+fryer
+fryer
 fudge
 fully
 fungi
@@ -558,7 +558,7 @@ geeky
 geese
 genie
 genre
-+genus
+genus
 ghost
 giant
 giddy
@@ -622,7 +622,7 @@ guild
 guilt
 guise
 habit
-+haiku
+haiku
 hairy
 halve
 handy
@@ -646,7 +646,7 @@ hello
 hence
 heron
 hilly
-+hiker
+hiker
 hinge
 hippo
 hitch
@@ -677,7 +677,7 @@ image
 imply
 inbox
 index
-+indie
+indie
 inept
 inert
 infer
@@ -715,9 +715,9 @@ lance
 lapse
 large
 larva
-+laser
+laser
 later
-+latex
+latex
 lathe
 laugh
 layer
@@ -740,7 +740,7 @@ lilac
 limit
 linen
 lingo
-+liter
+liter
 liver
 livid
 loath
@@ -788,7 +788,7 @@ marry
 marsh
 mason
 match
-+matte
+matte
 maxim
 maybe
 mayor
@@ -816,8 +816,8 @@ minor
 minty
 minus
 miser
-+misty
-+mixer
+misty
+mixer
 mocha
 modal
 model
@@ -836,7 +836,7 @@ motel
 motif
 motor
 motto
-+mould
+mould
 mound
 mount
 mourn
@@ -853,7 +853,7 @@ murky
 music
 musty
 naive
-+naked
+naked
 nasal
 nasty
 naval
@@ -868,7 +868,7 @@ niche
 niece
 night
 ninth
-+nitro
+nitro
 noble
 noise
 noisy
@@ -880,7 +880,7 @@ nudge
 nurse
 nylon
 nymph
-+oasis
+oasis
 obese
 occur
 ocean
@@ -943,7 +943,7 @@ piano
 piece
 pilot
 pinch
-+pious
+pious
 pitch
 pivot
 pixel
@@ -961,7 +961,7 @@ plier
 pluck
 plume
 plump
-+poach
+poach
 point
 poise
 poker
@@ -1007,6 +1007,7 @@ quest
 queue
 quick
 quiet
+quill
 quilt
 quirk
 quota
@@ -1156,7 +1157,7 @@ sight
 silky
 silly
 since
-+sinus
+sinus
 siren
 sixth
 sixty
@@ -1170,7 +1171,7 @@ slang
 slant
 slash
 slate
-+slave
+slave
 sleek
 sleep
 slept
@@ -1244,7 +1245,7 @@ spray
 spurt
 squad
 squat
-+squid
+squid
 stack
 staff
 stage
@@ -1293,7 +1294,7 @@ stump
 stunt
 style
 suave
-+suede
+suede
 sugar
 suite
 sulky
@@ -1311,7 +1312,7 @@ swell
 swift
 swine
 swing
-+swipe
+swipe
 swirl
 swish
 swoop
@@ -1337,7 +1338,7 @@ tease
 teddy
 teeth
 tempo
-+tempt
+tempt
 tenet
 tenor
 tense
@@ -1368,7 +1369,7 @@ tiger
 tight
 timer
 timid
-+tinge
+tinge
 titan
 title
 toast
@@ -1395,7 +1396,7 @@ trade
 trail
 train
 trait
-+trans
+trans
 trash
 tread
 treat
@@ -1422,7 +1423,7 @@ turbo
 tutor
 tweed
 tweet
-+tween
+tween
 twice
 twist
 tying
@@ -1455,7 +1456,7 @@ vapor
 vault
 venom
 venue
-+venus
+venus
 verge
 verse
 vicar
