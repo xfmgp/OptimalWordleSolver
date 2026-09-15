@@ -37,6 +37,7 @@ alive
 alley
 allow
 alloy
+aloft
 alone
 along
 aloof
