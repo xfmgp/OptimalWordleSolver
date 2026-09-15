@@ -58,7 +58,7 @@ alley
 -------allot
 allow
 alloy
--------aloft
+-aloft
 alone
 along
 aloof
