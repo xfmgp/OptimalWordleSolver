@@ -1841,7 +1841,7 @@ snake
 snare
 -------snarl
 sneak
-sneer???????
+sneer
 -------snide
 -------sniff
 snipe
