@@ -104,15 +104,36 @@
             font-size: 12px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 2px 8px rgba(83, 141, 78, 0.25);
+            transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
         }
 
         .btn-action:hover {
             background-color: #6aaa64;
             border-color: #6aaa64;
             transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(83, 141, 78, 0.35);
+        }
+
+        .btn-action.btn-download-top {
+            background-color: #2a2a2a;
+            border-color: var(--border-color);
+            color: var(--text-color);
+        }
+
+        .btn-action.btn-download-top:hover {
+            background-color: #3a3a3c;
+            border-color: #565758;
+            transform: translateY(-1px);
+        }
+
+        /* --- Standardized Pop Animation (1.5 Seconds Total) --- */
+        .stat-pop {
+            animation: popIncrement 1.5s ease-in-out 1;
+        }
+
+        @keyframes popIncrement {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.25); color: #6aaa64; }
+            100% { transform: scale(1); color: inherit; }
         }
 
         .upload-icon {
@@ -166,6 +187,7 @@
             justify-content: center;
             box-sizing: border-box;
             position: relative;
+            transition: background-color 0.3s ease;
         }
 
         .stat-val {
@@ -173,6 +195,7 @@
             font-weight: bold;
             color: var(--green);
             margin-bottom: 4px;
+            transition: color 0.3s ease;
         }
 
         .stat-box.small .stat-val {
@@ -219,7 +242,6 @@
             fill: currentColor;
         }
 
-        /* SVG Icons inside buttons */
         .btn-icon-svg {
             width: 14px;
             height: 14px;
@@ -234,7 +256,7 @@
             margin: 0 auto 15px auto;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 6px;
             align-items: center;
             width: 100%;
             box-sizing: border-box;
@@ -289,6 +311,17 @@
 
         .search-btn:hover {
             background: #6aaa64;
+        }
+
+        .search-msg {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            width: 100%;
+            min-height: 16px;
         }
 
         /* --- View Switcher Menu --- */
@@ -395,7 +428,6 @@
             color: #fff;
         }
 
-        /* Words Left Header Styling */
         .words-left-text {
             font-size: 12px;
             font-weight: 700;
@@ -444,7 +476,6 @@
             background-color: #6aaa64;
         }
 
-        /* --- Candidate Words Container inside Banner --- */
         .candidates-words {
             display: flex;
             align-items: center;
@@ -580,7 +611,6 @@
             cursor: not-allowed;
         }
 
-        /* --- Grid Toast Error Message --- */
         .grid-msg {
             margin-top: 12px;
             font-size: 12px;
@@ -732,6 +762,9 @@
             <input type="file" id="file-upload" accept=".txt" />
             <span class="upload-icon">📂</span> Upload
         </label>
+        <button id="btn-top-download" class="btn-action btn-download-top" onclick="downloadTreeTxt()">
+            <svg class="btn-icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg> Download
+        </button>
     </div>
 
     <div id="stats-container" class="hidden">
@@ -740,7 +773,8 @@
                 <div class="stat-val" id="stat-avg">0.00</div>
                 <div class="stat-label">Average Tries</div>
             </div>
-            <div class="stat-box">
+            <div class="stat-box" id="stat-total-box">
+                <div class="info-btn" onclick="downloadAllTotalWords()" title="Download total target word list"><svg class="download-icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></div>
                 <div class="stat-val" id="stat-total" style="color: var(--yellow);">0</div>
                 <div class="stat-label">Total Words</div>
             </div>
@@ -757,13 +791,14 @@
                 Search
             </button>
         </div>
+        <div id="search-msg" class="search-msg"></div>
         <div class="view-switcher">
             <button class="view-btn active" id="btn-view-grid">Grid</button>
             <button class="view-btn" id="btn-view-tree">Tree</button>
         </div>
     </div>
 
-    <!-- Grid View (Default) -->
+    <!-- Grid View -->
     <div id="grid-container">
         <div id="grid-search-banner" class="grid-search-banner hidden">
             <div class="badge-container">
@@ -773,11 +808,9 @@
                 </button>
                 <span id="grid-search-badge" class="badge-info hidden"></span>
             </div>
-            <!-- Standard text styling for words left counter -->
             <div id="grid-count-text" class="words-left-text hidden">
                 <span id="grid-count-num" class="words-left-num">0</span> Words Left
             </div>
-            <!-- Candidate words list rendering directly below the text -->
             <div class="candidates-words" id="candidates-words"></div>
         </div>
 
@@ -811,6 +844,12 @@
         let currentSearchTarget = "";
         let wordsByTriesMap = {};
         let gridMsgTimer = null;
+        let searchMsgTimer = null;
+
+        // Stats cache for smooth transitions
+        let currentTotalWords = 0;
+        let currentTotalTriesSum = 0;
+        let currentDistribution = {};
 
         // Grid Mode State
         let currentActiveRow = 0;
@@ -849,7 +888,6 @@
             if (e.key === 'Enter') handleSearch();
         });
 
-        // View switchers
         document.getElementById('btn-view-grid').addEventListener('click', () => switchView('grid'));
         document.getElementById('btn-view-tree').addEventListener('click', () => switchView('tree'));
 
@@ -879,6 +917,15 @@
             msgEl.innerText = msg;
             if (gridMsgTimer) clearTimeout(gridMsgTimer);
             gridMsgTimer = setTimeout(() => {
+                msgEl.innerText = '';
+            }, 3000);
+        }
+
+        function showSearchMessage(msg) {
+            const msgEl = document.getElementById('search-msg');
+            msgEl.innerText = msg;
+            if (searchMsgTimer) clearTimeout(searchMsgTimer);
+            searchMsgTimer = setTimeout(() => {
                 msgEl.innerText = '';
             }, 3000);
         }
@@ -957,9 +1004,7 @@
         }
 
         function stripComments(text) {
-            // Strip multi-line comments: /* ... */
             let cleaned = text.replace(/\/\*[\s\S]*?\*\//g, '');
-            // Strip single-line comments: // ...
             cleaned = cleaned.replace(/\/\/.*/g, '');
             return cleaned;
         }
@@ -1031,13 +1076,16 @@
             }
             
             globalRootNode = root;
+            currentTotalWords = totalWords;
+            currentTotalTriesSum = totalTries;
+            currentDistribution = distribution;
+
             renderStats(totalWords, totalTries, distribution);
             renderTree(root);
             initGridUI();
             if (resetSearch) clearSearch();
         }
 
-        /* --- 5x6 Wordle Interactive Grid Module --- */
         function initGridUI() {
             currentActiveRow = 0;
             gridGuesses = Array(6).fill('');
@@ -1052,7 +1100,6 @@
             document.getElementById('grid-count-text').classList.add('hidden');
             document.getElementById('candidates-words').innerHTML = '';
             
-            // Show Back and Enter buttons
             document.getElementById('grid-back-btn').classList.remove('hidden');
             document.getElementById('grid-enter-btn').classList.remove('hidden');
 
@@ -1104,11 +1151,13 @@
 
             const feedback = gridStates[currentActiveRow].join('');
 
-            updateCandidatesUI();
-
+            // Reset grid immediately if feedback is all 5 greens
             if (feedback === 'ggggg') {
+                resetGridWithState();
                 return;
             }
+
+            updateCandidatesUI();
 
             let nextGuess = null;
             let currentNode = gridNodePath[currentActiveRow];
@@ -1155,7 +1204,6 @@
                     gridNodePath.pop();
                 }
                 currentActiveRow--;
-                gridStates[currentActiveRow] = Array(5).fill('_');
             }
 
             document.getElementById('grid-enter-btn').disabled = false;
@@ -1164,10 +1212,12 @@
         }
 
         function resetGridWithState() {
+            document.getElementById('search-input').value = '';
             document.getElementById('grid-search-banner').classList.add('hidden');
             document.getElementById('grid-add-btn').classList.add('hidden');
             document.getElementById('grid-search-badge').classList.add('hidden');
             document.getElementById('grid-msg').innerText = '';
+            document.getElementById('search-msg').innerText = '';
             currentCalculatedPath = null;
             currentSearchTarget = "";
             initGridUI();
@@ -1221,9 +1271,7 @@
                 let nextGuess = candidates.includes(targetWord) ? targetWord : candidates[0];
                 let feedback = computeFeedback(nextGuess, targetWord);
                 
-                if (path.length > 0 && path[path.length - 1].guess === nextGuess) {
-                    break;
-                }
+                if (path.length > 0 && path[path.length - 1].guess === nextGuess) break;
                 
                 path.push({ guess: nextGuess, feedback: feedback });
                 if (feedback === 'ggggg') break;
@@ -1243,13 +1291,14 @@
             const searchInput = document.getElementById('search-input');
             const targetWord = searchInput.value.trim().toLowerCase();
 
-            if (!targetWord || targetWord.length !== 5) {
-                showGridMessage('Please enter a valid 5-letter word');
+            // Strictly validate 5 lowercase alphabetical letters (no spacing, no non-alphabets/symbols/numbers)
+            if (!/^[a-z]{5}$/.test(targetWord)) {
+                showSearchMessage('Please enter a valid 5-letter alphabetical word');
                 return;
             }
 
             if (!globalRootNode) {
-                showGridMessage('Please load strategy data first');
+                showSearchMessage('Please load strategy data first');
                 return;
             }
 
@@ -1271,7 +1320,6 @@
         function renderGridSearchResult(targetWord, path, isCalculated) {
             initGridUI();
 
-            // Hide Back and Enter buttons during active search mode
             document.getElementById('grid-back-btn').classList.add('hidden');
             document.getElementById('grid-enter-btn').classList.add('hidden');
 
@@ -1322,11 +1370,9 @@
         function addCalculatedPathToTree() {
             if (!currentCalculatedPath || currentCalculatedPath.length === 0) return;
 
-            let stepsToAppend = currentCalculatedPath;
-            if (globalRootNode && currentCalculatedPath[0].guess.toLowerCase() === globalRootNode.guess.toLowerCase()) {
-                stepsToAppend = currentCalculatedPath;
-            }
+            const triesForNewWord = currentCalculatedPath.length;
 
+            let stepsToAppend = currentCalculatedPath;
             let lineTokens = [];
             stepsToAppend.forEach((step, idx) => {
                 if (idx > 0) {
@@ -1338,12 +1384,82 @@
             const newLine = lineTokens.join(" ");
             const updatedTxt = rawTxtContent ? `${rawTxtContent}\n${newLine}` : newLine;
 
-            processData(updatedTxt, false);
-            downloadTreeTxt();
+            // Scroll up immediately when Add button is clicked
+            window.scrollTo({ top: 0, behavior: 'smooth' });
 
-            const addedPath = [...currentCalculatedPath];
-            currentCalculatedPath = null;
-            renderGridSearchResult(currentSearchTarget, addedPath, false);
+            // Trigger animations after a 0.5-second delay
+            setTimeout(() => {
+                // Animate Download Button with popup style matching total words (no green glow)
+                const downloadBtn = document.getElementById('btn-top-download');
+                downloadBtn.classList.add('stat-pop');
+                setTimeout(() => {
+                    downloadBtn.classList.remove('stat-pop');
+                }, 1500);
+
+                // Perform synchronized stats increment animation for total words AND corresponding x tries
+                animateStatsIncrement(triesForNewWord);
+
+                // Delay reprocessing data until after the 1.5s animation completes to prevent resetting DOM nodes prematurely
+                setTimeout(() => {
+                    processData(updatedTxt, false);
+                    const addedPath = [...currentCalculatedPath];
+                    currentCalculatedPath = null;
+                    renderGridSearchResult(currentSearchTarget, addedPath, false);
+                }, 1500);
+            }, 500);
+        }
+
+        function animateStatsIncrement(triesCount) {
+            const totalEl = document.getElementById('stat-total');
+            const totalBox = document.getElementById('stat-total-box');
+            const oldTotal = currentTotalWords;
+            const newTotal = oldTotal + 1;
+
+            if (totalEl && totalBox) {
+                totalEl.innerText = `${oldTotal} (+1)`;
+                totalBox.classList.add('stat-pop');
+                
+                setTimeout(() => {
+                    totalEl.innerText = newTotal;
+                }, 750);
+
+                setTimeout(() => {
+                    totalBox.classList.remove('stat-pop');
+                }, 1500);
+            }
+
+            let targetValEl = document.getElementById(`stat-val-${triesCount}`);
+            let targetBoxEl = document.getElementById(`stat-box-${triesCount}`);
+
+            if (triesCount === 6 && (!targetValEl || !targetBoxEl)) {
+                const sixRow = document.getElementById('six-tries-row');
+                sixRow.classList.remove('hidden');
+                sixRow.innerHTML = `
+                    <div class="stat-box small" id="stat-box-6">
+                        <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">${DOWNLOAD_SVG}</div>
+                        <div class="stat-val" id="stat-val-6">0</div>
+                        <div class="stat-label">6 Tries</div>
+                    </div>
+                `;
+                targetValEl = document.getElementById('stat-val-6');
+                targetBoxEl = document.getElementById('stat-box-6');
+            }
+
+            if (targetValEl && targetBoxEl) {
+                const oldVal = currentDistribution[triesCount] || 0;
+                const newVal = oldVal + 1;
+
+                targetValEl.innerText = `${oldVal} (+1)`;
+                targetBoxEl.classList.add('stat-pop');
+
+                setTimeout(() => {
+                    targetValEl.innerText = newVal;
+                }, 750);
+
+                setTimeout(() => {
+                    targetBoxEl.classList.remove('stat-pop');
+                }, 1500);
+            }
         }
 
         function downloadWordsForTries(triesNum) {
@@ -1362,6 +1478,21 @@
             URL.revokeObjectURL(url);
         }
 
+        function downloadAllTotalWords() {
+            const uniqueWords = [...new Set(globalSolutionsList.map(w => w.toUpperCase()))];
+            const content = uniqueWords.join("\n");
+
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `solution_words.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
         function clearSearch() {
             document.getElementById('search-input').value = '';
             document.getElementById('grid-search-banner').classList.add('hidden');
@@ -1370,6 +1501,7 @@
             document.getElementById('grid-count-text').classList.add('hidden');
             document.getElementById('candidates-words').innerHTML = '';
             document.getElementById('grid-msg').innerText = '';
+            document.getElementById('search-msg').innerText = '';
             currentCalculatedPath = null;
             currentSearchTarget = "";
         }
@@ -1395,9 +1527,9 @@
             for (let i = 2; i <= 5; i++) {
                 const count = distribution[i] || 0;
                 dist2To5Html += `
-                    <div class="stat-box small">
+                    <div class="stat-box small" id="stat-box-${i}">
                         <div class="info-btn" onclick="downloadWordsForTries(${i})" title="Download words solved in ${i} tries">${DOWNLOAD_SVG}</div>
-                        <div class="stat-val">${count}</div>
+                        <div class="stat-val" id="stat-val-${i}">${count}</div>
                         <div class="stat-label">${i} Tries</div>
                     </div>
                 `;
@@ -1409,9 +1541,9 @@
             if (countSix > 0) {
                 sixRow.classList.remove('hidden');
                 sixRow.innerHTML = `
-                    <div class="stat-box small">
+                    <div class="stat-box small" id="stat-box-6">
                         <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">${DOWNLOAD_SVG}</div>
-                        <div class="stat-val">${countSix}</div>
+                        <div class="stat-val" id="stat-val-6">${countSix}</div>
                         <div class="stat-label">6 Tries</div>
                     </div>
                 `;
