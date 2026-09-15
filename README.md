@@ -4,9 +4,9 @@
    
    Under `/src`, edit the txt paths in `words.rs` accordingly
 
-4. Return to (root) and select **Code > Codespaces > Create codespace on main**
+4. Return to the **repo** root and select **Code** > **Codespaces** > **Create codespace on main**
 
-5. Once you're redirected to the codespace, run the following commands: 
+5. Once you're redirected to the Codespace, run the following commands: 
    ```
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
@@ -21,6 +21,6 @@
    cargo run
    ```
 
-6. Download the output `solution.txt` under the Explorer view and upload it to [yca-rp.github.io/OptimalWordleSolver](https://yca-rp.github.io/OptimalWordleSolver)
+6. Download the output `solution.txt` from the **Codespace** root and upload it to [yca-rp.github.io/OptimalWordleSolver](https://yca-rp.github.io/OptimalWordleSolver)
 
    Use `//` for single-line comments or `/* */` for multi-line comments in `solution.txt`
