@@ -6,26 +6,27 @@
     <title>Wordle Strategy Visualiser</title>
     <style>
         :root {
-            --bg: #121213;
-            --txt: #ffffff;
-            --g: #538d4e;
-            --y: #b59f3b;
+            --bg-color: #121213;
+            --text-color: #ffffff;
+            --green: #538d4e;
+            --yellow: #b59f3b;
             --gray: #3a3a3c;
-            --lg: #818384;
-            --bc: #333;
-            --pbg: #1e1e1e;
+            --light-gray: #818384;
+            --border-color: #333;
+            --panel-bg: #1e1e1e;
             --red: #e74c3c;
         }
 
         body {
-            background-color: var(--bg);
-            color: var(--txt);
+            background-color: var(--bg-color);
+            color: var(--text-color);
             font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
         }
 
+        /* --- Wordle Tile Header --- */
         .title-container {
             text-align: center;
             margin-bottom: 20px;
@@ -51,44 +52,42 @@
             animation: popIn 0.3s ease-in-out;
         }
 
-        .title-tile.green, .badge-info.green, .btn-enter, .add-tree-btn, .search-btn, .letter.g {
-            background-color: var(--g);
-            border-color: var(--g);
+        .title-tile.green {
+            background-color: var(--green);
+            border-color: var(--green);
         }
 
-        .title-tile.gray, .letter._ {
+        .title-tile.gray {
             background-color: var(--gray);
             border-color: var(--gray);
         }
 
-        .title-tile.yellow, .badge-info.yellow, .btn-back, .letter.y {
-            background-color: var(--y);
-            border-color: var(--y);
+        .title-tile.yellow {
+            background-color: var(--yellow);
+            border-color: var(--yellow);
         }
 
         .subtitle {
             letter-spacing: 5px;
             font-size: 15px;
-            color: var(--lg);
+            color: var(--light-gray);
             text-transform: uppercase;
             font-weight: 700;
             margin-top: 8px;
         }
 
-        .action-container, .controls-container, .search-box, #stats-container, #grid-container, #tree-container {
+        /* --- Action Buttons Container --- */
+        .action-container {
             max-width: 600px;
             margin: 0 auto 15px auto;
-            box-sizing: border-box;
-        }
-
-        .action-container {
             display: flex;
             justify-content: center;
             gap: 12px;
+            box-sizing: border-box;
         }
 
-        input[type="file"], .hidden, summary::-webkit-details-marker {
-            display: none !important;
+        input[type="file"] {
+            display: none;
         }
 
         .btn-action {
@@ -97,9 +96,9 @@
             gap: 6px;
             padding: 7px 16px;
             cursor: pointer;
-            background-color: var(--g);
+            background-color: var(--green);
             color: #fff;
-            border: 1.5px solid var(--g);
+            border: 1.5px solid var(--green);
             border-radius: 4px;
             font-weight: 700;
             font-size: 12px;
@@ -116,8 +115,8 @@
 
         .btn-action.btn-download-top {
             background-color: #2a2a2a;
-            border-color: var(--bc);
-            color: var(--txt);
+            border-color: var(--border-color);
+            color: var(--text-color);
         }
 
         .btn-action.btn-download-top:hover {
@@ -126,6 +125,7 @@
             transform: translateY(-1px);
         }
 
+        /* --- Standardized Pop Animation (1.5 Seconds Total) --- */
         .stat-pop {
             animation: popIncrement 1.5s ease-in-out 1;
         }
@@ -140,20 +140,31 @@
             font-size: 13px;
         }
 
-        #stats-container, #grid-container, #tree-container {
-            background: var(--pbg);
-            border-radius: 8px;
-        }
-
+        /* --- Stats Section --- */
         #stats-container {
-            margin-bottom: 20px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            background: var(--panel-bg);
             padding: 15px;
+            border-radius: 8px;
             display: flex;
             flex-direction: column;
             gap: 12px;
+            box-sizing: border-box;
         }
 
-        .grid-1x2, .grid-2x2 {
+        .hidden {
+            display: none !important;
+        }
+
+        .grid-1x2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .grid-2x2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
@@ -182,19 +193,19 @@
         .stat-val {
             font-size: 22px;
             font-weight: bold;
-            color: var(--g);
+            color: var(--green);
             margin-bottom: 4px;
             transition: color 0.3s ease;
         }
 
         .stat-box.small .stat-val {
             font-size: 18px;
-            color: var(--txt);
+            color: var(--text-color);
         }
 
         .stat-label {
             font-size: 11px;
-            color: var(--lg);
+            color: var(--light-gray);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -207,7 +218,7 @@
             height: 18px;
             border-radius: 50%;
             background-color: #3a3a3c;
-            color: var(--lg);
+            color: var(--light-gray);
             font-size: 10px;
             display: flex;
             align-items: center;
@@ -239,12 +250,16 @@
             vertical-align: middle;
         }
 
+        /* --- Search Controls --- */
         .controls-container {
+            max-width: 600px;
+            margin: 0 auto 15px auto;
             display: flex;
             flex-direction: column;
             gap: 6px;
             align-items: center;
             width: 100%;
+            box-sizing: border-box;
         }
 
         .search-box {
@@ -252,6 +267,8 @@
             flex-direction: row;
             gap: 8px;
             width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
         }
 
         .search-input {
@@ -260,7 +277,7 @@
             height: 38px;
             padding: 0 12px;
             background: #2a2a2a;
-            border: 1px solid var(--bc);
+            border: 1px solid var(--border-color);
             border-radius: 4px;
             color: #fff;
             font-size: 14px;
@@ -270,12 +287,13 @@
         }
 
         .search-input:focus {
-            border-color: var(--g);
+            border-color: var(--green);
         }
 
         .search-btn {
             height: 38px;
             padding: 0 16px;
+            background: var(--green);
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -291,11 +309,11 @@
             gap: 6px;
         }
 
-        .search-btn:hover, .btn-enter:hover, .add-tree-btn:hover {
-            background-color: #6aaa64;
+        .search-btn:hover {
+            background: #6aaa64;
         }
 
-        .search-msg, .grid-msg {
+        .search-msg {
             font-size: 12px;
             font-weight: 700;
             color: var(--red);
@@ -303,18 +321,16 @@
             letter-spacing: 1px;
             text-align: center;
             width: 100%;
-        }
-
-        .search-msg {
             min-height: 16px;
         }
 
+        /* --- View Switcher Menu --- */
         .view-switcher {
             display: inline-flex;
             background-color: #2a2a2a;
             padding: 4px;
             border-radius: 8px;
-            border: 1px solid var(--bc);
+            border: 1px solid var(--border-color);
             gap: 4px;
             margin-bottom: 10px;
         }
@@ -322,7 +338,7 @@
         .view-btn {
             background: transparent;
             border: none;
-            color: var(--lg);
+            color: var(--light-gray);
             padding: 6px 18px;
             font-size: 12px;
             font-weight: 700;
@@ -335,7 +351,7 @@
 
         .view-btn.active {
             background-color: var(--gray);
-            color: var(--txt);
+            color: var(--text-color);
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
@@ -348,11 +364,17 @@
             100% { transform: scale(1); opacity: 1; }
         }
 
+        /* --- Interactive Grid Section --- */
         #grid-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--panel-bg);
             padding: 24px;
+            border-radius: 8px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-sizing: border-box;
         }
 
         .grid-search-banner {
@@ -380,7 +402,7 @@
             margin: 0;
         }
 
-        .badge-info, .add-tree-btn {
+        .badge-info {
             padding: 6px 18px;
             font-size: 12px;
             font-weight: 700;
@@ -394,6 +416,15 @@
             user-select: none;
             line-height: 1;
             margin: 0;
+        }
+
+        .badge-info.green {
+            background-color: var(--green);
+            color: #fff;
+        }
+
+        .badge-info.yellow {
+            background-color: var(--yellow);
             color: #fff;
         }
 
@@ -402,7 +433,7 @@
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: var(--lg);
+            color: var(--light-gray);
             text-align: center;
             display: inline-flex;
             align-items: center;
@@ -413,18 +444,36 @@
         }
 
         .words-left-num {
-            color: var(--g);
+            color: var(--green);
             font-weight: 800;
             font-size: 15px;
             line-height: 1;
         }
 
         .add-tree-btn {
+            background-color: var(--green);
+            color: #fff;
             border: none;
+            padding: 6px 18px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.2s ease;
             white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             gap: 6px;
+            box-sizing: border-box;
+            line-height: 1;
+            margin: 0;
+        }
+
+        .add-tree-btn:hover {
+            background-color: #6aaa64;
         }
 
         .candidates-words {
@@ -439,7 +488,7 @@
 
         .candidate-tag {
             background-color: #121213;
-            color: var(--txt);
+            color: var(--text-color);
             font-weight: 700;
             padding: 6px 10px;
             border-radius: 4px;
@@ -491,13 +540,13 @@
         }
 
         .grid-tile.state-y {
-            background-color: var(--y);
-            border-color: var(--y);
+            background-color: var(--yellow);
+            border-color: var(--yellow);
         }
 
         .grid-tile.state-g {
-            background-color: var(--g);
-            border-color: var(--g);
+            background-color: var(--green);
+            border-color: var(--green);
         }
 
         .grid-tile.state-_ {
@@ -528,19 +577,33 @@
             gap: 6px;
             transition: background-color 0.2s ease, opacity 0.2s ease;
             box-sizing: border-box;
-            color: #fff;
         }
 
         .btn-reset {
             background-color: var(--gray);
+            color: #fff;
         }
 
         .btn-reset:hover {
             background-color: #565758;
         }
 
+        .btn-back {
+            background-color: var(--yellow);
+            color: #fff;
+        }
+
         .btn-back:hover {
             background-color: #c9b458;
+        }
+
+        .btn-enter {
+            background-color: var(--green);
+            color: #fff;
+        }
+
+        .btn-enter:hover {
+            background-color: #6aaa64;
         }
 
         .btn-grid:disabled {
@@ -550,12 +613,24 @@
 
         .grid-msg {
             margin-top: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
             height: 16px;
         }
 
+        /* --- Tree Section --- */
         #tree-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--panel-bg);
             padding: 15px;
+            border-radius: 8px;
             overflow-x: auto;
+            box-sizing: border-box;
         }
 
         .word-row {
@@ -574,9 +649,13 @@
             font-size: 14px;
         }
 
+        .letter.g { background-color: var(--green); }
+        .letter.y { background-color: var(--yellow); }
+        .letter._ { background-color: var(--gray); }
+        
         details {
             margin-left: 8px;
-            border-left: 2px solid var(--bc);
+            border-left: 2px solid var(--border-color);
             padding-left: 8px;
             margin-top: 6px;
         }
@@ -596,6 +675,8 @@
             background-color: rgba(255, 255, 255, 0.05);
         }
 
+        summary::-webkit-details-marker { display: none; }
+        
         .arrow {
             font-size: 10px;
             color: #888;
@@ -608,7 +689,7 @@
         details[open] > summary .arrow {
             transform: rotate(90deg);
         }
-
+        
         .next-guess {
             margin: 6px 0 6px 20px;
             font-size: 13px;
@@ -629,7 +710,7 @@
         .win {
             margin-left: 8px;
             font-size: 14px;
-            color: var(--g);
+            color: var(--green);
             font-weight: bold;
         }
 
@@ -642,7 +723,7 @@
             letter-spacing: 4px;
             color: #fff;
             padding-bottom: 10px;
-            border-bottom: 1px solid var(--bc);
+            border-bottom: 1px solid var(--border-color);
         }
 
         @media (max-width: 480px) {
@@ -694,7 +775,7 @@
             </div>
             <div class="stat-box" id="stat-total-box">
                 <div class="info-btn" onclick="downloadAllTotalWords()" title="Download total target word list"><svg class="download-icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></div>
-                <div class="stat-val" id="stat-total" style="color: var(--y);">0</div>
+                <div class="stat-val" id="stat-total" style="color: var(--yellow);">0</div>
                 <div class="stat-label">Total Words</div>
             </div>
         </div>
@@ -717,6 +798,7 @@
         </div>
     </div>
 
+    <!-- Grid View -->
     <div id="grid-container">
         <div id="grid-search-banner" class="grid-search-banner hidden">
             <div class="badge-container">
@@ -751,284 +833,325 @@
         <div id="grid-msg" class="grid-msg"></div>
     </div>
 
+    <!-- Tree View -->
     <div id="tree-container" class="hidden"></div>
 
     <script>
-        let rawTxt = "";
-        let gRoot = null;
-        let gSolutions = [];
-        let cCalcPath = null;
-        let cSearchTgt = "";
-        let wByTries = {};
-        let gMsgTmr = null;
-        let sMsgTmr = null;
+        let rawTxtContent = "";
+        let globalRootNode = null;
+        let globalSolutionsList = [];
+        let currentCalculatedPath = null;
+        let currentSearchTarget = "";
+        let wordsByTriesMap = {};
+        let gridMsgTimer = null;
+        let searchMsgTimer = null;
 
-        let cTotalW = 0;
-        let cTotalTries = 0;
-        let cDist = {};
+        // Stats cache for smooth transitions
+        let currentTotalWords = 0;
+        let currentTotalTriesSum = 0;
+        let currentDistribution = {};
 
-        let cRow = 0;
-        let gGuesses = Array(6).fill('');
-        let gStates = Array(6).fill(null).map(() => Array(5).fill('_'));
-        let gNodePath = []; 
+        // Grid Mode State
+        let currentActiveRow = 0;
+        let gridGuesses = Array(6).fill('');
+        let gridStates = Array(6).fill(null).map(() => Array(5).fill('_'));
+        let gridNodePath = []; 
 
-        const DWN_SVG = `<svg class="download-icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>`;
-        const $ = id => document.getElementById(id);
+        const DOWNLOAD_SVG = `<svg class="download-icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>`;
 
         window.addEventListener('DOMContentLoaded', () => {
             fetch('./solution.txt')
-                .then(res => {
-                    if (!res.ok) throw 1;
-                    return res.text();
+                .then(response => {
+                    if (!response.ok) throw new Error('Default file not found');
+                    return response.text();
                 })
-                .then(txt => pData(txt, true))
-                .catch(() => {});
+                .then(text => processData(text, true))
+                .catch(err => {
+                    console.log('Auto-load notice:', err);
+                });
         });
 
-        $('file-upload').addEventListener('change', e => {
-            const f = e.target.files[0];
-            if (!f) return;
-            const r = new FileReader();
-            r.onload = e => pData(e.target.result, true);
-            r.readAsText(f);
+        document.getElementById('file-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                processData(text, true);
+            };
+            reader.readAsText(file);
         });
 
-        $('search-btn').addEventListener('click', handleSearch);
-        $('search-input').addEventListener('keypress', e => {
+        document.getElementById('search-btn').addEventListener('click', handleSearch);
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') handleSearch();
         });
 
-        $('btn-view-grid').addEventListener('click', () => switchView('grid'));
-        $('btn-view-tree').addEventListener('click', () => switchView('tree'));
+        document.getElementById('btn-view-grid').addEventListener('click', () => switchView('grid'));
+        document.getElementById('btn-view-tree').addEventListener('click', () => switchView('tree'));
 
         function switchView(view) {
-            const t = $('tree-container');
-            const g = $('grid-container');
-            const bg = $('btn-view-grid');
-            const bt = $('btn-view-tree');
+            const treeContainer = document.getElementById('tree-container');
+            const gridContainer = document.getElementById('grid-container');
+            const btnTree = document.getElementById('btn-view-tree');
+            const btnGrid = document.getElementById('btn-view-grid');
 
             if (view === 'grid') {
-                g.classList.remove('hidden');
-                t.classList.add('hidden');
-                bg.classList.add('active');
-                bt.classList.remove('active');
+                gridContainer.classList.remove('hidden');
+                treeContainer.classList.add('hidden');
+                btnGrid.classList.add('active');
+                btnTree.classList.remove('active');
             } else {
-                t.classList.remove('hidden');
-                g.classList.add('hidden');
-                bt.classList.add('active');
-                bg.classList.remove('active');
+                treeContainer.classList.remove('hidden');
+                gridContainer.classList.add('hidden');
+                btnTree.classList.add('active');
+                btnGrid.classList.remove('active');
             }
         }
 
-        const isFeedback = token => /^[yg_]{5}$/.test(token);
+        const isFeedback = (token) => /^[yg_]{5}$/.test(token);
 
         function showGridMessage(msg) {
-            const el = $('grid-msg');
-            el.innerText = msg;
-            if (gMsgTmr) clearTimeout(gMsgTmr);
-            gMsgTmr = setTimeout(() => el.innerText = '', 3000);
+            const msgEl = document.getElementById('grid-msg');
+            msgEl.innerText = msg;
+            if (gridMsgTimer) clearTimeout(gridMsgTimer);
+            gridMsgTimer = setTimeout(() => {
+                msgEl.innerText = '';
+            }, 3000);
         }
 
         function showSearchMessage(msg) {
-            const el = $('search-msg');
-            el.innerText = msg;
-            if (sMsgTmr) clearTimeout(sMsgTmr);
-            sMsgTmr = setTimeout(() => el.innerText = '', 3000);
+            const msgEl = document.getElementById('search-msg');
+            msgEl.innerText = msg;
+            if (searchMsgTimer) clearTimeout(searchMsgTimer);
+            searchMsgTimer = setTimeout(() => {
+                msgEl.innerText = '';
+            }, 3000);
         }
 
         function computeFeedback(guess, target) {
             guess = guess.toLowerCase();
             target = target.toLowerCase();
             let res = ['_', '_', '_', '_', '_'];
-            let tArr = target.split('');
+            let targetArr = target.split('');
 
             for (let i = 0; i < 5; i++) {
                 if (guess[i] === target[i]) {
                     res[i] = 'g';
-                    tArr[i] = null;
+                    targetArr[i] = null;
                 }
             }
             for (let i = 0; i < 5; i++) {
                 if (res[i] !== 'g') {
-                    let idx = tArr.indexOf(guess[i]);
+                    let idx = targetArr.indexOf(guess[i]);
                     if (idx !== -1) {
                         res[i] = 'y';
-                        tArr[idx] = null;
+                        targetArr[idx] = null;
                     }
                 }
             }
             return res.join('');
         }
 
-        const filterCandidates = (cand, guess, fb) => cand.filter(w => computeFeedback(guess, w) === fb);
+        function filterCandidates(candidates, guess, feedback) {
+            return candidates.filter(word => computeFeedback(guess, word) === feedback);
+        }
 
         function getRemainingCandidates() {
-            let candidates = [...new Set(gSolutions)];
-            for (let i = 0; i <= cRow; i++) {
-                if (!gGuesses[i]) continue;
-                candidates = filterCandidates(candidates, gGuesses[i].toLowerCase(), gStates[i].join(''));
+            let candidates = [...new Set(globalSolutionsList)];
+            for (let i = 0; i <= currentActiveRow; i++) {
+                if (!gridGuesses[i]) continue;
+                const g = gridGuesses[i].toLowerCase();
+                const fb = gridStates[i].join('');
+                candidates = filterCandidates(candidates, g, fb);
             }
             return candidates;
         }
 
         function updateCandidatesUI() {
-            const banner = $('grid-search-banner');
-            const cText = $('grid-count-text');
-            const cNum = $('grid-count-num');
-            const badge = $('grid-search-badge');
-            const addBtn = $('grid-add-btn');
-            const wEl = $('candidates-words');
+            const banner = document.getElementById('grid-search-banner');
+            const countText = document.getElementById('grid-count-text');
+            const countNum = document.getElementById('grid-count-num');
+            const searchBadge = document.getElementById('grid-search-badge');
+            const addBtn = document.getElementById('grid-add-btn');
+            const wordsEl = document.getElementById('candidates-words');
 
-            const feedback = gStates[cRow].join('');
+            const feedback = gridStates[currentActiveRow].join('');
             const candidates = getRemainingCandidates();
             const count = candidates.length;
 
             if ((count === 2 || count === 3) && feedback !== 'ggggg') {
-                cNum.innerText = count;
-                cText.classList.remove('hidden');
+                countNum.innerText = count;
+                countText.classList.remove('hidden');
                 banner.classList.remove('hidden');
 
-                wEl.innerHTML = '';
+                wordsEl.innerHTML = '';
                 candidates.forEach(word => {
                     const tag = document.createElement('span');
                     tag.className = 'candidate-tag';
                     tag.innerText = word.toUpperCase();
-                    wEl.appendChild(tag);
+                    wordsEl.appendChild(tag);
                 });
             } else {
-                cText.classList.add('hidden');
-                wEl.innerHTML = '';
+                countText.classList.add('hidden');
+                wordsEl.innerHTML = '';
 
-                if (badge.classList.contains('hidden') && addBtn.classList.contains('hidden')) {
+                if (searchBadge.classList.contains('hidden') && addBtn.classList.contains('hidden')) {
                     banner.classList.add('hidden');
                 }
             }
         }
 
-        function pData(text, resetSearch = false) {
-            rawTxt = text.trim();
-            const cleaned = text.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*/g, '');
-            const lines = cleaned.split('\n');
+        function stripComments(text) {
+            let cleaned = text.replace(/\/\*[\s\S]*?\*\//g, '');
+            cleaned = cleaned.replace(/\/\/.*/g, '');
+            return cleaned;
+        }
+
+        function processData(text, resetSearch = false) {
+            rawTxtContent = text.trim();
+            const cleanedText = stripComments(text);
+            const lines = cleanedText.split('\n');
             let root = null;
             
-            let tWords = 0;
-            let tTries = 0;
-            let dist = {};
-            wByTries = {};
-            gSolutions = [];
+            let totalWords = 0;
+            let totalTries = 0;
+            let distribution = {};
+            wordsByTriesMap = {};
+            globalSolutionsList = [];
             
             for (let line of lines) {
                 const tokens = line.trim().split(/\s+/);
-                if (!tokens.length || tokens[0] === "") continue;
+                if (tokens.length === 0 || tokens[0] === "") continue;
                 
                 const hasWin = tokens.includes("ggggg");
                 const triesCount = tokens.filter(isFeedback).length;
                 
                 if (hasWin && triesCount > 0) {
-                    tWords++;
-                    tTries += triesCount;
-                    dist[triesCount] = (dist[triesCount] || 0) + 1;
+                    totalWords++;
+                    totalTries += triesCount;
+                    distribution[triesCount] = (distribution[triesCount] || 0) + 1;
                 }
 
                 let i = 0;
-                let cGuess = !isFeedback(tokens[0]) ? tokens[0].toLowerCase() : (root ? root.guess : "");
+                let currentGuess = "";
                 
-                if (!isFeedback(tokens[0])) i++;
-                if (!root) root = { guess: cGuess, branches: {} };
+                if (!isFeedback(tokens[0])) {
+                    currentGuess = tokens[0].toLowerCase();
+                    i++;
+                } else {
+                    if (!root) continue; 
+                    currentGuess = root.guess;
+                }
                 
-                let cNode = root;
+                if (!root) root = { guess: currentGuess, branches: {} };
+                
+                let currentNode = root;
                 
                 while (i < tokens.length) {
-                    let feedback = tokens[i++];
+                    let feedback = tokens[i];
+                    i++;
                     
                     if (i < tokens.length) {
-                        let nextGuess = tokens[i++].toLowerCase();
-                        if (!cNode.branches[feedback]) {
-                            cNode.branches[feedback] = { guess: nextGuess, branches: {} };
+                        let nextGuess = tokens[i].toLowerCase();
+                        i++;
+                        
+                        if (!currentNode.branches[feedback]) {
+                            currentNode.branches[feedback] = { guess: nextGuess, branches: {} };
                         }
-                        cNode = cNode.branches[feedback];
-                        cGuess = nextGuess;
+                        currentNode = currentNode.branches[feedback];
+                        currentGuess = nextGuess;
                     } else {
-                        cNode.branches[feedback] = null; 
+                        currentNode.branches[feedback] = null; 
                         if (feedback === 'ggggg') {
-                            gSolutions.push(cGuess);
-                            if (!wByTries[triesCount]) wByTries[triesCount] = [];
-                            wByTries[triesCount].push(cGuess.toUpperCase());
+                            globalSolutionsList.push(currentGuess);
+                            if (!wordsByTriesMap[triesCount]) {
+                                wordsByTriesMap[triesCount] = [];
+                            }
+                            wordsByTriesMap[triesCount].push(currentGuess.toUpperCase());
                         }
                     }
                 }
             }
             
-            gRoot = root;
-            cTotalW = tWords;
-            cTotalTries = tTries;
-            cDist = dist;
+            globalRootNode = root;
+            currentTotalWords = totalWords;
+            currentTotalTriesSum = totalTries;
+            currentDistribution = distribution;
 
-            renderStats(tWords, tTries, dist);
+            renderStats(totalWords, totalTries, distribution);
             renderTree(root);
             initGridUI();
             if (resetSearch) clearSearch();
         }
 
         function initGridUI() {
-            cRow = 0;
-            gGuesses = Array(6).fill('');
-            gStates = Array(6).fill(null).map(() => Array(5).fill('_'));
-            gNodePath = [];
+            currentActiveRow = 0;
+            gridGuesses = Array(6).fill('');
+            gridStates = Array(6).fill(null).map(() => Array(5).fill('_'));
+            gridNodePath = [];
 
-            if (gRoot) {
-                gGuesses[0] = gRoot.guess.toUpperCase();
-                gNodePath.push(gRoot);
+            if (globalRootNode) {
+                gridGuesses[0] = globalRootNode.guess.toUpperCase();
+                gridNodePath.push(globalRootNode);
             }
 
-            $('grid-count-text').classList.add('hidden');
-            $('candidates-words').innerHTML = '';
+            document.getElementById('grid-count-text').classList.add('hidden');
+            document.getElementById('candidates-words').innerHTML = '';
             
-            $('grid-back-btn').classList.remove('hidden');
-            $('grid-enter-btn').classList.remove('hidden');
+            document.getElementById('grid-back-btn').classList.remove('hidden');
+            document.getElementById('grid-enter-btn').classList.remove('hidden');
 
             renderGrid();
-            $('grid-enter-btn').disabled = false;
+            document.getElementById('grid-enter-btn').disabled = false;
         }
 
         function renderGrid() {
-            const gridEl = $('wordle-grid');
+            const gridEl = document.getElementById('wordle-grid');
             gridEl.innerHTML = '';
 
             for (let r = 0; r < 6; r++) {
                 const rowEl = document.createElement('div');
-                rowEl.className = `grid-row ${r === cRow ? 'active' : ''}`;
-                const word = gGuesses[r] || '';
+                rowEl.className = `grid-row ${r === currentActiveRow ? 'active' : ''}`;
+                const word = gridGuesses[r] || '';
 
                 for (let c = 0; c < 5; c++) {
                     const tile = document.createElement('div');
-                    tile.className = `grid-tile state-${gStates[r][c]}`;
-                    tile.innerText = word[c] || '';
+                    const letter = word[c] || '';
+                    const state = gridStates[r][c];
 
-                    if (r === cRow && word) {
+                    tile.className = `grid-tile state-${state}`;
+                    tile.innerText = letter;
+
+                    if (r === currentActiveRow && word) {
                         tile.addEventListener('click', () => toggleTileState(r, c));
                     }
+
                     rowEl.appendChild(tile);
                 }
                 gridEl.appendChild(rowEl);
             }
         }
 
-        function toggleTileState(r, c) {
-            if (r !== cRow) return;
-            const cycle = ['_', 'y', 'g'];
-            gStates[r][c] = cycle[(cycle.indexOf(gStates[r][c]) + 1) % 3];
+        function toggleTileState(row, col) {
+            if (row !== currentActiveRow) return;
+            const stateCycle = ['_', 'y', 'g'];
+            const currentState = gridStates[row][col];
+            const nextIndex = (stateCycle.indexOf(currentState) + 1) % stateCycle.length;
+            gridStates[row][col] = stateCycle[nextIndex];
             renderGrid();
         }
 
         function handleGridEnter() {
-            if (cRow >= 6) return;
+            if (currentActiveRow >= 6) return;
 
-            const cGuess = gGuesses[cRow];
-            if (!cGuess || cGuess.length !== 5) return;
+            const currentGuess = gridGuesses[currentActiveRow];
+            if (!currentGuess || currentGuess.length !== 5) return;
 
-            const feedback = gStates[cRow].join('');
+            const feedback = gridStates[currentActiveRow].join('');
 
+            // Reset grid immediately if feedback is all 5 greens
             if (feedback === 'ggggg') {
                 resetGridWithState();
                 return;
@@ -1037,19 +1160,20 @@
             updateCandidatesUI();
 
             let nextGuess = null;
-            let cNode = gNodePath[cRow];
+            let currentNode = gridNodePath[currentActiveRow];
 
-            if (cNode && cNode.branches && cNode.branches[feedback]) {
-                const nextNode = cNode.branches[feedback];
+            if (currentNode && currentNode.branches && currentNode.branches[feedback]) {
+                const nextNode = currentNode.branches[feedback];
                 if (nextNode) {
                     nextGuess = nextNode.guess;
-                    gNodePath.push(nextNode);
+                    gridNodePath.push(nextNode);
                 }
             } else {
                 let candidates = getRemainingCandidates();
+
                 if (candidates.length > 0) {
                     nextGuess = candidates[0];
-                    gNodePath.push(null);
+                    gridNodePath.push(null);
                 } else {
                     showGridMessage("No words found");
                     handleGridBack();
@@ -1057,52 +1181,58 @@
                 }
             }
 
-            if (cRow < 5) {
-                cRow++;
-                if (nextGuess) gGuesses[cRow] = nextGuess.toUpperCase();
+            if (currentActiveRow < 5) {
+                currentActiveRow++;
+                if (nextGuess) {
+                    gridGuesses[currentActiveRow] = nextGuess.toUpperCase();
+                }
             } else {
-                $('grid-enter-btn').disabled = true;
+                document.getElementById('grid-enter-btn').disabled = true;
             }
 
             renderGrid();
         }
 
         function handleGridBack() {
-            if (gStates[cRow].some(s => s !== '_')) {
-                gStates[cRow] = Array(5).fill('_');
-            } else if (cRow > 0) {
-                gGuesses[cRow] = '';
-                if (gNodePath.length > cRow) gNodePath.pop();
-                cRow--;
+            const hasColors = gridStates[currentActiveRow].some(state => state !== '_');
+
+            if (hasColors) {
+                gridStates[currentActiveRow] = Array(5).fill('_');
+            } else if (currentActiveRow > 0) {
+                gridGuesses[currentActiveRow] = '';
+                if (gridNodePath.length > currentActiveRow) {
+                    gridNodePath.pop();
+                }
+                currentActiveRow--;
             }
 
-            $('grid-enter-btn').disabled = false;
+            document.getElementById('grid-enter-btn').disabled = false;
             updateCandidatesUI();
             renderGrid();
         }
 
         function resetGridWithState() {
-            $('search-input').value = '';
-            $('grid-search-banner').classList.add('hidden');
-            $('grid-add-btn').classList.add('hidden');
-            $('grid-search-badge').classList.add('hidden');
-            $('grid-msg').innerText = '';
-            $('search-msg').innerText = '';
-            cCalcPath = null;
-            cSearchTgt = "";
+            document.getElementById('search-input').value = '';
+            document.getElementById('grid-search-banner').classList.add('hidden');
+            document.getElementById('grid-add-btn').classList.add('hidden');
+            document.getElementById('grid-search-badge').classList.add('hidden');
+            document.getElementById('grid-msg').innerText = '';
+            document.getElementById('search-msg').innerText = '';
+            currentCalculatedPath = null;
+            currentSearchTarget = "";
             initGridUI();
         }
 
-        $('grid-enter-btn').addEventListener('click', handleGridEnter);
-        $('grid-back-btn').addEventListener('click', handleGridBack);
-        $('grid-reset-btn').addEventListener('click', resetGridWithState);
+        document.getElementById('grid-enter-btn').addEventListener('click', handleGridEnter);
+        document.getElementById('grid-back-btn').addEventListener('click', handleGridBack);
+        document.getElementById('grid-reset-btn').addEventListener('click', resetGridWithState);
 
-        function findPathInTree(node, target, cPath = []) {
+        function findPathInTree(node, target, currentPath = []) {
             if (!node) return null;
 
             for (let feedback of Object.keys(node.branches)) {
                 const nextNode = node.branches[feedback];
-                const newPath = [...cPath, { guess: node.guess, feedback: feedback }];
+                const newPath = [...currentPath, { guess: node.guess, feedback: feedback }];
 
                 if (feedback === 'ggggg' && node.guess.toLowerCase() === target.toLowerCase()) {
                     return newPath;
@@ -1118,19 +1248,23 @@
 
         function calculatePathForNewWord(root, targetWord) {
             targetWord = targetWord.toLowerCase();
-            let candidates = [...new Set(gSolutions)];
+            let candidates = [...new Set(globalSolutionsList)];
             let path = [];
-            let cNode = root;
+            let currentNode = root;
 
-            while (cNode) {
-                let guess = cNode.guess;
+            while (currentNode) {
+                let guess = currentNode.guess;
                 let feedback = computeFeedback(guess, targetWord);
                 path.push({ guess: guess, feedback: feedback });
 
                 if (feedback === 'ggggg') return path;
 
                 candidates = filterCandidates(candidates, guess, feedback);
-                cNode = cNode.branches[feedback] || null;
+                if (currentNode.branches[feedback]) {
+                    currentNode = currentNode.branches[feedback];
+                } else {
+                    currentNode = null;
+                }
             }
 
             while (candidates.length > 0) {
@@ -1154,28 +1288,30 @@
         }
 
         function handleSearch() {
-            const targetWord = $('search-input').value.trim().toLowerCase();
+            const searchInput = document.getElementById('search-input');
+            const targetWord = searchInput.value.trim().toLowerCase();
 
+            // Strictly validate 5 lowercase alphabetical letters (no spacing, no non-alphabets/symbols/numbers)
             if (!/^[a-z]{5}$/.test(targetWord)) {
                 showSearchMessage('Please enter a valid 5-letter alphabetical word');
                 return;
             }
 
-            if (!gRoot) {
+            if (!globalRootNode) {
                 showSearchMessage('Please load strategy data first');
                 return;
             }
 
-            let path = findPathInTree(gRoot, targetWord);
+            let path = findPathInTree(globalRootNode, targetWord);
             let isCalculated = false;
 
             if (!path) {
-                path = calculatePathForNewWord(gRoot, targetWord);
+                path = calculatePathForNewWord(globalRootNode, targetWord);
                 isCalculated = true;
             }
 
-            cCalcPath = isCalculated ? path : null;
-            cSearchTgt = targetWord;
+            currentCalculatedPath = isCalculated ? path : null;
+            currentSearchTarget = targetWord;
 
             renderGridSearchResult(targetWord, path, isCalculated);
             switchView('grid');
@@ -1184,12 +1320,12 @@
         function renderGridSearchResult(targetWord, path, isCalculated) {
             initGridUI();
 
-            $('grid-back-btn').classList.add('hidden');
-            $('grid-enter-btn').classList.add('hidden');
+            document.getElementById('grid-back-btn').classList.add('hidden');
+            document.getElementById('grid-enter-btn').classList.add('hidden');
 
-            const banner = $('grid-search-banner');
-            const badge = $('grid-search-badge');
-            const addBtn = $('grid-add-btn');
+            const banner = document.getElementById('grid-search-banner');
+            const badge = document.getElementById('grid-search-badge');
+            const addBtn = document.getElementById('grid-add-btn');
 
             banner.classList.remove('hidden');
             badge.classList.remove('hidden');
@@ -1207,125 +1343,172 @@
 
             path.forEach((step, idx) => {
                 if (idx < 6) {
-                    gGuesses[idx] = step.guess.toUpperCase();
-                    gStates[idx] = step.feedback.split('');
+                    gridGuesses[idx] = step.guess.toUpperCase();
+                    gridStates[idx] = step.feedback.split('');
                 }
             });
 
-            cRow = Math.min(path.length - 1, 5);
+            currentActiveRow = Math.min(path.length - 1, 5);
             updateCandidatesUI();
             renderGrid();
         }
 
         function downloadTreeTxt() {
-            if (!rawTxt) return;
-            dlFile(rawTxt, 'solution.txt');
-        }
+            if (!rawTxtContent) return;
 
-        function addCalculatedPathToTree() {
-            if (!cCalcPath || cCalcPath.length === 0) return;
-
-            const triesForNewWord = cCalcPath.length;
-            let lineTokens = [];
-
-            cCalcPath.forEach((step, idx) => {
-                if (idx > 0) lineTokens.push(step.guess);
-                lineTokens.push(step.feedback);
-            });
-
-            const newLine = lineTokens.join(" ");
-            const updatedTxt = rawTxt ? `${rawTxt}\n${newLine}` : newLine;
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            setTimeout(() => {
-                const downloadBtn = $('btn-top-download');
-                downloadBtn.classList.add('stat-pop');
-                setTimeout(() => downloadBtn.classList.remove('stat-pop'), 1500);
-
-                animateStatsIncrement(triesForNewWord);
-
-                setTimeout(() => {
-                    pData(updatedTxt, false);
-                    const addedPath = [...cCalcPath];
-                    cCalcPath = null;
-                    renderGridSearchResult(cSearchTgt, addedPath, false);
-                }, 1500);
-            }, 500);
-        }
-
-        function animateStatsIncrement(triesCount) {
-            const totalEl = $('stat-total');
-            const totalBox = $('stat-total-box');
-            const oldTotal = cTotalW;
-            const newTotal = oldTotal + 1;
-
-            if (totalEl && totalBox) {
-                totalEl.innerText = `${oldTotal} (+1)`;
-                totalBox.classList.add('stat-pop');
-                setTimeout(() => totalEl.innerText = newTotal, 750);
-                setTimeout(() => totalBox.classList.remove('stat-pop'), 1500);
-            }
-
-            let targetValEl = $(`stat-val-${triesCount}`);
-            let targetBoxEl = $(`stat-box-${triesCount}`);
-
-            if (triesCount === 6 && (!targetValEl || !targetBoxEl)) {
-                const sixRow = $('six-tries-row');
-                sixRow.classList.remove('hidden');
-                sixRow.innerHTML = `
-                    <div class="stat-box small" id="stat-box-6">
-                        <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">${DWN_SVG}</div>
-                        <div class="stat-val" id="stat-val-6">0</div>
-                        <div class="stat-label">6 Tries</div>
-                    </div>
-                `;
-                targetValEl = $('stat-val-6');
-                targetBoxEl = $('stat-box-6');
-            }
-
-            if (targetValEl && targetBoxEl) {
-                const oldVal = cDist[triesCount] || 0;
-                const newVal = oldVal + 1;
-
-                targetValEl.innerText = `${oldVal} (+1)`;
-                targetBoxEl.classList.add('stat-pop');
-                setTimeout(() => targetValEl.innerText = newVal, 750);
-                setTimeout(() => targetBoxEl.classList.remove('stat-pop'), 1500);
-            }
-        }
-
-        function dlFile(content, name) {
-            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const blob = new Blob([rawTxtContent], { type: 'text/plain;charset=utf-8' });
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
-            link.download = name;
+            link.download = 'solution.txt';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
         }
 
-        const downloadWordsForTries = n => dlFile([...new Set(wByTries[n] || [])].join("\n"), `${n}_tries_words.txt`);
-        const downloadAllTotalWords = () => dlFile([...new Set(gSolutions.map(w => w.toUpperCase()))].join("\n"), 'solution_words.txt');
+        function addCalculatedPathToTree() {
+            if (!currentCalculatedPath || currentCalculatedPath.length === 0) return;
+
+            const triesForNewWord = currentCalculatedPath.length;
+
+            let stepsToAppend = currentCalculatedPath;
+            let lineTokens = [];
+            stepsToAppend.forEach((step, idx) => {
+                if (idx > 0) {
+                    lineTokens.push(step.guess);
+                }
+                lineTokens.push(step.feedback);
+            });
+
+            const newLine = lineTokens.join(" ");
+            const updatedTxt = rawTxtContent ? `${rawTxtContent}\n${newLine}` : newLine;
+
+            // Scroll up immediately when Add button is clicked
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Trigger animations after a 0.5-second delay
+            setTimeout(() => {
+                // Animate Download Button with popup style matching total words (no green glow)
+                const downloadBtn = document.getElementById('btn-top-download');
+                downloadBtn.classList.add('stat-pop');
+                setTimeout(() => {
+                    downloadBtn.classList.remove('stat-pop');
+                }, 1500);
+
+                // Perform synchronized stats increment animation for total words AND corresponding x tries
+                animateStatsIncrement(triesForNewWord);
+
+                // Delay reprocessing data until after the 1.5s animation completes to prevent resetting DOM nodes prematurely
+                setTimeout(() => {
+                    processData(updatedTxt, false);
+                    const addedPath = [...currentCalculatedPath];
+                    currentCalculatedPath = null;
+                    renderGridSearchResult(currentSearchTarget, addedPath, false);
+                }, 1500);
+            }, 500);
+        }
+
+        function animateStatsIncrement(triesCount) {
+            const totalEl = document.getElementById('stat-total');
+            const totalBox = document.getElementById('stat-total-box');
+            const oldTotal = currentTotalWords;
+            const newTotal = oldTotal + 1;
+
+            if (totalEl && totalBox) {
+                totalEl.innerText = `${oldTotal} (+1)`;
+                totalBox.classList.add('stat-pop');
+                
+                setTimeout(() => {
+                    totalEl.innerText = newTotal;
+                }, 750);
+
+                setTimeout(() => {
+                    totalBox.classList.remove('stat-pop');
+                }, 1500);
+            }
+
+            let targetValEl = document.getElementById(`stat-val-${triesCount}`);
+            let targetBoxEl = document.getElementById(`stat-box-${triesCount}`);
+
+            if (triesCount === 6 && (!targetValEl || !targetBoxEl)) {
+                const sixRow = document.getElementById('six-tries-row');
+                sixRow.classList.remove('hidden');
+                sixRow.innerHTML = `
+                    <div class="stat-box small" id="stat-box-6">
+                        <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">${DOWNLOAD_SVG}</div>
+                        <div class="stat-val" id="stat-val-6">0</div>
+                        <div class="stat-label">6 Tries</div>
+                    </div>
+                `;
+                targetValEl = document.getElementById('stat-val-6');
+                targetBoxEl = document.getElementById('stat-box-6');
+            }
+
+            if (targetValEl && targetBoxEl) {
+                const oldVal = currentDistribution[triesCount] || 0;
+                const newVal = oldVal + 1;
+
+                targetValEl.innerText = `${oldVal} (+1)`;
+                targetBoxEl.classList.add('stat-pop');
+
+                setTimeout(() => {
+                    targetValEl.innerText = newVal;
+                }, 750);
+
+                setTimeout(() => {
+                    targetBoxEl.classList.remove('stat-pop');
+                }, 1500);
+            }
+        }
+
+        function downloadWordsForTries(triesNum) {
+            const wordList = wordsByTriesMap[triesNum] || [];
+            const uniqueWords = [...new Set(wordList)];
+            const content = uniqueWords.join("\n");
+
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `${triesNum}_tries_words.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        function downloadAllTotalWords() {
+            const uniqueWords = [...new Set(globalSolutionsList.map(w => w.toUpperCase()))];
+            const content = uniqueWords.join("\n");
+
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `solution_words.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
 
         function clearSearch() {
-            $('search-input').value = '';
-            $('grid-search-banner').classList.add('hidden');
-            $('grid-add-btn').classList.add('hidden');
-            $('grid-search-badge').classList.add('hidden');
-            $('grid-count-text').classList.add('hidden');
-            $('candidates-words').innerHTML = '';
-            $('grid-msg').innerText = '';
-            $('search-msg').innerText = '';
-            cCalcPath = null;
-            cSearchTgt = "";
+            document.getElementById('search-input').value = '';
+            document.getElementById('grid-search-banner').classList.add('hidden');
+            document.getElementById('grid-add-btn').classList.add('hidden');
+            document.getElementById('grid-search-badge').classList.add('hidden');
+            document.getElementById('grid-count-text').classList.add('hidden');
+            document.getElementById('candidates-words').innerHTML = '';
+            document.getElementById('grid-msg').innerText = '';
+            document.getElementById('search-msg').innerText = '';
+            currentCalculatedPath = null;
+            currentSearchTarget = "";
         }
 
         function renderStats(totalWords, totalTries, distribution) {
-            const container = $('stats-container');
-            const sixRow = $('six-tries-row');
+            const container = document.getElementById('stats-container');
+            const sixRow = document.getElementById('six-tries-row');
             
             if (totalWords === 0) {
                 container.classList.add('hidden');
@@ -1335,27 +1518,31 @@
 
             container.classList.remove('hidden');
             
-            $('stat-avg').innerText = (totalTries / totalWords).toFixed(2);
-            $('stat-total').innerText = totalWords;
+            const avg = (totalTries / totalWords).toFixed(2);
+            document.getElementById('stat-avg').innerText = avg;
+            document.getElementById('stat-total').innerText = totalWords;
 
-            let distHtml = '';
+            let dist2To5Html = '';
+
             for (let i = 2; i <= 5; i++) {
-                distHtml += `
+                const count = distribution[i] || 0;
+                dist2To5Html += `
                     <div class="stat-box small" id="stat-box-${i}">
-                        <div class="info-btn" onclick="downloadWordsForTries(${i})" title="Download words solved in ${i} tries">${DWN_SVG}</div>
-                        <div class="stat-val" id="stat-val-${i}">${distribution[i] || 0}</div>
+                        <div class="info-btn" onclick="downloadWordsForTries(${i})" title="Download words solved in ${i} tries">${DOWNLOAD_SVG}</div>
+                        <div class="stat-val" id="stat-val-${i}">${count}</div>
                         <div class="stat-label">${i} Tries</div>
                     </div>
                 `;
             }
-            $('distribution-row').innerHTML = distHtml;
+
+            document.getElementById('distribution-row').innerHTML = dist2To5Html;
 
             const countSix = distribution[6] || 0;
             if (countSix > 0) {
                 sixRow.classList.remove('hidden');
                 sixRow.innerHTML = `
                     <div class="stat-box small" id="stat-box-6">
-                        <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">${DWN_SVG}</div>
+                        <div class="info-btn" onclick="downloadWordsForTries(6)" title="Download words solved in 6 tries">${DOWNLOAD_SVG}</div>
                         <div class="stat-val" id="stat-val-6">${countSix}</div>
                         <div class="stat-label">6 Tries</div>
                     </div>
@@ -1369,9 +1556,12 @@
         function createWordRow(word, feedback) {
             let html = '<div class="word-row">';
             for (let i = 0; i < 5; i++) {
-                html += `<div class="letter ${feedback[i] || '_'}">${word[i] || ''}</div>`;
+                const letter = word[i] ? word[i] : '';
+                const fbClass = feedback[i] ? feedback[i] : '_';
+                html += `<div class="letter ${fbClass}">${letter}</div>`;
             }
-            return html + '</div>';
+            html += '</div>';
+            return html;
         }
 
         function buildHTML(node, parentGuess) {
@@ -1385,25 +1575,35 @@
                 const isWin = (feedback === 'ggggg');
                 
                 html += `<details ${isWin ? 'open' : ''}>`;
-                html += `<summary><span class="arrow">${isWin ? ' ' : '▶'}</span>${createWordRow(parentGuess, feedback)}${isWin ? '<span class="win">🏆</span>' : ''}</summary>`;
+                html += '<summary>';
+                html += `<span class="arrow">${isWin ? ' ' : '▶'}</span>`;
+                html += createWordRow(parentGuess, feedback);
+                
+                if (isWin) {
+                    html += '<span class="win">🏆</span>';
+                }
+                html += '</summary>';
                 
                 if (childNode) {
                     html += `<div class="next-guess">${childNode.guess.toUpperCase()}</div>`;
                     html += buildHTML(childNode, childNode.guess);
                 }
+                
                 html += '</details>';
             }
             return html;
         }
 
         function renderTree(root) {
-            const container = $('tree-container');
+            const container = document.getElementById('tree-container');
             if (!root) {
                 container.innerHTML = '<p style="text-align:center; color: #ff5555;">Invalid file format.</p>';
                 return;
             }
             
-            container.innerHTML = `<div class="root-title">Opener: ${root.guess}</div>${buildHTML(root, root.guess)}`;
+            let html = `<div class="root-title">Opener: ${root.guess}</div>`;
+            html += buildHTML(root, root.guess);
+            container.innerHTML = html;
         }
     </script>
 </body>
