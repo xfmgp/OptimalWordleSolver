@@ -12,12 +12,6 @@ trace _____ diols __g_y spoon g_gg_ shook ggggg
 trace _____ diols __g_y spoon gygg_ swoop ggggg
 trace _____ diols __g_y spoon gggg_ spook ggggg
 trace _____ diols __g_y spoon ggggg
-trace _____ diols _y__y using _yg__ swish ggggg
-trace _____ diols _y__y using _ygg_ shiny ggggg
-trace _____ diols _y__y using _yggg swing ggggg
-trace _____ diols _y__y using yyy__ sushi ggggg
-trace _____ diols _y__y using yggg_ +sinus ggggg
-trace _____ diols _y__y using ggggg
 trace _____ diols y_y__ whump __g__ found _gggg bound ggggg
 trace _____ diols y_y__ whump __g__ found ggggg
 trace _____ diols y_y__ whump __g_y pound ggggg
@@ -34,6 +28,11 @@ trace _____ diols ___yy surfs yy_y_ flush ggggg
 trace _____ diols ___yy surfs gy___ slung ggggg
 trace _____ diols ___yy surfs gy__y slush ggggg
 trace _____ diols ___yy surfs gg___ sulky ggggg
+trace _____ diols _y__y using _yg__ swish ggggg
+trace _____ diols _y__y using _ygg_ shiny ggggg
+trace _____ diols _y__y using _yggg swing ggggg
+trace _____ diols _y__y using yyy__ sushi ggggg
+trace _____ diols _y__y using ggggg
 trace _____ diols _yy__ union _ygy_ going ggggg
 trace _____ diols _yy__ union _gyg_ inbox ggggg
 trace _____ diols _yy__ union _gggg onion ggggg
@@ -47,10 +46,10 @@ trace _____ diols _y_y_ lying y_y__ pupil ggggg
 trace _____ diols _y_y_ lying y_gg_ blink ggggg
 trace _____ diols _y_y_ lying y_ggg fling ggggg
 trace _____ diols _y_y_ lying ggggg
-trace _____ diols y_gy_ flood _yg_y +mould ggggg
-trace _____ diols y_gy_ flood _gg_g blond ggggg
-trace _____ diols y_gy_ flood _gggg blood ggggg
-trace _____ diols y_gy_ flood ggggg
+trace _____ diols y_yg_ would _y_gy oddly ggggg
+trace _____ diols y_yg_ would _g_gy godly ggggg
+trace _____ diols y_yg_ would _gggg mould ggggg
+trace _____ diols y_yg_ would ggggg
 trace _____ diols ____y husky _gy_g sunny ggggg
 trace _____ diols ____y husky ygg_g bushy ggggg
 trace _____ diols ____y husky ggggg
@@ -69,9 +68,9 @@ trace _____ diols _y___ whiny ggggg
 trace _____ diols _g_y_ vinyl _g_yy milky ggggg
 trace _____ diols _g_y_ vinyl gg__g vigil ggggg
 trace _____ diols _g_y_ vinyl ggggg
-trace _____ diols y_yg_ would _y_gy oddly ggggg
-trace _____ diols y_yg_ would _g_gy godly ggggg
-trace _____ diols y_yg_ would ggggg
+trace _____ diols y_gy_ flood _gg_g blond ggggg
+trace _____ diols y_gy_ flood _gggg blood ggggg
+trace _____ diols y_gy_ flood ggggg
 trace _____ diols yg___ windy _g_y_ vivid ggggg
 trace _____ diols yg___ windy _g_gg giddy ggggg
 trace _____ diols yg___ windy ggggg
@@ -83,10 +82,12 @@ trace _____ diols __g__ known __g__ goofy ggggg
 trace _____ diols __g__ known ggggg
 trace _____ diols __gyg gloss _gggg floss ggggg
 trace _____ diols __gyg gloss ggggg
+trace _____ diols _y_g_ quill __yg_ imply ggggg
+trace _____ diols _y_g_ quill ggggg
 trace _____ diols _y_gy spill g_ggg skill ggggg
 trace _____ diols _y_gy spill ggggg
-trace _____ diols _yy_y noisy _ygy_ +pious ggggg
-trace _____ diols _yy_y noisy ggggg
+trace _____ diols _g__g sinus _gggg minus ggggg
+trace _____ diols _g__g sinus ggggg
 trace _____ diols _gy__ hippo _g__g bingo ggggg
 trace _____ diols _gy__ hippo ggggg
 trace _____ diols y____ muddy _gggg buddy ggggg
@@ -102,21 +103,21 @@ trace _____ diols __y_g bonus ggggg
 trace _____ diols __yyy lousy ggggg
 trace _____ diols _y_yy sling ggggg
 trace _____ diols _y_yg bliss ggggg
-trace _____ diols _y_g_ imply ggggg
+trace _____ diols _yy_y noisy ggggg
 trace _____ diols _yyy_ login ggggg
 trace _____ diols _ygyy spoil ggggg
 trace _____ diols _g__y fishy ggggg
-trace _____ diols _g__g minus ggggg
 trace _____ diols _g_yy silky ggggg
 trace _____ diols _g_g_ hilly ggggg
 trace _____ diols _g_gy silly ggggg
 trace _____ diols _gy_y bison ggggg
 trace _____ diols _gyy_ lingo ggggg
 trace _____ diols _gg_y kiosk ggggg
+trace _____ diols _gg_g pious ggggg
 trace _____ diols y_y_y sound ggggg
 trace _____ diols y_yy_ moldy ggggg
 trace _____ diols yy___ humid ggggg
-trace _____ diols yy__y +squid ggggg
+trace _____ diols yy__y squid ggggg
 trace _____ diols yyy__ idiom ggggg
 trace _____ diols yyyyy solid ggggg
 trace _____ diols yg_y_ livid ggggg
@@ -129,85 +130,16 @@ trace _____ diols gy___ dying ggggg
 trace _____ diols gyy__ doing ggggg
 trace _____ diols gg___ dizzy ggggg
 trace _____ diols gg_g_ dimly ggggg
-trace ____y wedel _y___ envoy y____ guess ggggg
-trace ____y wedel _y___ envoy yy___ +genus ggggg
-trace ____y wedel _y___ envoy yyy__ +venus ggggg
-trace ____y wedel _y___ envoy g____ equip ggggg
-trace ____y wedel _y___ envoy gy_yg ebony ggggg
-trace ____y wedel _y___ envoy gg___ ennui ggggg
-trace ____y wedel _y___ envoy gg_gg enjoy ggggg
-trace ____y wedel _y___ envoy ggggg
-trace ____y wedel _g__y timbo _____ jelly ggggg
-trace ____y wedel _g__y timbo ____y felon ggggg
-trace ____y wedel _g__y timbo ____g hello ggggg
-trace ____y wedel _g__y timbo ___y_ belly ggggg
-trace ____y wedel _g__y timbo __y_y melon ggggg
-trace ____y wedel _g__y timbo __g_y lemon ggggg
-trace ____y wedel _g__y timbo _y___ helix ggggg
-trace ____y wedel _g___ being _g_y_ venom ggggg
-trace ____y wedel _g___ being _g_g_ penny ggggg
-trace ____y wedel _g___ being _ggyy feign ggggg
-trace ____y wedel _g___ being ggyyy begin ggggg
-trace ____y wedel _g___ being ggggg
-trace ____y wedel ___g_ money _gygg nosey ggggg
-trace ____y wedel ___g_ money _gggg honey ggggg
-trace ____y wedel ___g_ money ggggg
-trace ____y wedel ___gg pixel ___gg novel ggggg
-trace ____y wedel ___gg pixel _g_gg libel ggggg
-trace ____y wedel ___gg pixel ggggg
-trace ____y wedel __gg_ video __ggy modem ggggg
-trace ____y wedel __gg_ video _ygg_ index ggggg
-trace ____y wedel __gg_ video ggggg
-trace ____y wedel _y__y shelf y_gy_ bless ggggg
-trace ____y wedel _y__y shelf yygyy flesh ggggg
-trace ____y wedel _y__y shelf ggggg
-trace ____y wedel _y__g zhomo _____ spell ggggg
-trace ____y wedel _y__g zhomo ___y_ smell ggggg
-trace ____y wedel _y__g zhomo _g___ shell ggggg
-trace ____y wedel _y_g_ sheep __gg_ queen ggggg
-trace ____y wedel _y_g_ sheep gggg_ sheen ggggg
-trace ____y wedel _y_g_ sheep ggggg
-trace ____y wedel _yy_y yield __gyg blend ggggg
-trace ____y wedel _yy_y yield _gggg field ggggg
-trace ____y wedel _yy_y yield ggggg
-trace ____y wedel _yyg_ speed __ygg embed ggggg
-trace ____y wedel _yyg_ speed y_ygg +suede ggggg
-trace ____y wedel _yyg_ speed ggggg
-trace ____y wedel _y_y_ enemy y_g__ +beige ggggg
-trace ____y wedel _y_y_ enemy ggggg
-trace ____y wedel _y_gy sleep gggg_ sleek ggggg
-trace ____y wedel _y_gy sleep ggggg
-trace ____y wedel _y_gg kneel __ygg expel ggggg
-trace ____y wedel _y_gg kneel ggggg
-trace ____y wedel _yy__ spend __yyy +indie ggggg
-trace ____y wedel _yy__ spend ggggg
-trace ____y wedel _g_g_ seven gg_gg semen ggggg
-trace ____y wedel _g_g_ seven ggggg
-trace ____y wedel _gy__ denim ggy_y demon ggggg
-trace ____y wedel _gy__ denim ggggg
-trace ____y wedel y__gg vowel _gggg bowel ggggg
-trace ____y wedel y__gg vowel ggggg
-trace ____y wedel g__g_ women gg_gg woken ggggg
-trace ____y wedel g__g_ women ggggg
-trace ____y wedel ___gy linen ggggg
-trace ____y wedel __yg_ dozen ggggg
-trace ____y wedel __ggg model ggggg
-trace ____y wedel _yygy bleed ggggg
-trace ____y wedel _g_y_ geeky ggggg
-trace ____y wedel _g_gg level ggggg
-trace ____y wedel _gy_g devil ggggg
-trace ____y wedel _gyy_ needy ggggg
-trace ____y wedel yy___ +swipe ggggg
-trace ____y wedel yy__y elbow ggggg
-trace ____y wedel yy__g swell ggggg
-trace ____y wedel yy_g_ sweep ggggg
-trace ____y wedel yyy_g dwell ggggg
-trace ____y wedel yg__y below ggggg
-trace ____y wedel yg_gg jewel ggggg
-trace ____y wedel g_gg_ widen ggggg
-trace ____y wedel gy_gg wheel ggggg
-trace ____y wedel gyy_y wield ggggg
-trace ____y wedel gg___ weigh ggggg
+trace y____ flosh ___y_ musty __yy_ stint gggg_ sting ggggg
+trace y____ flosh ___y_ musty __yy_ stint ggggg
+trace y____ flosh ___y_ musty __ygg sixty ggggg
+trace y____ flosh ___y_ musty __gy_ visit ggggg
+trace y____ flosh ___y_ musty _yyy_ stunt ggggg
+trace y____ flosh ___y_ musty _yyyg study ggggg
+trace y____ flosh ___y_ musty _gggg dusty ggggg
+trace y____ flosh ___y_ musty yyyy_ stump ggggg
+trace y____ flosh ___y_ musty g_ggg misty ggggg
+trace y____ flosh ___y_ musty ggggg
 trace y____ flosh __y__ point _yy_g bigot ggggg
 trace y____ flosh __y__ point _yg_g idiot ggggg
 trace y____ flosh __y__ point _g__y motto ggggg
@@ -218,15 +150,6 @@ trace y____ flosh __y__ point _gy_g vomit ggggg
 trace y____ flosh __y__ point _gggg joint ggggg
 trace y____ flosh __y__ point gyy_g pivot ggggg
 trace y____ flosh __y__ point ggggg
-trace y____ flosh ___y_ musty __yy_ stint gggg_ sting ggggg
-trace y____ flosh ___y_ musty __yy_ stint ggggg
-trace y____ flosh ___y_ musty __ygg sixty ggggg
-trace y____ flosh ___y_ musty __gy_ visit ggggg
-trace y____ flosh ___y_ musty _yyy_ stunt ggggg
-trace y____ flosh ___y_ musty _yyyg study ggggg
-trace y____ flosh ___y_ musty _gggg dusty ggggg
-trace y____ flosh ___y_ musty yyyy_ stump ggggg
-trace y____ flosh ___y_ musty ggggg
 trace y____ flosh _____ witty _y_gg unity ggggg
 trace y____ flosh _____ witty _yy__ input ggggg
 trace y____ flosh _____ witty _g_gg minty ggggg
@@ -252,14 +175,13 @@ trace y____ flosh ____y night _gggg might ggggg
 trace y____ flosh ____y night ggggg
 trace y____ flosh ____g width _g_gg ninth ggggg
 trace y____ flosh ____g width ggggg
-trace y____ flosh ___g_ midst yy_gg +misty ggggg
-trace y____ flosh ___g_ midst ggggg
 trace y____ flosh __gyy shout ggg_g shoot ggggg
 trace y____ flosh __gyy shout ggggg
 trace y____ flosh _y_y_ still gyyy_ split ggggg
 trace y____ flosh _y_y_ still ggggg
 trace y____ flosh ___yy sight ggggg
 trace y____ flosh ___yg sixth ggggg
+trace y____ flosh ___g_ midst ggggg
 trace y____ flosh __y_y ought ggggg
 trace y____ flosh __yyg south ggggg
 trace y____ flosh __yg_ moist ggggg
@@ -285,6 +207,156 @@ trace y____ flosh g___y fight ggggg
 trace y____ flosh g___g fifth ggggg
 trace y____ flosh gy__g filth ggggg
 trace y____ flosh gg___ flint ggggg
+trace ____y dowls _____ feign _y__y enemy ggggg
+trace ____y dowls _____ feign _y__g queen ggggg
+trace ____y dowls _____ feign _yy__ equip ggggg
+trace ____y dowls _____ feign _yy_y ennui ggggg
+trace ____y dowls _____ feign _g__y penny ggggg
+trace ____y dowls _____ feign _g_y_ geeky ggggg
+trace ____y dowls _____ feign _gyyg begin ggggg
+trace ____y dowls _____ feign _ggyy being ggggg
+trace ____y dowls _____ feign ggggg
+trace ____y dowls ___y_ linen y__g_ expel ggggg
+trace ____y dowls ___y_ linen y_yg_ kneel ggggg
+trace ____y dowls ___y_ linen yy_y_ helix ggggg
+trace ____y dowls ___y_ linen yg_g_ pixel ggggg
+trace ____y dowls ___y_ linen g__g_ level ggggg
+trace ____y dowls ___y_ linen gg_g_ libel ggggg
+trace ____y dowls ___y_ linen ggggg
+trace ____y dowls ____y seven gy_g_ sheep ggggg
+trace ____y dowls ____y seven gy_gg sheen ggggg
+trace ____y dowls ____y seven gg_gg semen ggggg
+trace ____y dowls ____y seven ggggg
+trace ____y dowls ___gy spell g_ggg smell g_ggg shell ggggg
+trace ____y dowls ___gy spell g_ggg smell ggggg
+trace ____y dowls ___gy spell g_gg_ shelf ggggg
+trace ____y dowls ___gy spell ggggg
+trace ____y dowls _y___ venom _yyy_ ebony ggggg
+trace ____y dowls _y___ venom _yyg_ enjoy ggggg
+trace ____y dowls _y___ venom yyyg_ envoy ggggg
+trace ____y dowls _y___ venom ggggg
+trace ____y dowls ____g venus _y_yg guess ggggg
+trace ____y dowls ____g venus _gggg genus ggggg
+trace ____y dowls ____g venus ggggg
+trace ____y dowls ___yy sleep ygg__ flesh ggggg
+trace ____y dowls ___yy sleep gggg_ sleek ggggg
+trace ____y dowls ___yy sleep ggggg
+trace ____y dowls _y_y_ melon _gggg felon ggggg
+trace ____y dowls _y_y_ melon ygygg lemon ggggg
+trace ____y dowls _y_y_ melon ggggg
+trace ____y dowls y____ needy _yyy_ embed ggggg
+trace ____y dowls y____ needy yy_y_ index ggggg
+trace ____y dowls y____ needy ggggg
+trace ____y dowls ___g_ jelly _gggg belly ggggg
+trace ____y dowls ___g_ jelly ggggg
+trace ____y dowls _yyy_ elbow yyygg below ggggg
+trace ____y dowls _yyy_ elbow ggggg
+trace ____y dowls _g___ money _gggg honey ggggg
+trace ____y dowls _g___ money ggggg
+trace ____y dowls _gy__ women gg_gg woken ggggg
+trace ____y dowls _gy__ women ggggg
+trace ____y dowls _ggy_ vowel _gggg bowel ggggg
+trace ____y dowls _ggy_ vowel ggggg
+trace ____y dowls y___y spend ggg_g speed ggggg
+trace ____y dowls y___y spend ggggg
+trace ____y dowls y__y_ blend ggg_g bleed ggggg
+trace ____y dowls y__y_ blend ggggg
+trace ____y dowls y__g_ yield _gggg field ggggg
+trace ____y dowls y__g_ yield ggggg
+trace ____y dowls ___yg bless ggggg
+trace ____y dowls __y__ weigh ggggg
+trace ____y dowls __y_y sweep ggggg
+trace ____y dowls __yy_ wheel ggggg
+trace ____y dowls __ygy swell ggggg
+trace ____y dowls __gy_ jewel ggggg
+trace ____y dowls _y_g_ hello ggggg
+trace ____y dowls _g__y nosey ggggg
+trace ____y dowls _g_y_ novel ggggg
+trace ____y dowls y_y__ widen ggggg
+trace ____y dowls y_yg_ wield ggggg
+trace ____y dowls yy___ video ggggg
+trace ____y dowls yg___ modem ggggg
+trace ____y dowls yg_y_ model ggggg
+trace ____y dowls g____ denim ggggg
+trace ____y dowls g__y_ devil ggggg
+trace ____y dowls g_yg_ dwell ggggg
+trace ____y dowls gy___ demon ggggg
+trace ____y dowls gg___ dozen ggggg
+trace ____g sloid g__y_ wring __gg_ spine g_ggg shine ggggg
+trace ____g sloid g__y_ wring __gg_ spine ggggg
+trace ____g sloid g__y_ wring __y__ sieve ggggg
+trace ____g sloid g__y_ wring __y_y siege ggggg
+trace ____g sloid g__y_ wring __g__ seize ggggg
+trace ____g sloid g__y_ wring __gy_ snipe ggggg
+trace ____g sloid g__y_ wring y_g__ swipe ggggg
+trace ____g sloid g__y_ wring y_gg_ swine ggggg
+trace ____g sloid ____y newbs _y___ judge _gggg fudge ggggg
+trace ____g sloid ____y newbs _y___ judge ggggg
+trace ____g sloid ____y newbs _y_y_ budge ggggg
+trace ____g sloid ____y newbs _g___ hedge ggggg
+trace ____g sloid ____y newbs _gy__ wedge ggggg
+trace ____g sloid ____y newbs yy___ undue ggggg
+trace ____g sloid ____y newbs gy___ nudge ggggg
+trace ____g sloid ___y_ hinge _y_gg beige ggggg
+trace ____g sloid ___y_ hinge _yy_g knife ggggg
+trace ____g sloid ___y_ hinge _gggg binge ggggg
+trace ____g sloid ___y_ hinge ggggg
+trace ____g sloid y_y__ mouse _y_gg obese ggggg
+trace ____g sloid y_y__ mouse _g_gg posse ggggg
+trace ____g sloid y_y__ mouse _gggg house ggggg
+trace ____g sloid y_y__ mouse ggggg
+trace ____g sloid __g__ phone __g_g evoke ggggg
+trace ____g sloid __g__ phone __ggg ozone ggggg
+trace ____g sloid __g__ phone ggggg
+trace ____g sloid _g___ plume _gg_g fluke ggggg
+trace ____g sloid _g___ plume _gggg flume ggggg
+trace ____g sloid _g___ plume ggggg
+trace ____g sloid y_g__ moose __ggg whose ggggg
+trace ____g sloid y_g__ moose _gggg goose ggggg
+trace ____g sloid y_g__ moose ggggg
+trace ____g sloid g_g__ spoke g_g_g shove ggggg
+trace ____g sloid g_g__ spoke g_ggg smoke ggggg
+trace ____g sloid g_g__ spoke ggggg
+trace ____g sloid _____ venue _y_gg queue ggggg
+trace ____g sloid _____ venue ggggg
+trace ____g sloid __y__ vogue _gyyg gouge ggggg
+trace ____g sloid __y__ vogue ggggg
+trace ____g sloid _y___ lunge yg_gg bulge ggggg
+trace ____g sloid _y___ lunge ggggg
+trace ____g sloid _y_y_ while __ggg exile ggggg
+trace ____g sloid _y_y_ while ggggg
+trace ____g sloid _gg__ glove ggg_g globe ggggg
+trace ____g sloid _gg__ glove ggggg
+trace ____g sloid y____ geese _y_yg ensue ggggg
+trace ____g sloid y____ geese ggggg
+trace ____g sloid y__y_ issue yy_yg guise ggggg
+trace ____g sloid y__y_ issue ggggg
+trace ____g sloid y_yy_ poise _gggg noise ggggg
+trace ____g sloid y_yy_ poise ggggg
+trace ____g sloid ___yy guide ggggg
+trace ____g sloid ___g_ genie ggggg
+trace ____g sloid ___gy indie ggggg
+trace ____g sloid __y_y dodge ggggg
+trace ____g sloid __yyy oxide ggggg
+trace ____g sloid __yg_ movie ggggg
+trace ____g sloid __gyy diode ggggg
+trace ____g sloid _y__y ledge ggggg
+trace ____g sloid _yy__ noble ggggg
+trace ____g sloid _yy_y lodge ggggg
+trace ____g sloid _yg__ whole ggggg
+trace ____g sloid _g__y elude ggggg
+trace ____g sloid _g_yy glide ggggg
+trace ____g sloid _gyy_ olive ggggg
+trace ____g sloid y___y dense ggggg
+trace ____g sloid yy___ pulse ggggg
+trace ____g sloid yyg__ loose ggggg
+trace ____g sloid g____ sense ggggg
+trace ____g sloid g___y suede ggggg
+trace ____g sloid gy_y_ smile ggggg
+trace ____g sloid gyy__ solve ggggg
+trace ____g sloid gg_y_ slime ggggg
+trace ____g sloid gg_yy slide ggggg
+trace ____g sloid ggg__ slope ggggg
 trace __y__ solid __y__ banal _y__y apply ggggg
 trace __y__ solid __y__ banal _y__g awful ggggg
 trace __y__ solid __y__ banal _y_yy alpha ggggg
@@ -312,6 +384,7 @@ trace __y__ solid _y___ mango _gyyy wagon ggggg
 trace __y__ solid _y___ mango yyyyy among ggggg
 trace __y__ solid _y___ mango ggggg
 trace __y__ solid ___y_ avian y_y__ pizza ggggg
+trace __y__ solid ___y_ avian y_g__ haiku ggggg
 trace __y__ solid ___y_ avian g_g_y aging ggggg
 trace __y__ solid ___y_ avian ggggg
 trace __y__ solid ___g_ mania gg_g_ maxim ggggg
@@ -348,157 +421,90 @@ trace __y__ solid _gyy_ voila ggggg
 trace __y__ solid y____ abyss ggggg
 trace __y__ solid y__y_ amiss ggggg
 trace __y__ solid y__yy daisy ggggg
+trace __y__ solid y_yy_ alias ggggg
 trace __y__ solid y_yg_ basil ggggg
 trace __y__ solid y_g__ palsy ggggg
-trace __y__ solid y_gg_ +alias ggggg
 trace __y__ solid yy___ mason ggggg
+trace __y__ solid yy_g_ oasis ggggg
 trace __y__ solid g____ sauna ggggg
 trace __y__ solid g___g squad ggggg
 trace __y__ solid g_y_y sadly ggggg
 trace __y__ solid g_g__ salsa ggggg
 trace __y__ solid g_g_g salad ggggg
 trace __y__ solid gyg__ salon ggggg
-trace ____g sloid ____y newbs _y___ judge _gggg fudge ggggg
-trace ____g sloid ____y newbs _y___ judge ggggg
-trace ____g sloid ____y newbs _y_y_ budge ggggg
-trace ____g sloid ____y newbs _g___ hedge ggggg
-trace ____g sloid ____y newbs _gy__ wedge ggggg
-trace ____g sloid ____y newbs yy___ undue ggggg
-trace ____g sloid ____y newbs gy___ nudge ggggg
-trace ____g sloid g__y_ wring __gg_ spine g_ggg shine ggggg
-trace ____g sloid g__y_ wring __gg_ spine ggggg
-trace ____g sloid g__y_ wring __y__ sieve ggggg
-trace ____g sloid g__y_ wring __y_y siege ggggg
-trace ____g sloid g__y_ wring __g__ seize ggggg
-trace ____g sloid g__y_ wring __gy_ snipe ggggg
-trace ____g sloid g__y_ wring y_gg_ swine ggggg
-trace ____g sloid y_y__ mouse _y_gg obese ggggg
-trace ____g sloid y_y__ mouse _g_gg posse ggggg
-trace ____g sloid y_y__ mouse _gggg house ggggg
-trace ____g sloid y_y__ mouse ggggg
-trace ____g sloid ___y_ hinge _yy_g knife ggggg
-trace ____g sloid ___y_ hinge _gggg binge ggggg
-trace ____g sloid ___y_ hinge ggggg
-trace ____g sloid __g__ phone __g_g evoke ggggg
-trace ____g sloid __g__ phone __ggg ozone ggggg
-trace ____g sloid __g__ phone ggggg
-trace ____g sloid _g___ plume _gg_g fluke ggggg
-trace ____g sloid _g___ plume _gggg flume ggggg
-trace ____g sloid _g___ plume ggggg
-trace ____g sloid y_g__ moose __ggg whose ggggg
-trace ____g sloid y_g__ moose _gggg goose ggggg
-trace ____g sloid y_g__ moose ggggg
-trace ____g sloid g_g__ spoke g_g_g shove ggggg
-trace ____g sloid g_g__ spoke g_ggg smoke ggggg
-trace ____g sloid g_g__ spoke ggggg
-trace ____g sloid _____ venue _y_gg queue ggggg
-trace ____g sloid _____ venue ggggg
-trace ____g sloid __y__ vogue _gyyg gouge ggggg
-trace ____g sloid __y__ vogue ggggg
-trace ____g sloid _y___ lunge yg_gg bulge ggggg
-trace ____g sloid _y___ lunge ggggg
-trace ____g sloid _y_y_ while __ggg exile ggggg
-trace ____g sloid _y_y_ while ggggg
-trace ____g sloid _gg__ glove ggg_g globe ggggg
-trace ____g sloid _gg__ glove ggggg
-trace ____g sloid y____ geese _y_yg ensue ggggg
-trace ____g sloid y____ geese ggggg
-trace ____g sloid y__y_ issue yy_yg guise ggggg
-trace ____g sloid y__y_ issue ggggg
-trace ____g sloid y_yy_ poise _gggg noise ggggg
-trace ____g sloid y_yy_ poise ggggg
-trace ____g sloid ___yy guide ggggg
-trace ____g sloid ___g_ genie ggggg
-trace ____g sloid __y_y dodge ggggg
-trace ____g sloid __yyy oxide ggggg
-trace ____g sloid __yg_ movie ggggg
-trace ____g sloid __gyy diode ggggg
-trace ____g sloid _y__y ledge ggggg
-trace ____g sloid _yy__ noble ggggg
-trace ____g sloid _yy_y lodge ggggg
-trace ____g sloid _yg__ whole ggggg
-trace ____g sloid _g__y elude ggggg
-trace ____g sloid _g_yy glide ggggg
-trace ____g sloid _gyy_ olive ggggg
-trace ____g sloid y___y dense ggggg
-trace ____g sloid yy___ pulse ggggg
-trace ____g sloid yyg__ loose ggggg
-trace ____g sloid g____ sense ggggg
-trace ____g sloid gy_y_ smile ggggg
-trace ____g sloid gyy__ solve ggggg
-trace ____g sloid gg_y_ slime ggggg
-trace ____g sloid gg_yy slide ggggg
-trace ____g sloid ggg__ slope ggggg
-trace _y__y penes ___g_ voled yg_g_ zhomo __y__ rover ggggg
-trace _y__y penes ___g_ voled yg_g_ zhomo __yy_ mover ggggg
-trace _y__y penes ___g_ voled yg_g_ zhomo _yy__ hover ggggg
-trace _y__y penes ___g_ voled ___g_ fiber __ygg buyer ggggg
-trace _y__y penes ___g_ voled ___g_ fiber ggggg
-trace _y__y penes ___g_ voled _g_g_ joker _g_gg boxer ggggg
-trace _y__y penes ___g_ voled _g_g_ joker ggggg
-trace _y__y penes ___g_ voled y__g_ river _gggg giver ggggg
-trace _y__y penes ___g_ voled y__g_ river ggggg
-trace _y__y penes ___g_ voled ___gy rider ggggg
-trace _y__y penes ___g_ voled __yg_ flyer ggggg
-trace _y__y penes ___g_ voled __gg_ ruler ggggg
-trace _y__y penes ___g_ voled _y_g_ offer ggggg
-trace _y__y penes ___g_ voled _yygy older ggggg
-trace _y__y penes ___g_ voled _gyg_ lower ggggg
-trace _y__y penes ___g_ voled y__gy diver ggggg
-trace _y__y penes ___g_ voled y_yg_ liver ggggg
-trace _y__y penes ___g_ voled ygyg_ lover ggggg
-trace _y__y penes _g___ zombi _____ ferry ggggg
-trace _y__y penes _g___ zombi ____y weird ggggg
-trace _y__y penes _g___ zombi ___y_ berry ggggg
-trace _y__y penes _g___ zombi ___g_ derby ggggg
-trace _y__y penes _g___ zombi __y__ merry ggggg
-trace _y__y penes _g___ zombi __g__ femur ggggg
-trace _y__y penes _g_g_ vifda _____ rebel ggggg
-trace _y__y penes _g_g_ vifda __y__ fewer ggggg
-trace _y__y penes _g_g_ vifda __g__ refer ggggg
-trace _y__y penes _g_g_ vifda __gy_ defer ggggg
-trace _y__y penes _g_g_ vifda y____ lever ggggg
-trace _y__y penes _g_g_ vifda y_y__ fever ggggg
-trace _y__y penes ___gy loser __ygg usher ggggg
-trace _y__y penes ___gy loser __ggg miser ggggg
-trace _y__y penes ___gy loser _gygg sober ggggg
-trace _y__y penes ___gy loser ggggg
-trace _y__y penes __gg_ miner __ggg owner ggggg
-trace _y__y penes __gg_ miner _yggg inner ggggg
-trace _y__y penes __gg_ miner _gggg finer ggggg
-trace _y__y penes __gg_ miner ggggg
-trace _y__y penes _gy__ reign yg__y nerdy ggggg
-trace _y__y penes _gy__ reign yg__g heron ggggg
-trace _y__y penes _gy__ reign ggggg
-trace _y__y penes g__g_ power g__gg plier ggggg
-trace _y__y penes g__g_ power gg_gg poker ggggg
-trace _y__y penes g__g_ power ggggg
-trace _y__y penes __yg_ under _g_gg infer ggggg
-trace _y__y penes __yg_ under ggggg
-trace _y__y penes _y___ query __ggg fiery ggggg
-trace _y__y penes _y___ query ggggg
-trace _y__y penes _y_g_ queer __ygg elder ggggg
-trace _y__y penes _y_g_ queer ggggg
-trace _y__y penes _g_gy sewer gg_gg sever ggggg
-trace _y__y penes _g_gy sewer ggggg
-trace _y__y penes _gyg_ newer gg_gg never ggggg
-trace _y__y penes _gyg_ newer ggggg
-trace _y__y penes y__g_ upper __ggg hyper ggggg
-trace _y__y penes y__g_ upper ggggg
-trace _y__y penes __ygy siren ggggg
-trace _y__y penes _y_y_ every ggggg
-trace _y__y penes _y_gy sheer ggggg
-trace _y__y penes _yygy sneer ggggg
-trace _y__y penes _g__y serum ggggg
-trace _y__y penes _gy_y resin ggggg
-trace _y__y penes _ggg_ renew ggggg
-trace _y__y penes y__gy super ggggg
-trace _y__y penes y_yg_ ripen ggggg
-trace _y__y penes yy__y sperm ggggg
-trace _y__y penes yg___ reply ggggg
-trace _y__y penes yg_g_ repel ggggg
-trace _y__y penes g__gy poser ggggg
-trace _y__y penes gg___ peril ggggg
+trace _y__y levin _y___ spork ___y_ queer _g_gg buyer ggggg
+trace _y__y levin _y___ spork ___y_ queer ggggg
+trace _y__y levin _y___ spork __yy_ offer y__gg boxer ggggg
+trace _y__y levin _y___ spork __yy_ offer ggggg
+trace _y__y levin _y___ spork ___g_ query ggggg
+trace _y__y levin _y___ spork __yyy joker ggggg
+trace _y__y levin _y___ spork _y_y_ hyper ggggg
+trace _y__y levin _y___ spork _yyy_ power ggggg
+trace _y__y levin _y___ spork _yyyy poker ggggg
+trace _y__y levin _y___ spork _g_y_ upper ggggg
+trace _y__y levin _y___ spork y__y_ usher ggggg
+trace _y__y levin _y___ spork yyyy_ poser ggggg
+trace _y__y levin _y___ spork g__y_ sheer ggggg
+trace _y__y levin _y___ spork g_yy_ sober ggggg
+trace _y__y levin _y___ spork gy_y_ super ggggg
+trace _y__y levin _y___ spork gg_g_ sperm ggggg
+trace _y__y levin _g___ fumed ___y_ berry ggggg
+trace _y__y levin _g___ fumed ___yy derby ggggg
+trace _y__y levin _g___ fumed ___g_ sewer ggggg
+trace _y__y levin _g___ fumed __yy_ merry ggggg
+trace _y__y levin _g___ fumed _yyy_ serum ggggg
+trace _y__y levin _g___ fumed y__g_ refer ggggg
+trace _y__y levin _g___ fumed y__gy defer ggggg
+trace _y__y levin _g___ fumed g__y_ ferry ggggg
+trace _y__y levin _g___ fumed g__g_ fewer ggggg
+trace _y__y levin _g___ fumed gygy_ femur ggggg
+trace _y__y levin _y_y_ shmek ___g_ rider _g_gg fiber ggggg
+trace _y__y levin _y_y_ shmek ___g_ rider ggggg
+trace _y__y levin _y_y_ shmek ___y_ fiery ggggg
+trace _y__y levin _y_y_ shmek ___gy biker ggggg
+trace _y__y levin _y_y_ shmek __yg_ mixer ggggg
+trace _y__y levin _y_y_ shmek _y_gy hiker ggggg
+trace _y__y levin _y_y_ shmek y_yg_ miser ggggg
+trace _y__y levin _y_yy miner _yygg infer ggggg
+trace _y__y levin _y_yy miner _yggg inner ggggg
+trace _y__y levin _y_yy miner _gggg finer ggggg
+trace _y__y levin _y_yy miner ggggg
+trace _y__y levin yy___ older _y_gg ruler ggggg
+trace _y__y levin yy___ older _g_gg flyer ggggg
+trace _y__y levin yy___ older _gggg elder ggggg
+trace _y__y levin yy___ older ggggg
+trace _y__y levin _y__y under _y_gg owner ggggg
+trace _y__y levin _y__y under _g_gg sneer ggggg
+trace _y__y levin _y__y under ggggg
+trace _y__y levin _yg__ zhomo __y__ rover ggggg
+trace _y__y levin _yg__ zhomo __yy_ mover ggggg
+trace _y__y levin _yg__ zhomo _yy__ hover ggggg
+trace _y__y levin _ygy_ wodge ____y river ggggg
+trace _y__y levin _ygy_ wodge ___yy giver ggggg
+trace _y__y levin _ygy_ wodge __y_y diver ggggg
+trace _y__y levin _g__y renew ygy__ nerdy ggggg
+trace _y__y levin _g__y renew ygygy newer ggggg
+trace _y__y levin _g__y renew ggggg
+trace _y__y levin yg___ reply gg_y_ rebel ggggg
+trace _y__y levin yg___ reply gggy_ repel ggggg
+trace _y__y levin yg___ reply ggggg
+trace _y__y levin _y_yg siren _gygg ripen ggggg
+trace _y__y levin _y_yg siren ggggg
+trace _y__y levin _gg__ sever _gggg fever ggggg
+trace _y__y levin _gg__ sever ggggg
+trace _y__y levin gy___ lower gg_gg loser ggggg
+trace _y__y levin gy___ lower ggggg
+trace _y__y levin _yy__ every ggggg
+trace _y__y levin _g__g heron ggggg
+trace _y__y levin _g_y_ weird ggggg
+trace _y__y levin _g_yg reign ggggg
+trace _y__y levin _g_gg resin ggggg
+trace _y__y levin _gg_y never ggggg
+trace _y__y levin yy_y_ plier ggggg
+trace _y__y levin yg_g_ peril ggggg
+trace _y__y levin gyg__ lover ggggg
+trace _y__y levin gygy_ liver ggggg
+trace _y__y levin ggg__ lever ggggg
 trace _yy__ pylon _____ karma _yy__ sugar ggggg
 trace _yy__ pylon _____ karma _gy__ rabbi ggggg
 trace _yy__ pylon _____ karma _gy_y radar ggggg
@@ -586,6 +592,8 @@ trace ___y_ lions yy___ dhobi ___yy climb ggggg
 trace ___y_ lions yy___ dhobi _g__y chill ggggg
 trace ___y_ lions yy___ dhobi _g__g chili ggggg
 trace ___y_ lions yy___ dhobi yg__y child ggggg
+trace ___y_ lions __y__ cough gg___ combo ggggg
+trace ___y_ lions __y__ cough ggggg
 trace ___y_ lions __g_y scoop ggg__ scoff ggggg
 trace ___y_ lions __g_y scoop ggggg
 trace ___y_ lions _yyy_ ionic _gggg conic ggggg
@@ -594,10 +602,8 @@ trace ___y_ lions _g___ mimic _g_gg civic ggggg
 trace ___y_ lions _g___ mimic ggggg
 trace ___y_ lions ____g mucus ggggg
 trace ___y_ lions ___g_ chunk ggggg
-trace ___y_ lions __y__ cough ggggg
 trace ___y_ lions __y_g focus ggggg
 trace ___y_ lions __yy_ condo ggggg
-trace ___y_ lions __g__ +combo ggggg
 trace ___y_ lions _y___ cubic ggggg
 trace ___y_ lions _y__y music ggggg
 trace ___y_ lions _y_y_ cynic ggggg
@@ -617,42 +623,6 @@ trace ___y_ lions g____ lucky ggggg
 trace ___y_ lions g_y_g locus ggggg
 trace ___y_ lions gy___ lucid ggggg
 trace ___y_ lions gyy__ logic ggggg
-trace y_y__ split __y_g fault _y_yg gloat ggggg
-trace y_y__ split __y_g fault _yggg adult ggggg
-trace y_y__ split __y_g fault _gggg vault ggggg
-trace y_y__ split __y_g fault gy_yg float ggggg
-trace y_y__ split __y_g fault ggggg
-trace y_y__ split ____y quota ___yy +avant ggggg
-trace y_y__ split ____y quota ___gy fatty ggggg
-trace y_y__ split ____y quota __yyy baton ggggg
-trace y_y__ split ____y quota ggggg
-trace y_y__ split ____g haunt _y__g abbot ggggg
-trace y_y__ split ____g haunt _yy_g about ggggg
-trace y_y__ split ____g haunt _gggg gaunt ggggg
-trace y_y__ split ____g haunt ggggg
-trace y_y__ split ___gg audit y__gg habit ggggg
-trace y_y__ split ___gg audit g_ygg admit ggggg
-trace y_y__ split ___gg audit ggggg
-trace y_y__ split y___y nasty _gggg hasty ggggg
-trace y_y__ split y___y nasty ggggg
-trace y_y__ split ___yy faith ggggg
-trace y_y__ split ___yg faint ggggg
-trace y_y__ split __y_y fatal ggggg
-trace y_y__ split __yyy vital ggggg
-trace y_y__ split __g_y waltz ggggg
-trace y_y__ split _y__y patty ggggg
-trace y_y__ split _y__g adopt ggggg
-trace y_y__ split _y_yg paint ggggg
-trace y_y__ split _y_gy patio ggggg
-trace y_y__ split _gy_y aptly ggggg
-trace y_y__ split y__yy vista ggggg
-trace y_y__ split y__yg waist ggggg
-trace y_y__ split y_y_y +atlas ggggg
-trace y_y__ split yy__y pasta ggggg
-trace y_y__ split g___g squat ggggg
-trace y_y__ split g__yg saint ggggg
-trace y_y__ split g__gy satin ggggg
-trace y_y__ split g_g_y salty ggggg
 trace __y_g mails _y___ adobe g_g_g awoke ggggg
 trace __y_g mails _y___ adobe g_gyg above ggggg
 trace __y_g mails _y___ adobe gyg_g anode ggggg
@@ -688,72 +658,106 @@ trace __y_g mails yy_g_ ample ggggg
 trace __y_g mails gg___ maybe ggggg
 trace __y_g mails gg_g_ maple ggggg
 trace __y_g mails ggg__ maize ggggg
-trace y___y peens _y___ motel __yy_ eight ggggg
-trace y___y peens _y___ motel __yg_ quiet ggggg
-trace y___y peens _y___ motel _gggg hotel ggggg
-trace y___y peens _y___ motel ggggg
-trace y___y peens _yg_y sweet g_ggy steel ggggg
-trace y___y peens _yg_y sweet g_ggg sheet ggggg
-trace y___y peens _yg_y sweet ggggg
-trace y___y peens _g___ deity gg_y_ debut ggggg
-trace y___y peens _g___ deity ggyy_ debit ggggg
-trace y___y peens _g___ deity ggggg
-trace y___y peens __g_y quest _gggg guest ggggg
-trace y___y peens __g_y quest ggggg
-trace y___y peens _y_y_ often __ygy inlet ggggg
-trace y___y peens _y_y_ often ggggg
-trace y___y peens yg___ depth gggy_ depot ggggg
-trace y___y peens yg___ depth ggggg
-trace y___y peens _y__y exist ggggg
-trace y___y peens _y__g ethos ggggg
-trace y___y peens _y_yy onset ggggg
-trace y___y peens _y_g_ +tinge ggggg
-trace y___y peens _yg__ fleet ggggg
-trace y___y peens _ygg_ event ggggg
-trace y___y peens _g__y zesty ggggg
-trace y___y peens _g__g fetus ggggg
-trace y___y peens _gy_y beset ggggg
-trace y___y peens y_g__ +tempt ggggg
-trace y___y peens y_g_y slept ggggg
-trace y___y peens y_gy_ inept ggggg
-trace y___y peens y_ggy spent ggggg
-trace y___y peens yy___ empty ggggg
-trace y___y peens yy__y upset ggggg
-trace y___y peens yyg_y steep ggggg
-trace y___y peens yg__y setup ggggg
-trace y___y peens gg___ petty ggggg
-trace __y_y unled ___y_ speak __ygy kebab ggggg
-trace __y_y unled ___y_ speak __gy_ omega ggggg
-trace __y_y unled ___y_ speak y_yg_ essay ggggg
-trace __y_y unled ___y_ speak ggggg
-trace __y_y unled __yyy pedal _yygg ideal ggggg
-trace __y_y unled __yyy pedal _gggg medal ggggg
-trace __y_y unled __yyy pedal ggggg
-trace __y_y unled __yg_ label _g_gg hazel ggggg
-trace __y_y unled __yg_ label _gygg bagel ggggg
-trace __y_y unled __yg_ label ggggg
-trace __y_y unled _yyg_ panel _yygy alien ggggg
-trace __y_y unled _yyg_ panel _gygg navel ggggg
-trace __y_y unled _yyg_ panel ggggg
-trace __y_y unled __yy_ legal yy_g_ bleak ggggg
-trace __y_y unled __yy_ legal ggggg
-trace __y_y unled ___yy media ggggg
-trace __y_y unled ___yg ahead ggggg
-trace __y_y unled ___g_ abbey ggggg
-trace __y_y unled __yyg plead ggggg
-trace __y_y unled __gy_ +slave ggggg
-trace __y_y unled __gyy delay ggggg
-trace __y_y unled __gg_ alley ggggg
-trace __y_y unled _y_y_ hyena ggggg
-trace __y_y unled _y_yy sedan ggggg
-trace __y_y unled _y_yg amend ggggg
-trace __y_y unled _y_g_ haven ggggg
-trace __y_y unled _yyy_ penal ggggg
-trace __y_y unled _yygy laden ggggg
-trace __y_y unled _g_y_ sneak ggggg
-trace __y_y unled _g_g_ annex ggggg
-trace __y_y unled _gyg_ angel ggggg
-trace __y_y unled y_yy_ equal ggggg
+trace y_y__ split __y_g fault _y_yg gloat ggggg
+trace y_y__ split __y_g fault _yggg adult ggggg
+trace y_y__ split __y_g fault _gggg vault ggggg
+trace y_y__ split __y_g fault yy_yg aloft ggggg
+trace y_y__ split __y_g fault gy_yg float ggggg
+trace y_y__ split __y_g fault ggggg
+trace y_y__ split ____g haunt _y__g abbot ggggg
+trace y_y__ split ____g haunt _yy_g about ggggg
+trace y_y__ split ____g haunt _gggg gaunt ggggg
+trace y_y__ split ____g haunt ggggg
+trace y_y__ split ____y quota ___gy fatty ggggg
+trace y_y__ split ____y quota __yyy baton ggggg
+trace y_y__ split ____y quota ggggg
+trace y_y__ split ___gg audit y__gg habit ggggg
+trace y_y__ split ___gg audit g_ygg admit ggggg
+trace y_y__ split ___gg audit ggggg
+trace y_y__ split y___y nasty _gggg hasty ggggg
+trace y_y__ split y___y nasty ggggg
+trace y_y__ split ___yy faith ggggg
+trace y_y__ split ___yg faint ggggg
+trace y_y__ split __y_y fatal ggggg
+trace y_y__ split __yyy vital ggggg
+trace y_y__ split __g_y waltz ggggg
+trace y_y__ split _y__y patty ggggg
+trace y_y__ split _y__g adopt ggggg
+trace y_y__ split _y_yg paint ggggg
+trace y_y__ split _y_gy patio ggggg
+trace y_y__ split _gy_y aptly ggggg
+trace y_y__ split y__yy vista ggggg
+trace y_y__ split y__yg waist ggggg
+trace y_y__ split y_g_y atlas ggggg
+trace y_y__ split yy__y pasta ggggg
+trace y_y__ split g___g squat ggggg
+trace y_y__ split g__yg saint ggggg
+trace y_y__ split g__gy satin ggggg
+trace y_y__ split g_g_y salty ggggg
+trace __y_y laden _y_y_ speak __ygy kebab ggggg
+trace __y_y laden _y_y_ speak __gy_ omega ggggg
+trace __y_y laden _y_y_ speak y_yg_ essay ggggg
+trace __y_y laden _y_y_ speak ggggg
+trace __y_y laden yyyy_ plead _yygy delay ggggg
+trace __y_y laden yyyy_ plead _yggy ideal ggggg
+trace __y_y laden yyyy_ plead ggggg
+trace __y_y laden _y_yy sneak _ygy_ hyena ggggg
+trace __y_y laden _y_yy sneak ggggg
+trace __y_y laden yy_y_ equal y__gy bleak ggggg
+trace __y_y laden yy_y_ equal ggggg
+trace __y_y laden yygy_ pedal _gggg medal ggggg
+trace __y_y laden yygy_ pedal ggggg
+trace __y_y laden yg_g_ hazel _g_gg bagel ggggg
+trace __y_y laden yg_g_ hazel ggggg
+trace __y_y laden yg_gy panel _gygg navel ggggg
+trace __y_y laden yg_gy panel ggggg
+trace __y_y laden _y_g_ abbey ggggg
+trace __y_y laden _y_gy annex ggggg
+trace __y_y laden _yyy_ ahead ggggg
+trace __y_y laden _yyyy amend ggggg
+trace __y_y laden _ygy_ media ggggg
+trace __y_y laden _ygyg sedan ggggg
+trace __y_y laden _g_gg haven ggggg
+trace __y_y laden _gygy naked ggggg
+trace __y_y laden yy_yy penal ggggg
+trace __y_y laden yy_g_ alley ggggg
+trace __y_y laden yy_gy angel ggggg
+trace __y_y laden yy_gg alien ggggg
+trace __y_y laden gy_y_ legal ggggg
+trace __y_y laden gg_g_ label ggggg
+trace __y_y laden ggggg
+trace y___y peles _y__y quest __ygg exist ggggg
+trace y___y peles _y__y quest _gggg guest ggggg
+trace y___y peles _y__y quest ggggg
+trace y___y peles _g___ deity gg_y_ debut ggggg
+trace y___y peles _g___ deity ggyy_ debit ggggg
+trace y___y peles _g___ deity ggggg
+trace y___y peles ___g_ quiet ___gy often ggggg
+trace y___y peles ___g_ quiet ggggg
+trace y___y peles __yg_ motel _gggg hotel ggggg
+trace y___y peles __yg_ motel ggggg
+trace y___y peles _y_gy sweet g_ggg sheet ggggg
+trace y___y peles _y_gy sweet ggggg
+trace y___y peles yy___ inept __yyy empty ggggg
+trace y___y peles yy___ inept ggggg
+trace y___y peles yg___ depth gggy_ depot ggggg
+trace y___y peles yg___ depth ggggg
+trace y___y peles ___gy onset ggggg
+trace y___y peles __gg_ inlet ggggg
+trace y___y peles _y___ eight ggggg
+trace y___y peles _y__g ethos ggggg
+trace y___y peles _y_y_ event ggggg
+trace y___y peles _yyg_ fleet ggggg
+trace y___y peles _yygy steel ggggg
+trace y___y peles _g__y zesty ggggg
+trace y___y peles _g__g fetus ggggg
+trace y___y peles _g_gy beset ggggg
+trace y___y peles y__gy upset ggggg
+trace y___y peles yy__y spent ggggg
+trace y___y peles yy_gy steep ggggg
+trace y___y peles yyy_y slept ggggg
+trace y___y peles yg__y setup ggggg
+trace y___y peles gg___ petty ggggg
 trace __g__ spink g____ small g_g__ shady ggggg
 trace __g__ spink g____ small g_g_g shawl ggggg
 trace __g__ spink g____ small g_gy_ slash ggggg
@@ -771,7 +775,6 @@ trace __g__ spink g_yy_ snail ggggg
 trace __g__ spink _____ guava ggggg
 trace __g__ spink ___gg blank ggggg
 trace __g__ spink __y_y khaki ggggg
-trace __g__ spink __y_g +haiku ggggg
 trace __g__ spink __yy_ again ggggg
 trace __g__ spink _y___ plaza ggggg
 trace __g__ spink _y_gg plank ggggg
@@ -779,44 +782,12 @@ trace __g__ spink _yy__ plaid ggggg
 trace __g__ spink _yyy_ plain ggggg
 trace __g__ spink _yyg_ piano ggggg
 trace __g__ spink y___g flask ggggg
-trace __g__ spink y_y__ +oasis ggggg
 trace __g__ spink yy___ psalm ggggg
 trace __g__ spink g___y shaky ggggg
 trace __g__ spink g__g_ slang ggggg
 trace __g__ spink gy___ swamp ggggg
 trace __g__ spink gg___ spasm ggggg
 trace __g__ spink gg_y_ spawn ggggg
-trace _y__g wersh _yy__ simul ___y_ rouge ggggg
-trace _y__g wersh _yy__ simul ___g_ rogue ggggg
-trace _y__g wersh _yy__ simul _y___ +biker ggggg
-trace _y__g wersh _yy__ simul _yy__ +mixer ggggg
-trace _y__g wersh _yy__ simul _g___ ridge ggggg
-trace _y__g wersh _yy__ simul _g__y rifle ggggg
-trace _y__g wersh _yg__ gorge __g_g +fryer ggggg
-trace _y__g wersh _yg__ gorge __ggg purge ggggg
-trace _y__g wersh _yg__ gorge _gggg forge ggggg
-trace _y__g wersh _yg__ gorge ggggg
-trace _y__g wersh _gg__ verge _gg_g eerie ggggg
-trace _y__g wersh _gg__ verge _gggg merge ggggg
-trace _y__g wersh _gg__ verge ygg_g nerve ggggg
-trace _y__g wersh _gg__ verge ggggg
-trace _y__g wersh _yy_y rhyme yg__g +hiker ggggg
-trace _y__g wersh _yy_y rhyme ggggg
-trace _y__g wersh _ygg_ purse _gggg nurse ggggg
-trace _y__g wersh _ygg_ purse ggggg
-trace _y__g wersh _yyy_ spore ggggg
-trace _y__g wersh _yyyy shore ggggg
-trace _y__g wersh _yyg_ rinse ggggg
-trace _y__g wersh _yg_y horde ggggg
-trace _y__g wersh _ygy_ surge ggggg
-trace _y__g wersh _yggy horse ggggg
-trace _y__g wersh _gy__ genre ggggg
-trace _y__g wersh _gyg_ reuse ggggg
-trace _y__g wersh _ggy_ serve ggggg
-trace _y__g wersh _ggg_ verse ggggg
-trace _y__g wersh yyyy_ swore ggggg
-trace _y__g wersh gyy_y where ggggg
-trace _y__g wersh gygg_ worse ggggg
 trace _g___ ungod _____ frisk _gg__ privy ggggg
 trace _g___ ungod _____ frisk _ggg_ prism ggggg
 trace _g___ ungod _____ frisk _gggg brisk ggggg
@@ -846,32 +817,60 @@ trace _g___ ungod y____ brush ggggg
 trace _g___ ungod y__yg proud ggggg
 trace _g___ ungod y_yy_ group ggggg
 trace _g___ ungod yy__y drunk ggggg
-trace _yy_y ympes ___g_ wager _yggg anger ggggg
-trace _yy_y ympes ___g_ wager _g_gy raven ggggg
-trace _yy_y ympes ___g_ wager _g_gg baker ggggg
-trace _yy_y ympes ___g_ wager _gggg eager ggggg
-trace _yy_y ympes ___g_ wager gg_gg wafer ggggg
-trace _yy_y ympes ___g_ wager ggggg
-trace _yy_y ympes ___y_ renal yg_y_ zebra ggggg
-trace _yy_y ympes ___y_ renal gg_gy relax ggggg
-trace _yy_y ympes ___y_ renal gg_gg regal ggggg
-trace _yy_y ympes ___y_ renal ggggg
-trace _yy_y ympes _y_g_ ramen ygyg_ maker ggggg
-trace _yy_y ympes _y_g_ ramen yggg_ gamer ggggg
-trace _yy_y ympes _y_g_ ramen ggggg
-trace _yy_y ympes ___yy swear g_ggg shear ggggg
-trace _yy_y ympes ___yy swear ggggg
-trace _yy_y ympes y__y_ relay yyyyg early ggggg
-trace _yy_y ympes y__y_ relay ggggg
-trace _yy_y ympes ___gy safer ggggg
-trace _yy_y ympes __yy_ opera ggggg
-trace _yy_y ympes __yyy spear ggggg
-trace _yy_y ympes __gg_ paper ggggg
-trace _yy_y ympes _g_yy smear ggggg
-trace _yy_y ympes _g_g_ amber ggggg
-trace _yy_y ympes y__g_ layer ggggg
-trace _yy_y ympes y_yg_ payer ggggg
-trace _yy_y ympes y_gy_ repay ggggg
+trace _y__g gursh y_g__ verge __ggg forge ggggg
+trace _y__g gursh y_g__ verge _gggg merge ggggg
+trace _y__g gursh y_g__ verge ggggg
+trace _y__g gursh __y_y where _g_yg rhyme ggggg
+trace _y__g gursh __y_y where ggggg
+trace _y__g gursh __yy_ swore g_ggg spore ggggg
+trace _y__g gursh __yy_ swore ggggg
+trace _y__g gursh __g__ nerve _gg_g eerie ggggg
+trace _y__g gursh __g__ nerve ggggg
+trace _y__g gursh __gg_ worse __ggg verse ggggg
+trace _y__g gursh __gg_ worse ggggg
+trace _y__g gursh _ggg_ purse _gggg nurse ggggg
+trace _y__g gursh _ggg_ purse ggggg
+trace _y__g gursh yyy__ rouge ggyyg rogue ggggg
+trace _y__g gursh yyy__ rouge ggggg
+trace _y__g gursh __y__ rifle ggggg
+trace _y__g gursh __yyy shore ggggg
+trace _y__g gursh __yg_ rinse ggggg
+trace _y__g gursh __g_y horde ggggg
+trace _y__g gursh __gy_ serve ggggg
+trace _y__g gursh __ggy horse ggggg
+trace _y__g gursh _yyg_ reuse ggggg
+trace _y__g gursh y_y__ ridge ggggg
+trace _y__g gursh ygg__ purge ggggg
+trace _y__g gursh yggy_ surge ggggg
+trace _y__g gursh g_y__ genre ggggg
+trace _y__g gursh g_g__ gorge ggggg
+trace _yy_y waspy _y___ renal yy_y_ amber ggggg
+trace _yy_y waspy _y___ renal yyyy_ anger ggggg
+trace _yy_y waspy _y___ renal yg_y_ zebra ggggg
+trace _yy_y waspy _y___ renal gg_gy relax ggggg
+trace _yy_y waspy _y___ renal gg_gg regal ggggg
+trace _yy_y waspy _y___ renal ggggg
+trace _yy_y waspy _g___ maker _g_gy raven ggggg
+trace _yy_y waspy _g___ maker _g_gg eager ggggg
+trace _yy_y waspy _g___ maker _gggg baker ggggg
+trace _yy_y waspy _g___ maker yg_gy ramen ggggg
+trace _yy_y waspy _g___ maker yg_gg gamer ggggg
+trace _yy_y waspy _g___ maker ggggg
+trace _yy_y waspy _yy__ smear g_ggg shear ggggg
+trace _yy_y waspy _yy__ smear ggggg
+trace _yy_y waspy gg___ wager gg_gg wafer ggggg
+trace _yy_y waspy gg___ wager ggggg
+trace _yy_y waspy _y__g relay ggggg
+trace _yy_y waspy _y_y_ opera ggggg
+trace _yy_y waspy _y_yg repay ggggg
+trace _yy_y waspy _yyy_ spear ggggg
+trace _yy_y waspy _g__y layer ggggg
+trace _yy_y waspy _g__g early ggggg
+trace _yy_y waspy _g_y_ paper ggggg
+trace _yy_y waspy _g_yy payer ggggg
+trace _yy_y waspy _gy__ safer ggggg
+trace _yy_y waspy _gg__ laser ggggg
+trace _yy_y waspy yyy__ swear ggggg
 trace yy___ hoist _g__y rotor _gggg motor ggggg
 trace yy___ hoist _g__y rotor ygy__ forty ggggg
 trace yy___ hoist _g__y rotor ggggg
@@ -880,6 +879,8 @@ trace yy___ hoist yg__y yewen ____y north ggggg
 trace yy___ hoist yg__y yewen __y__ worth ggggg
 trace yy___ hoist _y_yy story gggg_ storm ggggg
 trace yy___ hoist _y_yy story ggggg
+trace yy___ hoist _yy_y nitro yyggg intro ggggg
+trace yy___ hoist _yy_y nitro ggggg
 trace yy___ hoist ____g burnt ggggg
 trace yy___ hoist ___yy rusty ggggg
 trace yy___ hoist ___yg spurt ggggg
@@ -890,8 +891,6 @@ trace yy___ hoist __ygg first ggggg
 trace yy___ hoist __g_g flirt ggggg
 trace yy___ hoist __gyg skirt ggggg
 trace yy___ hoist _y_yg sport ggggg
-trace yy___ hoist _yy_y intro ggggg
-trace yy___ hoist _yg_y +nitro ggggg
 trace yy___ hoist _g__g robot ggggg
 trace yy___ hoist _g_gg worst ggggg
 trace yy___ hoist y_y_y birth ggggg
@@ -922,43 +921,62 @@ trace ___g_ sulph g___y shock ggggg
 trace ___g_ sulph g__y_ spicy ggggg
 trace ___g_ sulph g_y__ slick ggggg
 trace ___g_ sulph gy___ snuck ggggg
-trace __g_g delph _y___ usage __g_g awake ggggg
-trace __g_g delph _y___ usage __ggg image ggggg
-trace __g_g delph _y___ usage _yg_g snake ggggg
-trace __g_g delph _y___ usage yyg_g suave ggggg
-trace __g_g delph _y___ usage ggggg
-trace __g_g delph _y__y vroom _____ shake ggggg
-trace __g_g delph _y__y vroom ____y shame ggggg
-trace __g_g delph _y__y vroom y____ shave ggggg
-trace __g_g delph _yy__ flame _gg_g glaze ggggg
-trace __g_g delph _yy__ flame _gggg blame ggggg
-trace __g_g delph _yy__ flame ggggg
-trace __g_g delph _gy__ leave ggg_g lease ggggg
-trace __g_g delph _gy__ leave ggggg
-trace __g_g delph yy___ evade __gyg +naked ggggg
-trace __g_g delph yy___ evade ggggg
-trace __g_g delph _y_yy phase ggggg
-trace __g_g delph _y_gy shape ggggg
-trace __g_g delph _yy_y whale ggggg
-trace __g_g delph _yyy_ plane ggggg
-trace __g_g delph _g___ weave ggggg
-trace __g_g delph _g__y heave ggggg
-trace __g_g delph yy__y shade ggggg
-trace __g_g delph yy_y_ spade ggggg
-trace __g_g delph yyy__ blade ggggg
+trace __g_g sulph __y__ blame _yg_g leave ggggg
+trace __g_g sulph __y__ blame _gg_g glaze ggggg
+trace __g_g sulph __y__ blame _gggg flame ggggg
+trace __g_g sulph __y__ blame ggg_g blade ggggg
+trace __g_g sulph __y__ blame ggggg
+trace __g_g sulph _____ weave __g_g image ggggg
+trace __g_g sulph _____ weave _ygyg evade ggggg
+trace __g_g sulph _____ weave y_g_g awake ggggg
+trace __g_g sulph _____ weave ggggg
+trace __g_g sulph g___y vodka ____y shame ggggg
+trace __g_g sulph g___y vodka ___gy shake ggggg
+trace __g_g sulph g___y vodka __y_y shade ggggg
+trace __g_g sulph g___y vodka y___y shave ggggg
+trace __g_g sulph ____y heave ggggg
+trace __g_g sulph __y_y whale ggggg
+trace __g_g sulph __yy_ plane ggggg
+trace __g_g sulph y__yy phase ggggg
+trace __g_g sulph y_y__ lease ggggg
+trace __g_g sulph yy___ usage ggggg
+trace __g_g sulph g____ snake ggggg
+trace __g_g sulph g__y_ spade ggggg
+trace __g_g sulph g__gy shape ggggg
+trace __g_g sulph g_y__ slave ggggg
+trace __g_g sulph gg___ suave ggggg
+trace yy__y motet __gg_ enter __ggg liter ggggg
+trace yy__y motet __gg_ enter y_ggg deter ggggg
+trace yy__y motet __gg_ enter ggggg
+trace yy__y motet ___yg inert __ggg exert ggggg
+trace yy__y motet ___yg inert ggggg
+trace yy__y motet __yy_ stern _yyy_ berth ggggg
+trace yy__y motet __yy_ stern ggggg
+trace yy__y motet __yg_ steer _gygg ether ggggg
+trace yy__y motet __yg_ steer ggggg
+trace yy__y motet ___gg reset ggggg
+trace yy__y motet __gy_ entry ggggg
+trace yy__y motet __ggy utter ggggg
+trace yy__y motet _y_yg overt ggggg
+trace yy__y motet _yyg_ other ggggg
+trace yy__y motet _ygg_ outer ggggg
+trace yy__y motet _yggy otter ggggg
+trace yy__y motet _ggg_ voter ggggg
+trace yy__y motet g__yg merit ggggg
+trace yy__y motet g_gg_ meter ggggg
+trace yy__y motet gygy_ metro ggggg
 trace __yy_ monad _g_g_ vocal _gggg local _gggg focal ggggg
 trace __yy_ monad _g_g_ vocal _gggg local ggggg
 trace __yy_ monad _g_g_ vocal ggggg
 trace __yy_ monad ___y_ scuba yy_yy basic ggggg
 trace __yy_ monad ___y_ scuba ggggg
-trace __yy_ monad _y_g_ cacao y__gy +poach ggggg
-trace __yy_ monad _y_g_ cacao ggggg
 trace __yy_ monad ___g_ lilac ggggg
 trace __yy_ monad __yy_ cabin ggggg
 trace __yy_ monad __gy_ panic ggggg
 trace __yy_ monad __gyy candy ggggg
 trace __yy_ monad __gg_ canal ggggg
 trace __yy_ monad _y_y_ havoc ggggg
+trace __yy_ monad _y_g_ cacao ggggg
 trace __yy_ monad _yyy_ bacon ggggg
 trace __yy_ monad _ygy_ canon ggggg
 trace __yy_ monad _g_y_ cocoa ggggg
@@ -985,25 +1003,6 @@ trace _g__g bonds g____ bribe ggggg
 trace _g__g bonds g__g_ bride ggggg
 trace _g__g bonds g_y__ brine ggggg
 trace _g__g bonds gy___ broke ggggg
-trace yy__y motet ___yg inert __ggg exert ggggg
-trace yy__y motet ___yg inert ggggg
-trace yy__y motet __yy_ stern _yyy_ berth ggggg
-trace yy__y motet __yy_ stern ggggg
-trace yy__y motet __yg_ steer _gygg ether ggggg
-trace yy__y motet __yg_ steer ggggg
-trace yy__y motet __gg_ enter y_ggg deter ggggg
-trace yy__y motet __gg_ enter ggggg
-trace yy__y motet ___gg reset ggggg
-trace yy__y motet __gy_ entry ggggg
-trace yy__y motet __ggy utter ggggg
-trace yy__y motet _y_yg overt ggggg
-trace yy__y motet _yyg_ other ggggg
-trace yy__y motet _ygg_ outer ggggg
-trace yy__y motet _yggy otter ggggg
-trace yy__y motet _ggg_ voter ggggg
-trace yy__y motet g__yg merit ggggg
-trace yy__y motet g_gg_ meter ggggg
-trace yy__y motet gygy_ metro ggggg
 trace _gg__ dings ___y_ gravy ggg__ graph ggggg
 trace _gg__ dings ___y_ gravy ggggg
 trace _gg__ dings __y__ prank _gggg frank ggggg
@@ -1026,6 +1025,7 @@ trace y_g__ split g___y stand ggg__ staff ggggg
 trace y_g__ split g___y stand ggggg
 trace y_g__ split g_y_y stall gggg_ stalk ggggg
 trace y_g__ split g_y_y stall ggggg
+trace y_g__ split ____g avant ggggg
 trace y_g__ split ___yg giant ggggg
 trace y_g__ split ___gg await ggggg
 trace y_g__ split __y_y loath ggggg
@@ -1037,6 +1037,36 @@ trace y_g__ split g___g shaft ggggg
 trace y_g__ split g__gy stain ggggg
 trace y_g__ split g_y_g slant ggggg
 trace y_g__ split gy__y stamp ggggg
+trace y_y_y splat __ygy metal _gggg fetal ggggg
+trace y_y_y splat __ygy metal ggggg
+trace y_y_y splat g__gy steam gggg_ steak ggggg
+trace y_y_y splat g__gy steam ggggg
+trace y_y_y splat ___yy eaten ggggg
+trace y_y_y splat ___yg agent ggggg
+trace y_y_y splat ___gg wheat ggggg
+trace y_y_y splat __yyy latex ggggg
+trace y_y_y splat __gyy delta ggggg
+trace y_y_y splat __gyg valet ggggg
+trace y_y_y splat _y_yg adept ggggg
+trace y_y_y splat _yygy petal ggggg
+trace y_y_y splat y__yg asset ggggg
+trace y_y_y splat g__gg sweat ggggg
+trace y_y_y splat g_ygy steal ggggg
+trace g___y tenet gg___ tepid gg__y teddy ggggg
+trace g___y tenet gg___ tepid ggy__ tempo ggggg
+trace g___y tenet gg___ tepid ggggg
+trace g___y tenet g__g_ towel g__g_ thief ggggg
+trace g___y tenet g__g_ towel ggggg
+trace g___y tenet g__gy totem ggggg
+trace g___y tenet g_yg_ token ggggg
+trace g___y tenet gy__g theft ggggg
+trace g___y tenet gy_g_ tweed ggggg
+trace g___y tenet gy_gg tweet ggggg
+trace g___y tenet gyyg_ tween ggggg
+trace g___y tenet gg__g tempt ggggg
+trace g___y tenet gg_yy teeth ggggg
+trace g___y tenet ggg_y tenth ggggg
+trace g___y tenet ggggg
 trace _yg__ showd _____ flair _gg_y alarm ggggg
 trace _yg__ showd _____ flair ggggg
 trace _yg__ showd gg___ sharp gggg_ shark ggggg
@@ -1051,20 +1081,6 @@ trace _yg__ showd _yy_g hoard ggggg
 trace _yg__ showd _g_y_ wharf ggggg
 trace _yg__ showd g____ spark ggggg
 trace _yg__ showd g__y_ swarm ggggg
-trace y_y_y splat __ygy metal _gggg fetal ggggg
-trace y_y_y splat __ygy metal ggggg
-trace y_y_y splat g__gy steam gggg_ steak ggggg
-trace y_y_y splat g__gy steam ggggg
-trace y_y_y splat ___yy eaten ggggg
-trace y_y_y splat ___yg agent ggggg
-trace y_y_y splat ___gg wheat ggggg
-trace y_y_y splat __gyy delta ggggg
-trace y_y_y splat __gyg valet ggggg
-trace y_y_y splat _y_yg adept ggggg
-trace y_y_y splat _yygy petal ggggg
-trace y_y_y splat y__yg asset ggggg
-trace y_y_y splat g__gg sweat ggggg
-trace y_y_y splat g_ygy steal ggggg
 trace ___gg winos __g__ hence _gggg fence ggggg
 trace ___gg winos __g__ hence ggggg
 trace ___gg winos _y__y spice g_ggg slice ggggg
@@ -1091,19 +1107,19 @@ trace _y_y_ colin gy___ chord ggggg
 trace _y_y_ colin gy_g_ choir ggggg
 trace _y_y_ colin gg__y corny ggggg
 trace _y_y_ colin ggg__ color ggggg
-trace g___y owned ___y_ theft gyg_y teeth ggggg
-trace g___y owned ___y_ theft ggggg
-trace g___y owned ___yy teddy ggggg
-trace g___y owned ___yg tepid ggggg
-trace g___y owned ___g_ thief ggggg
-trace g___y owned __gy_ tenth ggggg
-trace g___y owned __gg_ tenet ggggg
-trace g___y owned _g_g_ tweet ggggg
-trace g___y owned _g_gg tweed ggggg
-trace g___y owned y__y_ tempo ggggg
-trace g___y owned y__g_ totem ggggg
-trace g___y owned y_yg_ token ggggg
-trace g___y owned yy_g_ towel ggggg
+trace _g__y diebs __y__ fryer _g_yg error ggggg
+trace _g__y diebs __y__ fryer ggggg
+trace _g__y diebs __g__ green ggggg
+trace _g__y diebs __g_y fresh ggggg
+trace _g__y diebs __g_g press ggggg
+trace _g__y diebs _yy__ grief ggggg
+trace _g__y diebs _yyy_ brief ggggg
+trace _g__y diebs y_y__ order ggggg
+trace _g__y diebs y_g__ greed ggggg
+trace _g__y diebs y_gy_ breed ggggg
+trace _g__y diebs g_y__ dryer ggggg
+trace _g__y diebs g_g_g dress ggggg
+trace _g__y diebs gyy__ drier ggggg
 trace ___yg slink _____ emcee ggggg
 trace ___yg slink ____y choke ggggg
 trace ___yg slink __yy_ niche ggggg
@@ -1116,30 +1132,6 @@ trace ___yg slink y____ chose ggggg
 trace ___yg slink yg___ close ggggg
 trace ___yg slink g____ scope ggggg
 trace ___yg slink g__g_ scene ggggg
-trace _g__y diebs __y__ error ggggg
-trace _g__y diebs __g__ green ggggg
-trace _g__y diebs __g_y fresh ggggg
-trace _g__y diebs __g_g press ggggg
-trace _g__y diebs _yy__ grief ggggg
-trace _g__y diebs _yyy_ brief ggggg
-trace _g__y diebs y_y__ order ggggg
-trace _g__y diebs y_g__ greed ggggg
-trace _g__y diebs y_gy_ breed ggggg
-trace _g__y diebs g_y__ dryer ggggg
-trace _g__y diebs g_g_g dress ggggg
-trace _g__y diebs gyy__ drier ggggg
-trace y___g nouls _____ white ggggg
-trace y___g nouls ____y spite ggggg
-trace y___g nouls ___y_ elite ggggg
-trace y___g nouls ___gy style ggggg
-trace y___g nouls __y_y suite ggggg
-trace y___g nouls __gy_ flute ggggg
-trace y___g nouls _y__y stove ggggg
-trace y___g nouls _y_gy stole ggggg
-trace y___g nouls _yy__ quote ggggg
-trace y___g nouls y____ +tween ggggg
-trace y___g nouls y_y__ unite ggggg
-trace y___g nouls yy__y stone ggggg
 trace g____ thing g_y__ tulip g__g_ timid ggggg
 trace g____ thing g_y__ tulip ggggg
 trace g____ thing g_yy_ toxin ggggg
@@ -1163,6 +1155,17 @@ trace __gy_ slops yg___ clash ggggg
 trace __gy_ slops yg__g class ggggg
 trace __gy_ slops yg_y_ clasp ggggg
 trace __gy_ slops gy_y_ scalp ggggg
+trace _y_yy coder g__gg cyber g__gg cheer ggggg
+trace _y_yy coder g__gg cyber ggggg
+trace _y_yy coder y__yy relic ggggg
+trace _y_yy coder y__yg recur ggggg
+trace _y_yy coder y__gy screw ggggg
+trace _y_yy coder y__gg nicer ggggg
+trace _y_yy coder yyyyg decor ggggg
+trace _y_yy coder g__yy clerk ggggg
+trace _y_yy coder g_ggg cider ggggg
+trace _y_yy coder gg_gg cover ggggg
+trace _y_yy coder ggggg
 trace _gy__ broad _gyy_ arrow gg_g_ arson ggggg
 trace _gy__ broad _gyy_ arrow ggyg_ armor ggggg
 trace _gy__ broad _gyy_ arrow ggggg
@@ -1174,26 +1177,17 @@ trace _gy__ broad _ggg_ groan ggggg
 trace _gy__ broad yg_g_ urban ggggg
 trace _gy__ broad ygyy_ arbor ggggg
 trace _gy__ broad ggggg
-trace _y_yy choir y___y screw ggggg
-trace _y_yy choir y___g recur ggggg
-trace _y_yy choir y__yg nicer ggggg
-trace _y_yy choir y__gy relic ggggg
-trace _y_yy choir y_y_g decor ggggg
-trace _y_yy choir g___y clerk ggggg
-trace _y_yy choir g___g cyber ggggg
-trace _y_yy choir g__yg cider ggggg
-trace _y_yy choir g_y_g cover ggggg
-trace _y_yy choir gg__g cheer ggggg
-trace y_g_y moyls _____ heath _gggg death ggggg
-trace y_g_y moyls _____ heath ggggg
-trace y_g_y moyls ____y feast _gggg beast ggggg
-trace y_g_y moyls ____y feast ggggg
-trace y_g_y moyls ___y_ leapt ggggg
-trace y_g_y moyls ___yy least ggggg
-trace y_g_y moyls ___g_ dealt ggggg
-trace y_g_y moyls __y_y yeast ggggg
-trace y_g_y moyls y____ +matte ggggg
-trace y_g_y moyls g____ meant ggggg
+trace y___g nouls _____ white ggggg
+trace y___g nouls ____y spite ggggg
+trace y___g nouls ___y_ elite ggggg
+trace y___g nouls ___gy style ggggg
+trace y___g nouls __y_y suite ggggg
+trace y___g nouls __gy_ flute ggggg
+trace y___g nouls _y__y stove ggggg
+trace y___g nouls _y_gy stole ggggg
+trace y___g nouls _yy__ quote ggggg
+trace y___g nouls y_y__ unite ggggg
+trace y___g nouls yy__y stone ggggg
 trace yg___ using _____ broth ggggg
 trace yg___ using ___g_ front ggggg
 trace yg___ using __y__ orbit ggggg
@@ -1223,15 +1217,15 @@ trace _gg_g dumps ___g_ grape ggggg
 trace _gg_g dumps __y__ frame ggggg
 trace _gg_g dumps y____ grade ggggg
 trace _gg_g dumps g__g_ drape ggggg
-trace y_g_g skelp __yy_ elate _gggg +latex ggggg
-trace y_g_g skelp __yy_ elate ggggg
-trace y_g_g skelp g_y__ state ggg_g stage ggggg
-trace y_g_g skelp g_y__ state ggggg
-trace y_g_g skelp __yyy plate ggggg
-trace y_g_g skelp g_yy_ slate ggggg
-trace y_g_g skelp g_yg_ stale ggggg
-trace y_g_g skelp gyy__ stake ggggg
-trace y_g_g skelp ggy__ skate ggggg
+trace y_g_y hwyls ____y feast _gggg beast ggggg
+trace y_g_y hwyls ____y feast ggggg
+trace y_g_y hwyls _____ meant ggggg
+trace y_g_y hwyls ___y_ leapt ggggg
+trace y_g_y hwyls ___yy least ggggg
+trace y_g_y hwyls ___g_ dealt ggggg
+trace y_g_y hwyls __y_y yeast ggggg
+trace y_g_y hwyls y____ death ggggg
+trace y_g_y hwyls g____ heath ggggg
 trace yyy_y later _gggg water _gggg eater ggggg
 trace yyy_y later _gggg water ggggg
 trace yyy_y later _yyyy avert ggggg
@@ -1265,14 +1259,14 @@ trace _yyy_ coral g_gy_ carry ggggg
 trace _yyy_ coral gygy_ cargo ggggg
 trace _yyy_ coral ggyy_ cobra ggggg
 trace _yyy_ coral ggggg
-trace yyy__ spyal ___y_ ratio ggggg
-trace yyy__ spyal ___yy ultra ggggg
-trace yyy__ spyal ___gy altar ggggg
-trace yyy__ spyal _yyy_ party ggggg
-trace yyy__ spyal y__g_ +trans ggggg
-trace yyy__ spyal g__g_ straw ggggg
-trace yyy__ spyal g_yg_ stray ggggg
-trace yyy__ spyal gy_g_ strap ggggg
+trace y_g_g skelp g_y__ state ggg_g stage ggggg
+trace y_g_g skelp g_y__ state ggggg
+trace y_g_g skelp __yy_ elate ggggg
+trace y_g_g skelp __yyy plate ggggg
+trace y_g_g skelp g_yy_ slate ggggg
+trace y_g_g skelp g_yg_ stale ggggg
+trace y_g_g skelp gyy__ stake ggggg
+trace y_g_g skelp ggy__ skate ggggg
 trace gg___ typto g____ trunk ggggg
 trace gg___ typto g___y troll ggggg
 trace gg___ typto g__y_ trust ggggg
@@ -1281,13 +1275,13 @@ trace gg___ typto g__g_ truth ggggg
 trace gg___ typto g_y__ trump ggggg
 trace gg___ typto g_y_y troop ggggg
 trace gg___ typto gy___ truly ggggg
-trace _yg_g sylph __y__ glare _gggg flare ggggg
-trace _yg_g sylph __y__ glare ggggg
-trace _yg_g sylph _____ aware ggggg
-trace _yg_g sylph y_y__ +laser ggggg
-trace _yg_g sylph g____ snare ggggg
-trace _yg_g sylph g___y share ggggg
-trace _yg_g sylph g__y_ spare ggggg
+trace __gg_ umphs ____y snack g_ggg slack ggggg
+trace __gg_ umphs ____y snack ggggg
+trace __gg_ umphs _____ black ggggg
+trace __gg_ umphs ___y_ coach ggggg
+trace __gg_ umphs ___yy shack ggggg
+trace __gg_ umphs __yy_ poach ggggg
+trace __gg_ umphs _g__y smack ggggg
 trace y__g_ howdy _____ stick ggggg
 trace y__g_ howdy _y___ stock ggggg
 trace y__g_ howdy y____ pitch ggggg
@@ -1295,6 +1289,20 @@ trace y__g_ howdy y__y_ ditch ggggg
 trace y__g_ howdy y_y__ witch ggggg
 trace y__g_ howdy yg___ notch ggggg
 trace y__g_ howdy g____ hitch ggggg
+trace y_y_g lathe _gy_g waste _gggg paste ggggg
+trace y_y_g lathe _gy_g waste ggggg
+trace y_y_g lathe _yy_g atone ggggg
+trace y_y_g lathe _gyyg haste ggggg
+trace y_y_g lathe _gg_g matte ggggg
+trace y_y_g lathe _gggg bathe ggggg
+trace y_y_g lathe ggggg
+trace yyy__ yaups _y___ altar ggggg
+trace yyy__ yaups _y__y straw ggggg
+trace yyy__ yaups _y_yy strap ggggg
+trace yyy__ yaups _yy__ ultra ggggg
+trace yyy__ yaups _g___ ratio ggggg
+trace yyy__ yaups yy__y stray ggggg
+trace yyy__ yaups yg_y_ party ggggg
 trace yyg__ sturt ___gg apart ggggg
 trace yyg__ sturt __ygg quart ggggg
 trace yyg__ sturt y__yg roast ggggg
@@ -1302,6 +1310,13 @@ trace yyg__ sturt g__gg smart ggggg
 trace yyg__ sturt gg_y_ stair ggggg
 trace yyg__ sturt gg_g_ stark ggggg
 trace yyg__ sturt gg_gg start ggggg
+trace g___g yonis _____ theme ggggg
+trace g___g yonis ____y these ggggg
+trace g___g yonis ___y_ title ggggg
+trace g___g yonis __g_y tense ggggg
+trace g___g yonis __gy_ tinge ggggg
+trace g___g yonis _y__y those ggggg
+trace g___g yonis y____ thyme ggggg
 trace gy___ zhomo ____g turbo ggggg
 trace gy___ zhomo __y__ tutor ggggg
 trace gy___ zhomo __y_g torso ggggg
@@ -1315,18 +1330,18 @@ trace __yyy ocean _yygg pecan ggggg
 trace __yyy ocean _ygg_ cheap ggggg
 trace __yyy ocean _yggg clean ggggg
 trace __yyy ocean ggggg
-trace __gg_ shuln ___y_ black ggggg
-trace __gg_ shuln _y___ coach ggggg
-trace __gg_ shuln g____ smack ggggg
-trace __gg_ shuln g___y snack ggggg
-trace __gg_ shuln g__y_ slack ggggg
-trace __gg_ shuln gg___ shack ggggg
 trace _yg_y whorl ___y_ ready ggggg
 trace _yg_y whorl ___yy realm ggggg
 trace _yg_y whorl ___g_ beard ggggg
 trace _yg_y whorl ___gy learn ggggg
 trace _yg_y whorl ___gg pearl ggggg
 trace _yg_y whorl g__g_ weary ggggg
+trace _yg_g wings ____y spare g_ggg share ggggg
+trace _yg_g wings ____y spare ggggg
+trace _yg_g wings _____ flare ggggg
+trace _yg_g wings ___y_ glare ggggg
+trace _yg_g wings __y_y snare ggggg
+trace _yg_g wings y____ aware ggggg
 trace _g_y_ wudus _____ crook ggggg
 trace _g_y_ wudus ____y crisp ggggg
 trace _g_y_ wudus ____g cross ggggg
@@ -1345,24 +1360,12 @@ trace _ggy_ yolks ____g crass ggggg
 trace _ggy_ yolks ___y_ crank ggggg
 trace _ggy_ yolks __y__ crawl ggggg
 trace _ggy_ yolks y____ crazy ggggg
-trace y_y_g welsh _y___ atone ggggg
-trace y_y_g welsh _y__y bathe ggggg
-trace y_y_g welsh _y_y_ paste ggggg
-trace y_y_g welsh _y_yy haste ggggg
-trace y_y_g welsh _yy_y lathe ggggg
-trace y_y_g welsh gy_y_ waste ggggg
 trace y_yg_ womby _____ piccy ___g_ hatch ggggg
 trace y_yg_ womby _____ piccy __yg_ catch ggggg
 trace y_yg_ womby _____ piccy g__g_ patch ggggg
 trace y_yg_ womby ___y_ batch ggggg
 trace y_yg_ womby __y__ match ggggg
 trace y_yg_ womby g____ watch ggggg
-trace g___g these g___g title ggggg
-trace g___g these g_ygg tense ggggg
-trace g___g these gg__g thyme ggggg
-trace g___g these gg_gg those ggggg
-trace g___g these ggg_g theme ggggg
-trace g___g these ggggg
 trace gy__y timer g__yg tenor ggggg
 trace gy__y timer g__gy threw ggggg
 trace gy__y timer g__gg tower ggggg
@@ -1374,11 +1377,6 @@ trace ___gy speck __gg_ leech ggggg
 trace ___gy speck __ggg check ggggg
 trace ___gy speck _gyg_ epoch ggggg
 trace ___gy speck ggggg
-trace _y_yg score _y_yg curve ggggg
-trace _y_yg score _yggg chore ggggg
-trace _y_yg score _ggyg +coder ggggg
-trace _y_yg score yy_yg curse ggggg
-trace _y_yg score ggggg
 trace _g_yy upend __y_g cried ggggg
 trace _g_yy upend __g__ creek ggggg
 trace _g_yy upend __g_g creed ggggg
@@ -1394,6 +1392,11 @@ trace y__gy yield __g__ eject ggggg
 trace y__gy yield __gy_ elect ggggg
 trace y__gy yield _yy__ evict ggggg
 trace y__gy yield _yy_y edict ggggg
+trace ggg__ vulns _____ trait ggggg
+trace ggg__ vulns ____y trash ggggg
+trace ggg__ vulns ___y_ train ggggg
+trace ggg__ vulns ___gg trans ggggg
+trace ggg__ vulns __y__ trail ggggg
 trace __yyg zobus _____ cache ggggg
 trace __yyg zobus ___yy cause ggggg
 trace __yyg zobus __g__ cable ggggg
@@ -1402,6 +1405,10 @@ trace __g_y leash _gg_y heavy ggggg
 trace __g_y leash yyg__ email ggggg
 trace __g_y leash ggg__ leafy ggggg
 trace __g_y leash ggggg
+trace _y_yg score _y_yg curve ggggg
+trace _y_yg score _yggg chore ggggg
+trace _y_yg score yy_yg curse ggggg
+trace _y_yg score ggggg
 trace _ygy_ scary _ygy_ chair ggggg
 trace _ygy_ scary _ygg_ charm ggggg
 trace _ygy_ scary gggg_ scarf ggggg
@@ -1410,10 +1417,6 @@ trace y__yy scent _yy_y ethic ggggg
 trace y__yy scent _yy_g comet ggggg
 trace y__yy scent yyg_g chest ggggg
 trace y__yy scent ggggg
-trace yy__g route y__gg +liter ggggg
-trace yy__g route yy_yg store ggggg
-trace yy__g route yg_gg forte ggggg
-trace yy__g route ggggg
 trace ygg__ grant _gg_y wrath ggggg
 trace ygg__ grant _gg_g draft ggggg
 trace ygg__ grant ggg_g graft ggggg
@@ -1422,10 +1425,6 @@ trace g__y_ zupan _____ toxic ggggg
 trace g__y_ zupan ____y tonic ggggg
 trace g__y_ zupan __g__ topic ggggg
 trace g__y_ zupan _g__y tunic ggggg
-trace ggg__ vulns _____ trait ggggg
-trace ggg__ vulns ____y trash ggggg
-trace ggg__ vulns ___y_ train ggggg
-trace ggg__ vulns __y__ trail ggggg
 trace __ygg lance _g_gg sauce ggggg
 trace __ygg lance _gggg dance ggggg
 trace __ygg lance ggggg
@@ -1453,6 +1452,9 @@ trace y_yy_ octal ggggg
 trace y_gy_ scant _yggg chant ggggg
 trace y_gy_ scant yyg_g coast ggggg
 trace y_gy_ scant ggggg
+trace yy__g route yy_yg store ggggg
+trace yy__g route yg_gg forte ggggg
+trace yy__g route ggggg
 trace gy__g three g_gyg terse ggggg
 trace gy__g three ggyyg there ggggg
 trace gy__g three ggggg
@@ -1536,5 +1538,3 @@ trace gg__y trend ggggg
 trace gg_gg truce ggggg
 trace ggg_g trade ggggg
 trace ggggg
-// New words
-trace _____ diols _y_g_ imply y__g_ quill ggggg
