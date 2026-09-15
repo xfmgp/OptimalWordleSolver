@@ -21,6 +21,6 @@
    cargo run
    ```
 
-6. Download the output `solution.txt` from the **Codespace** root and upload it to [ylarp.github.io/OptimalWordleSolver](https://ylarp.github.io/OptimalWordleSolver)
+6. Download the output `solution.txt` from the **Codespace** root and upload it to [ylarp.github.io/wordle](https://ylarp.github.io/wordle)
 
    Use `//` for single-line comments or `/* */` for multi-line comments in `solution.txt`
