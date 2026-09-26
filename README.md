@@ -21,6 +21,6 @@
    cargo run
    ```
 
-6. Download the output `solution.txt` from the Codespace and upload it to [xfmgp.github.io/wordle](https://xfmgp.github.io/wordle)
+6. Download the output `solution.txt` from the Codespace and upload it to [yc7rp.github.io/wordle](https://yc7rp.github.io/wordle)
 
    Use `//` for single-line comments or `/* */` for multi-line comments in `solution.txt`
